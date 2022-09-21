@@ -1,8 +1,9 @@
 # Script for writing tweets collected with the Web Data Research Assistant in multiple HTML files
-# to separate EXCEL files
+# to separate EXCEL files (removing tweets that consist in links, images or videos only)
 
 # import packages
 import pandas as pd
+import numpy as np
 from urllib.parse import urljoin
 import os
 from openpyxl import load_workbook
@@ -67,6 +68,12 @@ for f in filenames:
     
 # Assign the table data to a Pandas dataframe
     table = pd.read_html(url)[0] 
+    print(table)
+    
+# delete rows where text cell is empty    
+    
+    table['Text'].replace('', np.nan, inplace=True)
+    table.dropna(subset=['Text'], inplace=True)
     
     outfile=os.path.join(outpath, str(counter) + ".xlsx")
     print(outfile)
@@ -75,5 +82,4 @@ for f in filenames:
     
     table.to_excel(outfile)
     
-
 print("done")
