@@ -55,7 +55,7 @@ filenames= ("WebDataRA-2022-09-21T11_52_44.html",
     "WebDataRA-2022-09-21T12_45_28.html",
     "WebDataRA-backup-1000.html")
   
-# create webpage URL for each file whose table we want to extract
+# create URL for each file whose table we want to extract
 
 path="https://raw.githubusercontent.com/MonikaBarget/DistantReading/main/VMA2013_tweets/"
 
