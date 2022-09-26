@@ -1,12 +1,11 @@
-# Script for writing tweets collected with the Web Data Research Assistant in multiple HTML files
-# to separate EXCEL files (removing tweets that consist in links, images or videos only)
+# Script for writing tweets collected with the Web Data Research Assistant (developed by Leslie Carr) in multiple HTML files
+# to separate EXCEL files (removing tweets that contain no actual text)
 
 # import packages
 import pandas as pd
 import numpy as np
 from urllib.parse import urljoin
 import os
-from openpyxl import load_workbook
 
 # define EXCEL file for output data
 
