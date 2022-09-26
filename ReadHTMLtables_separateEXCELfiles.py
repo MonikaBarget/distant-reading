@@ -7,11 +7,11 @@ import numpy as np
 from urllib.parse import urljoin
 import os
 
-# define EXCEL file for output data
+# define file path for output data
 
 outpath = "C:\\Users\\mobarget\\Downloads\\"
 
-# files with WDRA data on Github
+# files collected with WDRA and stored on Github
 
 filenames= ("WebDataRA-2022-09-21T11_52_44.html",
     "WebDataRA-2022-09-21T11_54_00.html",
@@ -55,7 +55,7 @@ filenames= ("WebDataRA-2022-09-21T11_52_44.html",
     "WebDataRA-2022-09-21T12_45_28.html",
     "WebDataRA-backup-1000.html")
   
-# Create webpage URL for each file whose table we want to extract
+# create webpage URL for each file whose table we want to extract
 
 path="https://raw.githubusercontent.com/MonikaBarget/DistantReading/main/VMA2013_tweets/"
 
@@ -65,7 +65,7 @@ for f in filenames:
     print(url)
     counter+= 1
     
-# Assign the table data to a Pandas dataframe
+# assign the table data to a Pandas dataframe
     table = pd.read_html(url)[0] 
     print(table)
     
@@ -77,7 +77,7 @@ for f in filenames:
     outfile=os.path.join(outpath, str(counter) + ".xlsx")
     print(outfile)
     
-# Store the dataframe in NEW Excel file
+# store the dataframe in NEW Excel file
     
     table.to_excel(outfile)
     
