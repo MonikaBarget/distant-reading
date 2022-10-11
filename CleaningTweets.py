@@ -1,8 +1,38 @@
 # Script for cleaning Tweets in Python
 # based on the tutorial provided by https://catriscode.com/2021/05/01/tweets-cleaning-with-python/
+# extended by Monika Barget, October 2022
 
 import numpy as np
 import re
+import nltk
+from nltk.corpus import stopwords
+nltk.download('stopwords')
+import requests
+
+# STEP 1: read tweets from text file
+
+with open('C:\\Users\\mobarget\\Downloads\\VMA2013_100000tweets_refined_including-retweets.txt', encoding="utf-8") as f:
+    tweets = f.readlines()
+
+# STEP 2: define custom stopwords
+
+# a) From GITHUB:
+
+#url = "https://gist.githubusercontent.com/sebleier/554280/raw/7e0e4a1ce04c2bb7bd41089c9821dbcf6d0c786c/NLTK's%2520list%2520of%2520english%2520stopwords"
+#resp = requests.get(url)
+#my_stopwords=resp.text
+
+# b) From NLTK:
+
+#my_stopwords=stopwords.words('en') # multilingual: 'en_fr_de'
+#my_stopwords.extend(['@']) # extend list if necessary
+#print(my_stopwords)
+
+# c) Manual list:
+
+stopwords = ["http", "https", ".com"]
+
+# STEP 3: define function with cleaning operations
 
 def clean_tweet(tweet):
     if type(tweet) == np.float:
@@ -16,13 +46,19 @@ def clean_tweet(tweet):
     temp = re.sub('\[.*?\]',' ', temp)
     temp = re.sub("[^a-z0-9]"," ", temp)
     temp = temp.split()
-    temp = [w for w in temp if not w in stopwords]
+    temp = [w for w in temp if not w in my_stopwords]
     temp = " ".join(word for word in temp)
     return temp
-  
-tweets = ["Get ready for #NatGeoEarthDay! Join us on 4/21 for an evening of music and celebration, exploration and inspiration https://on.natgeo.com/3t0wzQy.",
-"Coral in the shallows of Aitutaki Lagoon, Cook Islands, Polynesia https://on.natgeo.com/3gkgq4Z",
-"Don't miss our @reddit AMA with author and climber Mark Synnott who will be answering your questions about his historic journey to the North Face of Everest TODAY at 12:00pm ET! Start submitting your questions here: https://on.natgeo.com/3ddSkHk @DuttonBooks"]
 
+# STEP 4: call function and get results
+  
 results = [clean_tweet(tw) for tw in tweets]
 results
+
+# STEP 5: write results to new file
+
+with open('C:\\Users\\mobarget\\Downloads\\VMA2013_100000tweets_refined_cleaned.txt', 'a', encoding="utf-8") as new_f:
+    for r in results:
+        new_f.write(r)
+    
+print("done") 
