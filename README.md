@@ -12,3 +12,4 @@ As an alternative to Twitter, we also explore Mastodon. The endpoints for collec
 
 - Endpoint for fetching public timelines is: https://mastodon.example/api/v1/timelines/public
 - With user-defined limits: https://mastodon.example/api/v1/timelines/public?limit=2
+- Documentation for querying Mastodon with Python: https://mastodonpy.readthedocs.io/en/stable/
