@@ -5,12 +5,14 @@
 According to Wikipedia, "the acquisition of Twitter by Elon Musk began on April 14, 2022, and concluded on October 27, 2022."
 As early as January 2022, Elon Musk had begun bying shares of Twitter. In April, he held 9.1 percent ownership of Twitter.
 On October 28, the US government confirmed that Elon Musk had bought the company for $44bn (£38.1bn) after legal conflicts
-over Musk's initial offer and the number of bots / false accounts on the social media platform.
+over Musk's initial offer and the number of bots/false accounts on the social media platform.
 
 The radical changes to the company's management and new monetization plans for the platform led to controversial reactions,
 last but not least on Twitter itself.
 
-The following data set contains 100,000 tweets referencing #Twitter and #ElonMusk immediately after the announcement of the takeover.
+The following data set contains 100,000 tweets referencing #Twitter and #ElonMusk immediately after the announcement of the takeover:
+
+[ElonMusk2022](https://raw.githubusercontent.com/MonikaBarget/DistantReading/main/Twitter_ElonMusk2022/ElonMusk2022_cleaned-with-Python.txt)
 
 ## Tasks to perform in Voyant
 
