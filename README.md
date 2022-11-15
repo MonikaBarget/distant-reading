@@ -15,3 +15,9 @@ As an alternative to Twitter, we also explore Mastodon. The endpoints for collec
 - Endpoint for fetching public timelines is: https://mastodon.example/api/v1/timelines/public
 - With user-defined limits: https://mastodon.example/api/v1/timelines/public?limit=2
 - Documentation for querying Mastodon with Python: https://mastodonpy.readthedocs.io/en/stable/
+
+## Data cleaning
+
+Up to a range of about 50000 social media posts, data can still be cleaned semi-manually in EXCEL or a browser-based cleaning tool. More data usually cause severe performance issues, so cleaning via script is recommended. The following script permits the cleaning of all kinds of social media collected in .txt format, with a special focus on deleting @ signs, hashtags, URLs and emojis:
+
+- [Clean data with Python](https://github.com/MonikaBarget/DistantReading/blob/main/Clean_data.py)
