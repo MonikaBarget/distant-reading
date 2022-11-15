@@ -10,9 +10,11 @@ over Musk's initial offer and the number of bots/false accounts on the social me
 The radical changes to the company's management and new monetization plans for the platform led to controversial reactions,
 last but not least on Twitter itself.
 
-The following data set contains 100,000 tweets referencing #Twitter and #ElonMusk immediately after the announcement of the takeover:
+The following data set contains 100,000 tweets referencing #Twitter and #ElonMusk immediately after the announcement of the takeover (till 31st October):
 
 [ElonMusk2022](https://raw.githubusercontent.com/MonikaBarget/DistantReading/main/Twitter_ElonMusk2022/ElonMusk2022_cleaned-with-Python.txt)
+
+Please keep in mind that the time period captured is very short and that some debates which we now associate with Twitter and Musk may only have arisen at a later point in time.
 
 ## Tasks to perform in Voyant
 
