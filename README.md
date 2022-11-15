@@ -24,7 +24,7 @@ Up to a range of about 50000 social media posts, data can still be cleaned semi-
 
 ## Overview of collected data sets and task sheets
 
-The [overview]() of the available data sets will be regularly updated. For some data sets, task sheets for student group work can also be found in this repository:
+The [overview](https://github.com/MonikaBarget/DistantReading/blob/main/Overview.md) of the available data sets will be regularly updated. For some data sets, task sheets for student group work can also be found in this repository:
 
 - [Case study 1: Elon Musk's takeover of Twitter]()
 - [Case study 2:]()
