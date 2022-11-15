@@ -26,5 +26,5 @@ Up to a range of about 50000 social media posts, data can still be cleaned semi-
 
 The [overview](https://github.com/MonikaBarget/DistantReading/blob/main/Overview.md) of the available data sets will be regularly updated. For some data sets, task sheets for student group work can also be found in this repository:
 
-- [Case study 1: Elon Musk's takeover of Twitter]()
-- [Case study 2:]()
+- [Case study 1: Elon Musk's takeover of Twitter](https://github.com/MonikaBarget/DistantReading/blob/main/ElonMusk_task-sheet.md)
+- [Case study 2: Miley Cyrus's VMA2013 performance](https://github.com/MonikaBarget/DistantReading/blob/main/MileyCyrus_task-sheet.md)
