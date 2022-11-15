@@ -32,7 +32,7 @@ The following data set contains 100,000 tweets referencing #Twitter and #ElonMus
 
 ### Reading keywords in context
 
-- Put the verb "leave" into the context tool and check in what sentences it has been used. What does the result tell you about the opinions of Twitter users on the Elon Musk takeover?
+- Put the words "leave" and "free*" (with wildcard) into the context tool and check in what sentences it has been used. What does the result tell you about the opinions of Twitter users on the Elon Musk takeover?
 
 ### Drawing general conclusions
 
