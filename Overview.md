@@ -5,6 +5,7 @@
 3) [Twitter reactions to the 2022 attack on a gay bar in Oslo (ca. 50000 tweets)](https://raw.githubusercontent.com/MonikaBarget/DistantReading/main/Twitter_OsloPride2022/Twitter_OsloPride_50000tweets_cleaned.txt)
 4) [Twitter reactions to Miley Cyrus's VMA2013 performance with Robin Thicke (ca. 100000 tweets)](https://raw.githubusercontent.com/MonikaBarget/DistantReading/main/Twitter_VMA2013/VMA2013_100000tweets_cleaned.txt)
 5) [Twitter reactions to the 2022 FIFA Worldcup in Qatar (ca. 100000 tweets)](https://raw.githubusercontent.com/MonikaBarget/DistantReading/main/Twitter_WorldCupQatar2022/Twitter_Qatar2022_cleaned.txt)
+6) [Twitter reactions to Elon Musk's takeover of the platform between October 28 and October 31](https://raw.githubusercontent.com/MonikaBarget/DistantReading/main/Twitter_ElonMusk2022/ElonMusk2022_cleaned-with-Python.txt)
 
 # How to add these data sets to Voyant Tools
 
