@@ -18,6 +18,7 @@ The following data set contains 100,000 tweets referencing #Twitter and #ElonMus
 
 - Look at the word cloud and the corresponding frequencies table. What words are the most prominent? What different topics or themes can you identitfy in the data?
 - Who are the "protagonists" mentioned in the data? Look them up if you do not know who they are!
+- What countries are mentioned in the data? Why do you think that could be the case?
 
 ### Comparative analysis with the "trends" tool
 
@@ -28,7 +29,7 @@ The following data set contains 100,000 tweets referencing #Twitter and #ElonMus
 ### Analysing co-occurences in the terms berry and other "links" tools
 
 - What words are most prominently associated with the person Elon Musk? How does that relate to his mention analysed in the trends tool?
-- What words are most prominently associated with Zuckerberg? Are they similar to the word associated with Musk? Why or why not?
+- What words are most prominently associated with Zuckerberg or other prominent people? Are they similar to the word associated with Musk? Why or why not?
 
 ### Reading keywords in context
 
