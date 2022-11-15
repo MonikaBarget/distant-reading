@@ -31,7 +31,7 @@ The following data set contains 100,000 tweets referencing #Twitter and #ElonMus
 ### Analysing co-occurences in the terms berry and other "links" tools
 
 - What words are most prominently associated with the person Elon Musk? How does that relate to his mention analysed in the trends tool?
-- What words are most prominently associated with Zuckerberg or other prominent people? Are they similar to the word associated with Musk? Why or why not?
+- What words are most prominently associated with Zuckerberg or other prominent people? Are they similar to the words associated with Musk? Why or why not?
 
 ### Reading keywords in context
 
