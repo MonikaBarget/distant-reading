@@ -7,7 +7,7 @@ As early as January 2022, Elon Musk had begun bying shares of Twitter. In April,
 On October 28, the US government confirmed that Elon Musk had bought the company for $44bn (£38.1bn) after legal conflicts
 over Musk's initial offer and the number of bots/false accounts on the social media platform.
 
-The radical changes to the company's management and new monetization plans for the platform led to controversial reactions,
+Radical changes to the company's management and new monetization plans for the platform led to controversial reactions,
 last but not least on Twitter itself.
 
 The following data set contains 100,000 tweets referencing #Twitter and #ElonMusk immediately after the announcement of the takeover (till 31st October):
@@ -23,12 +23,13 @@ Please keep in mind that the time period captured is very short and that some de
 - Look at the word cloud and the corresponding frequencies table. What words are the most prominent? What different topics or themes can you identitfy in the data?
 - Who are the "protagonists" mentioned in the data? Look them up if you do not know who they are!
 - What countries are mentioned in the data? Why do you think that could be the case?
+- What surprises you? What information is hard to contextualise?
 
 ### Comparative analysis with the "trends" tool
 
 - Write down words that express emotions / people's feelings towards the takeover and Elon Musk. But them into the trends tool. How did they develop over time?
 - Compare the mention of "Twitter" to the mention of other social media platforms such as Facebook, Tiktok, Instagram and Mastodon. 
-- Compare the occurence of prominent people such as Musk, Zuckerberg, Trump and Biden in the dataset. What does the trends graphs say about the way in which Twitter users have discussed these people?
+- Compare the occurence of prominent people such as Musk, Trump or Biden in the dataset. What does the trends graphs say about the way in which Twitter users have discussed these people?
 
 ### Analysing co-occurences in the terms berry and other "links" tools
 
@@ -37,7 +38,7 @@ Please keep in mind that the time period captured is very short and that some de
 
 ### Reading keywords in context
 
-- Put the words "leave" and "free*" (with wildcard) into the context tool and check in what sentences it has been used. What does the result tell you about the opinions of Twitter users on the Elon Musk takeover?
+- Put the words "fire*", "leav*" and "free*" (with wildcards) into the context tool and check in what sentences it has been used. What does the result tell you about the opinions of Twitter users on the Elon Musk takeover?
 
 ### Drawing general conclusions
 
