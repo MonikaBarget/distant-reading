@@ -27,7 +27,7 @@ Please keep in mind that the time period captured is very short and that some de
 
 ### Comparative analysis with the "trends" tool
 
-- Write down words that express emotions / people's feelings towards the takeover and Elon Musk. But them into the trends tool. How did they develop over time?
+- Write down words that express emotions / people's feelings towards the takeover and Elon Musk. Put them into the trends tool. How did they develop over time?
 - Compare the mention of "Twitter" to the mention of other social media platforms such as Facebook, Tiktok, Instagram and Mastodon. 
 - Compare the occurence of prominent people such as Musk, Trump or Biden in the dataset. What does the trends graphs say about the way in which Twitter users have discussed these people?
 
