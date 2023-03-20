@@ -28,7 +28,7 @@ Here is my own script using app store scraper to collect podcast reviews and wri
 
 https://github.com/MonikaBarget/DigitalHistory/blob/master/JupyterNotebooks/Webscraping_ApplePodcasts.ipynb
 
-Here is a script by Lars Keuris [@R14](https://github.com/14RS) using the same package but already cleaning the data along the way (e.g. by transforming emojis into punction marks only):
+Here is a script by Lars Keuris [@R14](https://github.com/14RS) using the same package but already cleaning the data along the way (e.g. by transforming emojis into punctuation marks only):
 
 https://github.com/14RS/ScrapeApplePodcastReviews/blob/main/ScrapeApplePodcastReviewWithApp_Store_Scraper.ipynb/
 
