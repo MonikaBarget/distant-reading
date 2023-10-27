@@ -49,3 +49,7 @@ The [overview](https://github.com/MonikaBarget/DistantReading/blob/main/Overview
 - [Case study 1: Elon Musk's takeover of Twitter](https://github.com/MonikaBarget/DistantReading/blob/main/ElonMusk_task-sheet.md)
 - [Case study 2: Miley Cyrus's VMA2013 performance](https://github.com/MonikaBarget/DistantReading/blob/main/MileyCyrus_task-sheet.md)
 - [Case study 3: True Crime podcast reviews](https://github.com/MonikaBarget/DistantReading/blob/main/TrueCrime_task-sheet.md)
+
+## Sample analyses
+
+The [Sample analyses] folder contains slides / presentations with interpretations of the datasets shared here. Most of the presentations were created by students of Digital Cultures at the University of Maastricht and were (anonymously) shared with their permission.
