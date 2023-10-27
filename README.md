@@ -38,7 +38,7 @@ Up to a range of about 50000 social media posts, data can still be cleaned semi-
 
 - [Clean data with Python](https://github.com/MonikaBarget/DistantReading/blob/main/Clean_data.py)
 
-Tool recommended for cleaning plain text in your browser: [TextCleanR]https://www.textcleanr.com/
+Tool recommended for cleaning plain text in your browser: [TextCleanR](https://www.textcleanr.com/)
 
 Tool recommended for cleaning structured data (e.g. in CSV and EXCEL format): [OpenRefine](https://openrefine.org/)
 
