@@ -48,3 +48,4 @@ The [overview](https://github.com/MonikaBarget/DistantReading/blob/main/Overview
 
 - [Case study 1: Elon Musk's takeover of Twitter](https://github.com/MonikaBarget/DistantReading/blob/main/ElonMusk_task-sheet.md)
 - [Case study 2: Miley Cyrus's VMA2013 performance](https://github.com/MonikaBarget/DistantReading/blob/main/MileyCyrus_task-sheet.md)
+- [Case study 3: True Crime podcast reviews](https://github.com/MonikaBarget/DistantReading/blob/main/TrueCrime_task-sheet.md)
