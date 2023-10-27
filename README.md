@@ -52,4 +52,4 @@ The [overview](https://github.com/MonikaBarget/DistantReading/blob/main/Overview
 
 ## Sample analyses
 
-The [Sample analyses] folder contains slides / presentations with interpretations of the datasets shared here. Most of the presentations were created by students of Digital Cultures at the University of Maastricht and were (anonymously) shared with their permission.
+The [Sample analyses](https://github.com/MonikaBarget/DistantReading/tree/main/Sample%20analyses) folder contains slides / presentations with interpretations of the datasets shared here. Most of the presentations were created by students of Digital Cultures at the University of Maastricht and were (anonymously) shared with their permission.
