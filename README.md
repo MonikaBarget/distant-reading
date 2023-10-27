@@ -38,6 +38,10 @@ Up to a range of about 50000 social media posts, data can still be cleaned semi-
 
 - [Clean data with Python](https://github.com/MonikaBarget/DistantReading/blob/main/Clean_data.py)
 
+Tool recommended for cleaning plain text in your browser: [TextCleanR]https://www.textcleanr.com/
+
+Tool recommended for cleaning structured data (e.g. in CSV and EXCEL format): [OpenRefine](https://openrefine.org/)
+
 ## Overview of collected data sets and task sheets
 
 The [overview](https://github.com/MonikaBarget/DistantReading/blob/main/Overview.md) of the available data sets will be regularly updated. For some data sets, task sheets for student group work can also be found in this repository:
