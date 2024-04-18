@@ -3,6 +3,10 @@
 ## Use cases and limitations
 
 When working on contemporary political and social issues, getting "treding" news via the Google API can be one solution for a relatively fast data collection. Unfortunately, the way in which Google News entries are ranked is not entirely transparent. The [Google Publisher Help Center](https://support.google.com/news/publisher-center/answer/9606702?hl=en) states that "ranking in Google News is determined algorithmically" and mentions "relevance of content", "prominence", "authoritativeness", "freshness", "location" and "language" as the most important factors. However, criteria such as "freshness" are not specified and scraping of news items shows that many articles are ranked highly for several days in a row. This is why working with Google News always requires a critical reflection on the data retrieved.
+
+## Overview of available Google News API scraper on Github
+
+Github has a helpful [overview of code and apps](https://github.com/topics/google-news-scraper) that can be used to scrape Google News. Most of these respositories provide information on scraping metadata, but not the actual text behind the articles (see information below). A considerable number of the scripts for extracting news via the Google API are written in Python, a programming language that is very popular in the digital humanities and social sciences.
  
 ## options to scrape content by time or region
 
@@ -31,4 +35,5 @@ The Google News scraping gives us a JSON file with basic metadata, such as news 
 3) PDF documents can also be batch-converted with PDF editors such as [Adobe](https://www.adobe.com/acrobat/hub/how-to-batch-convert-to-pdf.html), including browser-based tools such as [PrintFriendly](https://www.printfriendly.com/)
 
 - option to get content directly from the websites: https://stackoverflow.com/questions/56829861/how-to-scrape-google-news-articles-content-from-google-news-rss
+- this script has an option to scrape <code>article.text()</code> to CSV: https://github.com/pratikpv/google_news_scraper_and_sentiment_analyzer/blob/master/google_news_scraper.py
 - 
