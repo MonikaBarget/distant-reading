@@ -21,3 +21,11 @@ https://github.com/topics/google-news-scraper
 To run the code in other environments, e.g Jupyterlab, you need to change the first few lines of code relating to Google Colab settings. On the Maastricht University DSRI, you need to import the relevant packages via <code>!pip install</code>, and it may also be necessary to define a specific output directory. 
 
 More detailed documentation will follow...
+
+## Extracting text for distant reading
+
+The Google News scraping gives us a JSON file with basic metadata, such as news outlet, date, and URL. However, it does not automatically give us the text content of the articles behind the news. There are several options to proceed:
+
+1) use a second script to harvest the HTML files behind the URLs with the <code>selenium</selenium> package for web crawling, then download the HTML files and batch-convert them to PDF as many distant reading tools such as Voyant process PDF input
+2) for converting HTML to PDF, Python scripts can also be used but not all packages run smoothly on the UM DSRI (Monika is still working on solutions)
+3) PDF documents can also be batch-converted with PDF editors, including browser-based tools such as 
