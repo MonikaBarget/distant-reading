@@ -28,4 +28,7 @@ The Google News scraping gives us a JSON file with basic metadata, such as news 
 
 1) use a second script to harvest the HTML files behind the URLs with the <code>selenium</code> package for web crawling, then download the HTML files and batch-convert them to PDF as many distant reading tools such as Voyant process PDF input
 2) for converting HTML to PDF, Python scripts can also be used but not all packages run smoothly on the UM DSRI (Monika is still working on solutions)
-3) PDF documents can also be batch-converted with PDF editors, including browser-based tools such as [PrintFriendly](https://www.printfriendly.com/)
+3) PDF documents can also be batch-converted with PDF editors such as [Adobe](https://www.adobe.com/acrobat/hub/how-to-batch-convert-to-pdf.html), including browser-based tools such as [PrintFriendly](https://www.printfriendly.com/)
+
+- option to get content directly from the websites: https://stackoverflow.com/questions/56829861/how-to-scrape-google-news-articles-content-from-google-news-rss
+- 
