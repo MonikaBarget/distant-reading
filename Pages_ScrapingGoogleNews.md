@@ -94,10 +94,20 @@ More detailed documentation will follow...
 
 The Google News scraping gives us a JSON file with basic metadata, such as news outlet, date, and URL. However, it does not automatically give us the text content of the articles behind the news. There are several options to proceed:
 
+### Exporting HTML pages to PDF
+
 1) use a second script to harvest the HTML files behind the URLs with the <code>selenium</code> package for web crawling, then download the HTML files and batch-convert them to PDF as many distant reading tools such as Voyant process PDF input
 2) for converting HTML to PDF, Python scripts can also be used but not all packages run smoothly on the UM DSRI (Monika is still working on solutions)
 3) PDF documents can also be batch-converted with PDF editors such as [Adobe](https://www.adobe.com/acrobat/hub/how-to-batch-convert-to-pdf.html), including browser-based tools such as [PrintFriendly](https://www.printfriendly.com/)
 
 - option to get content directly from the websites: https://stackoverflow.com/questions/56829861/how-to-scrape-google-news-articles-content-from-google-news-rss
 - this script has an option to scrape <code>article.text()</code> to CSV: https://github.com/pratikpv/google_news_scraper_and_sentiment_analyzer/blob/master/google_news_scraper.py
+
+ ### Extracting full text from news URLs
+
+Newspaper3k is a Python package for article scraping and curation. Compatible with Python3, it leverages lxml and it extracts articles from diverse web sources. Its GitHub integration facilitates collaboration but a deprecated Python2 branch exists.
+
+https://newspaper.readthedocs.io/en/latest/
+
+
 - 
