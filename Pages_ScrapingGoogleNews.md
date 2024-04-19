@@ -112,5 +112,6 @@ https://newspaper.readthedocs.io/en/latest/
 Installation information: https://pypi.org/project/newspaper3k/
 Newspaper3k can be also be installed on the UM DSRI.
 
+Getting real URLs hidden behind Google News: https://stackoverflow.com/questions/51131834/decoding-encoded-google-news-urls
 
 - 
