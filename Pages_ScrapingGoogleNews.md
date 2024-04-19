@@ -109,5 +109,8 @@ Newspaper3k is a Python package for article scraping and curation. Compatible wi
 
 https://newspaper.readthedocs.io/en/latest/
 
+Installation information: https://pypi.org/project/newspaper3k/
+Newspaper3k can be also be installed on the UM DSRI.
+
 
 - 
