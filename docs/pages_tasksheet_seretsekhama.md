@@ -14,3 +14,23 @@ The data sets suggested below may help you get some insights.
 
 ## Data sets (YouTube and Apple Reviews)
 
+https://books.apple.com/gb/audiobook/a-marriage-of-inconvenience-the-persecution/id1215415562
+
+https://tv.apple.com/us/movie/a-united-kingdom/umc.cmc.5uleziwm21s5r64g5rqfam6ye
+
+https://podcasts.apple.com/us/podcast/the-interracial-couple/id1499506342
+
+https://podcasts.apple.com/us/podcast/interracial-marriage-with-christina-adams/id1534758235
+
+https://podcasts.apple.com/at/podcast/interracial-marriage/id1514522005?i=1000513366125
+
+https://podcasts.apple.com/us/podcast/interracial-odd-couple/id543807722
+
+https://podcasts.apple.com/sk/podcast/the-interracial-couple/id1499506342
+
+https://podcasts.apple.com/us/podcast/multiracial-family-man/id969793342
+
+https://podcasts.apple.com/us/podcast/keep-it-real-with-matt/id1470119157
+
+https://podcasts.apple.com/us/podcast/the-swirl-world-podcast/id885695922
+
