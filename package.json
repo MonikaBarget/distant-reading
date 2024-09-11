@@ -11,7 +11,7 @@
     "prepare": "husky install"
   },
   "keywords": [],
-  "author": "Your Name",
+  "author": "Monika Barget",
   "license": "ISC",
   "devDependencies": {
     "husky": "^9.0.11",
