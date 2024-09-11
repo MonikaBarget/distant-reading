@@ -1,3 +1,13 @@
+## Social media analysis with Twitter
+
+Some of the scripts and data shared here relate to social media analysis with Twitter. The Twitter academic API access was used to harvest the data.
+It is important to note that the academic Twitter API is no longer accessible as a consequence of Elon Musk's restructuring of the platform, which is now known as X.
+Therefore, the following documentation merely serves as a more general example of social media scraping.
+
+The Python script I used to get Twitter data in the past was the following:
+
+- [Python script for Twitter full archive search](https://github.com/MonikaBarget/DistantReading/blob/main/Twitter_full-archive-search_extended.py)
+
 <h2>The VMA2013 scandal - background</h2>
 
 <p align="justify">As an example of a prominent social media event that can be analysed via distant reading, I have chosen the 2013 MTV music awards performance by Miley Cyrus and Robin Thicke. The controversial performance was extensively covered on Twitter and still incited comments and comparisons years later.</p>
