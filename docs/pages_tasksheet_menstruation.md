@@ -4,5 +4,8 @@ Menstruation is an interesting topic for feminist and intersectional analysis be
 
 Data sets related to menstruation debates can help us explore how and societal attitudes towards menstruation and female bodies differ across various societies and historical periods. We can also ask what policy changes successfully address menstrual inequality and improve access to health resources. And we can critically assess the role of media and pop culture in creating and/or fighting menstruation myths.
 
+## Podcasts fostering menstruation awareness
 
-https://podcasts.apple.com/ca/podcast/are-you-menstrual/id1568547321
+Many podcasts worldwide are now contributing to menstruation awareness, and the reviews that listeners leave can give us insights into the opinions of both people who menstruate and those who do not have any first-hand menstruation experience. In the Apple store, the following menstruation podcast have a considerable number of ratings and reviews:
+
+- Are You Menstrual? (Amanda Montalvo): https://podcasts.apple.com/ca/podcast/are-you-menstrual/id1568547321
