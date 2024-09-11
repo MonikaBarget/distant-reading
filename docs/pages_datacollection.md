@@ -20,9 +20,9 @@ This is a special challenge for MAC users as their machines tend to automaticall
 will only give you limited results because the search engine focuses on podcast titles and the short podcast descriptions. If your keyword is not mentioned, a relevant podcast may
 not come up as a result, so using external research tools is recommended.
 
-### Podcast aggregators and airectories
+### Podcast aggregators, directories and recommendation sites
 
-Websites like Podchaser, Listen Notes, or Spotify often list top-rated and specialised podcasts. You can often filter podcasts by subject, reviews, and popularity.
+Websites like [Podchaser](https://www.podchaser.com/), [FeedSpot](https://podcasts.feedspot.com/), or [Listen Notes](https://www.listennotes.com/) list top-rated and specialised podcasts. You can often filter podcasts by subject, reviews, and popularity. In addition, blogs and (tech) news sites also regularly feature podcast recommendations, such as the [60 Best Podcasts (2024)](https://www.wired.com/story/best-podcasts/) presented by online magazine Wired.
 After finding relevant podcasts, check whether they are available on Apple Podcasts. Most professional podcasts are on Apple.
 
 ### Explore Social Media & Forums:
@@ -39,12 +39,12 @@ if they cover the topic of interests, and if URLs provided by AI are correct.
 
 Students can directly prompt AI by asking for general recommendations, e.g.
       
-           *“Can you recommend podcasts about the history of technology available on Apple Podcasts?”*
+           “Can you recommend podcasts about the history of technology available on Apple Podcasts?”*
 
 In my experience, this often gives you few and not necessarily recent results, so it is better to explicitly ask for a certain number of podcasts and specify if you want
 results from a particular time period or country:
 
-*“Give me the top 5 podcasts produced after 2018 about ancient history that are available on Apple Podcasts.”*
+           “Give me the top 5 podcasts produced after 2018 about ancient history that are available on Apple Podcasts.”*
 
 Another strategy can be to provide AI with the names of podcasts that the student already knows to ask for similar content. Moreoever, AI can also help generate relevant
 search terms for a subject to make finding podcasts via Google etc. easier. When a student wants to work with podcasts on “women’s rights,” for example, AI can suggest related topics like
