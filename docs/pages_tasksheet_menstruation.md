@@ -9,3 +9,6 @@ Data sets related to menstruation debates can help us explore how and societal a
 Many podcasts worldwide are now contributing to menstruation awareness, and the reviews that listeners leave can give us insights into the opinions of both people who menstruate and those who do not have any first-hand menstruation experience. In the Apple store, the following menstruation podcast have a considerable number of ratings and reviews:
 
 - Are You Menstrual? (Amanda Montalvo): https://podcasts.apple.com/ca/podcast/are-you-menstrual/id1568547321
+- The Period Recovery Podcast (Cynthia Donovan): https://podcasts.apple.com/us/podcast/the-period-recovery-podcast/id1623840946
+- The Period Podcast (Kate Clancy): https://podcasts.apple.com/us/podcast/period-podcast/id1158554647
+- 
