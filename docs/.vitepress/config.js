@@ -1,8 +1,11 @@
-export default {
-  base: '/DistantReading/',  // Adjust based on your repository
-  title: 'Distant Reading Documentation',
-  description: 'Documentation for the DistantReading project',
-  
+// Import the defineConfig function from VitePress
+import { defineConfig } from 'vitepress'
+
+// Export the configuration for VitePress using defineConfig
+export default defineConfig({
+  title: "DistantReading",
+  base: '/DistantReading/',  // Base URL for GitHub Pages deployment
+  description: "Files and documentation for teaching",
   themeConfig: {
     nav: [
       { text: 'Data Collection', link: '/pages_datacollection.md' },
@@ -51,8 +54,22 @@ export default {
           { text: 'Soraya Esfandiary', link: '/pages_tasksheet_sorayaesfandiary.md' },
           { text: 'True Crime', link: '/pages_tasksheet_truecrime.md' },
           { text: 'Witchcraft', link: '/pages_tasksheet_witchcraft.md' }
+        ],
+
+    // Sidebar configuration with different sections and links
+    sidebar: [
+      {
+        text: 'Examples',
+        items: [
+          { text: 'Markdown Examples', link: '/markdown-examples' },
+          { text: 'Runtime API Examples', link: '/api-examples' }
         ]
       }
+    ],
+
+    // Social links that appear in the footer
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
   }
-}
+})

@@ -7,18 +7,21 @@ With administrator rights, right-click Command Prompt and select *Run as adminis
 
 1) Now you need to log in to DSRI on the command line, using the *oc* command:
 
-[Login in the terminal with oc]https://dsri.maastrichtuniversity.nl/docs/openshift-install/#login-in-the-terminal-with-oc
+[Login in the terminal with oc](https://dsri.maastrichtuniversity.nl/docs/openshift-install/#login-in-the-terminal-with-oc)
 
 2) The next step is to point to correct project by typing:
+```
 $ oc get projects
 $ oc project <project name>
-
+```
 3) To find the correct POD id, type
+```
 $ oc get pods
-
+```
 4) Now connect to POD with
+```
 $ oc rsh <POD_ID>
-
+```
 5) You can zip folders or files on the command line with the tar command:
 
 [How to compress and extract files using the tar command](https://www.howtogeek.com/248780/how-to-compress-and-extract-files-using-the-tar-command-on-linux/)
