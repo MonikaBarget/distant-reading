@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "vite": "^5.0.0",
-    "vitepress": "^1.0.0" // Ensure VitePress is included
+    "vitepress": "^1.0.2" // Ensure VitePress is included
   }
 }
 
