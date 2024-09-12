@@ -1,12 +1,13 @@
 {
-  "name": "DistantReading",
+  "name": "your-project-name",
   "version": "1.0.0",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "build": "vite build",
+    "start": "vite",
+    "test": "jest"
   },
-  "devDependencies": {
-    "vitepress": "^1.0.2"
+  "dependencies": {
+    "vite": "^5.0.0"
   }
 }
+
