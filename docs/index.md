@@ -1,2 +1,3 @@
 # Welcome to Distant Reading
-This is the documentation for the DistantReading project.
+
+The repository contains files and documentation for teaching distant reading in the humanities and social sciences.
