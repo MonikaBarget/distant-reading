@@ -1,16 +1,11 @@
-<<<<<<< Updated upstream
-# Welcome to Distant Reading
-
-The repository contains files and documentation for teaching distant reading in the humanities and social sciences.
-=======
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "DistantReading"
-  text: "Files and documentation for teaching distant reading"
-  tagline: My great project tagline
+  name: "Distant Reading"
+  text: "a repository for teaching"
+  tagline:
   actions:
     - theme: brand
       text: Markdown Examples
@@ -20,12 +15,10 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
+  - title: Data scraping and data cleaning
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+  - title: Datasets and Task Sheets
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: Tutorials
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
->>>>>>> Stashed changes
