@@ -4,7 +4,7 @@
 
 On MacOS and Windows: download and install the Maastricht University VPN client from [vpn.maastrichtuniversity.nl](http://vpn.maastrichtuniversity.nl).
 
-![image.png](screenshots_dsri/image)
+![image.png](screenshots_dsri/image-bfaa1120-2cce-4cf8-bb81-aef78efb38db.png)
 
 ## Launch the UM VPN client
 
