@@ -39,7 +39,7 @@ You can also export the comments as text information and further analyse them us
 
 The following YouTube video by Monika explains the process of filtering data in Open Refine and exporting them step-by-step:
 
-![Thumbnail](https://img.youtube.com/vi/ibxc2zxcn335uGOo/maxresdefault.jpg)
+![Thumbnail](https://img.youtube.com/vi/oMWIUf5_9jM/maxresdefault.jpg)
 
 [Sorting and exporting data in Open Refine](https://youtu.be/oMWIUf5_9jM?si=ibxc2zxcn335uGOo)
 
