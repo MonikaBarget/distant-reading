@@ -39,9 +39,9 @@ You can also export the comments as text information and further analyse them us
 
 The following YouTube video by Monika explains the process of filtering data in Open Refine and exporting them step-by-step:
 
-![Thumbnail](https://img.youtube.com/vi/oMWIUf5_9jM&t/maxresdefault.jpg)
+![Thumbnail](https://img.youtube.com/vi/ibxc2zxcn335uGOo/maxresdefault.jpg)
 
-[Sorting and exporting data in Open Refine](https://www.youtube.com/watch?v=oMWIUf5_9jM&t=287s)
+[Sorting and exporting data in Open Refine](https://youtu.be/oMWIUf5_9jM?si=ibxc2zxcn335uGOo)
 
 The focus is on using a general text filter to find keywords and using the facet filter to explore rankings. However, OpenRefine has many other
 exciting functionalities not covered in this brief introduction! If you want to learn more, check out other videos shared by researchers and librarians on YouTube. One Open Refine tutorial on editing spreadsheets and uploading data easily to Wikidata is this:
