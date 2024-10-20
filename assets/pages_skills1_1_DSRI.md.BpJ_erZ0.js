@@ -1,1 +1,0 @@
-import{_ as e,c as s,o as t}from"./chunks/framework.OEd72lfg.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"pages_skills1_1_DSRI.md","filePath":"pages_skills1_1_DSRI.md"}'),a={name:"pages_skills1_1_DSRI.md"};function _(r,o,c,l,n,p){return t(),s("div")}const m=e(a,[["render",_]]);export{d as __pageData,m as default};
