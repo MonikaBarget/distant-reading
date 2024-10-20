@@ -39,6 +39,8 @@ You can also export the comments as text information and further analyse them us
 
 The following YouTube video by Monika explains the process of filtering data in Open Refine and exporting them step-by-step:
 
+![Thumbnail](https://img.youtube.com/vi/oMWIUf5_9jM&t/maxresdefault.jpg)
+
 [Sorting and exporting data in Open Refine](https://www.youtube.com/watch?v=oMWIUf5_9jM&t=287s)
 
 The focus is on using a general text filter to find keywords and using the facet filter to explore rankings. However, OpenRefine has many other
