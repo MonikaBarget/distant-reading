@@ -10,7 +10,7 @@ You can filter the data displayed in OpenRefine by applying a ‘Text Filter’,
 It is very important to note that when you have filtered the data displayed in OpenRefine, any operations you carry out will apply only to the rows that match the filter – that is, the data currently being displayed. This also means that only the current selection will be saved when you export your data while a filter is active!
 
 **Screenshot 1**: applying a text filter to the reviews column to find all reviews mentioning "victims"  
-![Screenshot 1](../screenshots_dsri/image-4556393.png)
+![Screenshot 1](../screenshots_dsri/Screenshot (159).png)
 
 ## Working with facets in Open Refine
 
