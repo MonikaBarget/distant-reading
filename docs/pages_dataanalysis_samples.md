@@ -1,4 +1,6 @@
-## Sample analyses of smaller data sets
+# Sampla analyses
+
+## Analyses of smaller data sets
 
 The [Sample analyses](https://github.com/MonikaBarget/DistantReading/tree/main/Sample%20analyses) folder contains slides / presentations with interpretations of the datasets shared here. Most of the presentations were created by students of Digital Cultures at the University of Maastricht and were (anonymously) shared with their permission.
 
@@ -18,6 +20,10 @@ This repository contains data tables and charts created for the MA thesis writte
 
 Data tables and charts created for the MA thesis written by Yin Nien Chiang in 2022. The thesis covers digitalization policies in party manifetos issued by parties of the political left in the United Kingdom. The party manifestos have been analysed with Voyant Tools. All the charts published here have been exported from Voyant. This thesis was submitted in the MA degree programme Digital Cultures at Maastricht University.
 
--[True Crime Podcast](https://gitlab.maastrichtuniversity.nl/ma-dc-student-projects/ma-dc-true-crime-podcasts)
+- [True Crime Podcast](https://gitlab.maastrichtuniversity.nl/ma-dc-student-projects/ma-dc-true-crime-podcasts)
 
 This repository contains data and code created for Nicole Schanzmeyer's MA DC thesis project on True Crime Podcasts and their public perception in the academic year of 2022/2023. This is a repository on the UM Gitlab instance and only visible to members of Maastricht University.
+
+## Full theses with a focus on distant reading
+
+Over time, full theses with a focus on distant reading may also become available in the [UM Theses Database](https://studenttheses.library.maastrichtuniversity.nl/) as more students share their work after graduation. Please note that access is only possible when you are logged in to the UM network.
