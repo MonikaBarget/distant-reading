@@ -1,4 +1,4 @@
-# Distant reading case study I
+# Distant reading case study "Elon Musk"
 
 ## Reactions to Elon Musk's Twitter take-over
 
