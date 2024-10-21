@@ -1,4 +1,6 @@
-# Interracial marriage in colonial times
+# Intersectional perspectives of interracial relationships
+
+## Interracial marriage in colonial times
 
 A United Kingdom is a 2016 biographical romantic drama film based on the true-life romance of Seretse Khama, 
 heir to the throne of the Bangwato Tribe in Serowe, with his British wife Ruth Williams Khama.
