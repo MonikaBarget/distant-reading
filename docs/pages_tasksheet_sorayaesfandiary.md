@@ -12,11 +12,11 @@ Individuals who grow up in "the West" with a background in regions historically 
 
 Here are some research questions that you could explore based on the YouTube comments left under videos retelling the life of Princess Soraya:
 
-    * What emotions do commenters express about Soraya’s life? What adjectives are frequently used to describe her?
-    * Do viewers’ comments reflect varying perceptions of Princess Soraya's identity and agency? Is there a dominant view?
-    * What themes regarding gender, ethnicity and power dynamics emerge from the comments?
-    * In what ways do the comments reveal cultural biases of viewers regarding women’s roles in monarchies or Iranian culture?
-    * Are viewers interested in the historical accuracy of the information presented in the videos? Do they point out aspects of Soraya's life that the videos have misrepresented or overlooked?
-    * Do you think that the YouTube comments represent a form of public dialogue about history, identity, and gender?
+* What emotions do commenters express about Soraya’s life? What adjectives are frequently used to describe her?
+* Do viewers’ comments reflect varying perceptions of Princess Soraya's identity and agency? Is there a dominant view?
+* What themes regarding gender, ethnicity and power dynamics emerge from the comments?
+* In what ways do the comments reveal cultural biases of viewers regarding women’s roles in monarchies or Iranian culture?
+* Are viewers interested in the historical accuracy of the information presented in the videos? Do they point out aspects of Soraya's life that the videos have misrepresented or overlooked?
+* Do you think that the YouTube comments represent a form of public dialogue about history, identity, and gender?
 
 In Voyant Tools, you may need different tools to answer these questions, so do not just focus on the word cloud / cirrus but also make use of tools showing you co-occurrences and keywords in context.
