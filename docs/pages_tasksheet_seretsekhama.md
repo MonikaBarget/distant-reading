@@ -1,4 +1,4 @@
-# Intersectional perspectives of interracial relationships
+# Distant reading case study "Seretse Khama"
 
 ## Interracial marriage in colonial times
 
