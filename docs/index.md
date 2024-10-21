@@ -8,17 +8,20 @@ hero:
   tagline:
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Github repository
+      link: https://github.com/MonikaBarget/distant-reading
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: YouTube channel
+      link: https://www.youtube.com/@digitalhistory7990
 
 features:
-  - title: Data scraping and data cleaning
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Datasets and Task Sheets
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Tutorials
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Data collection
+    details: Learn how to scrape data for text analysis using Python scripts.
+    link: /pages_datacollection
+  - title: Data cleaning
+    details: Find out how to clean and filter data with EXCEL, Open Refine, scripts and browser-based tools.
+    link: /pages_datacleaning
+  - title: Data analysis
+    details: Learn how to use Voyant Tools for computational text analysis.
+    link: /pages_skills2_1_VoyantTools
 ---
