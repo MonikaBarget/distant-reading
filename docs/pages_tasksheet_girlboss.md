@@ -27,4 +27,14 @@ Datasets that can give us an insight into how different social groups discuss th
 
 [Digital Cultures - Girlboss](https://youtube.com/playlist?list=PL5XPG366xWVs657iGVt3MXFiaj45B_fEX&si=MIu1IXo4iiPEHENt)
 
-### This case study is under development. Suggestions for the Voyant analysis cannot be published at present because a student in the MA DC programme at FASoS is currently working on a similar topic for their thesis.
+### Questions for data analysis
+
+Here are some questions that you could explore based on YouTube comments left under videos and talks discussing the girlboss movement and female entrepreneurship:
+
+* What emotions do commenters express regarding the girlboss movement? Which adjectives and phrases are frequently used to describe female entrepreneurs?
+* How do viewers evaluate empowerment and agency among women in entrepreneurship? Is there a dominant view or significant division?
+* What themes related to gender, race, or socioeconomic status emerge from the comments?
+* In what ways do the comments reveal past or present stereotypes about women in leadership roles?
+* Do the YouTube comments contribute to more awareness of the challenges faced by women in the business world? Can the comments contribute to a positive change?
+
+In Voyant Tools, consider employing a variety of tools to address these questions. Beyond just word cloud or cirrus visualisation, use tools that show co-occurrences or keywords in context.
