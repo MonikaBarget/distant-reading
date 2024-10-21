@@ -1,4 +1,4 @@
-# Advantages of using Open Refine
+# Advantages of using Open Refine for cleaning spreadsheet data
 
 Open Refine is a powerful tool for the manipulation of data in table format. You can use Open Refine directly in the UM DSRI or install it on your local machines.  
 In our course, Open Refine helps us filter podcast reviews to create sub-collections of data for analysis in Voyant Tools.
