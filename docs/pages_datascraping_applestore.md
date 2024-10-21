@@ -1,8 +1,10 @@
-# Working with Apple Store reviews in research
+# Data scraping from the Apple Store
+
+## Working with Apple Store reviews in research
 
 Podcast reviews provide an interesting source of user-generated content that can help us understand the tastes and opinions of different audiences. This can be relevant for product evaluation and marketing, but also for academic research in media studies, cultural studies, politics, gender studies, etc. Podcast reviews typically cover emotional responses and personal experiences as well as critical reflections. They can give insight into prevailing stereotypes and fears, but also in people's argumentations and knowledge.
 
-# How to collect podcast reviews from the Apple Store
+## How to collect podcast reviews from the Apple Store
 
 For scraping the podcast reviews from the [Apple Store](https://www.apple.com/apple-podcasts/), we will use a [Python](https://www.python.org/doc/essays/blurb/) script. According to the official website, "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics." You will **not** need to understand the details of programming to run Python code in the [UM DSRI](https://dsri.maastrichtuniversity.nl/). But you will need to know which variables in the code to change for the required output.
 
@@ -29,7 +31,7 @@ app_name = 'last-podcast-on-the-left'
 country = 'us'
 ```
 
-# Output data and how they can be analysed
+## Output data and how they can be analysed
 
 The reviews which the script then collects include the star-ratings, dates, and reviewer names. 
 All the information is written into a table format and saved as a CSV file for further processing. 
