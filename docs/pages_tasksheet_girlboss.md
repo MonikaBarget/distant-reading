@@ -1,4 +1,4 @@
-# Distant reading case study III
+# Distant reading case study "Girl Boss"
 
 ## (Re-)imagening female entrepreneurs - the Girl Boss movement and its critics
 
@@ -20,5 +20,11 @@ In July 2020, [Business Insider](https://www.businessinsider.nl/rise-and-fall-gi
 However, it is not entirely clear what exactly the post-#girlboss business woman should look like. The Dutch [ELLE](https://www.elle.com/nl/carriere-en-geld/a40830883/girlboss-sabbatical-minder-werken-tijdperk/) wondered in July 2022 what might come next, now that the #girlboss is (at least officially) dead, but could not provide a clear answer.
 After all, the Covid pandemic seems to have led to a certain revival of the "career queen" ethos. [Rhiannon Lucy Cosslett's piece in The Guardian, published in 2022](https://www.theguardian.com/commentisfree/2022/mar/01/decline-girlboss-culture-career-queen) 
 claims that the "girlboss culture" is, post-pandemic, "more ubiquitous than ever." 
+
+### Debating the girlboss phenomenon on YouTube
+
+Datasets that can give us an insight into how different social groups discuss the girlboss phenomenon and the role of female entrepreneurs more generally are reactions to relevant YouTube videos. Monika has created a playlist with some interesting videos for you that can serve as a starting point for your analysis:
+
+[Digital Cultures - Girlboss](https://youtube.com/playlist?list=PL5XPG366xWVs657iGVt3MXFiaj45B_fEX&si=MIu1IXo4iiPEHENt)
 
 ### This case study is under development. Suggestions for the Voyant analysis cannot be published at present because a student in the MA DC programme at FASoS is currently working on a similar topic for their thesis.
