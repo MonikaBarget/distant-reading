@@ -2,12 +2,12 @@
   "name": "distant-reading",
   "version": "3.0.0",
   "scripts": {
-    "build": "vitepress build",
-    "dev": "vitepress dev",
-    "deploy": "gh-pages -d .vitepress/dist",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+      "build": "vitepress build docs",                  // Builds for the docs folder
+      "dev": "vitepress dev docs",                      // Development for the docs folder
+      "deploy": "gh-pages -d docs/.vitepress/dist",     // Deploys the docs folder output
+      "preview": "vitepress preview docs"                // Preview the built docs
+}
+
   },
   "dependencies": {
     "vite": "^5.4.4"
