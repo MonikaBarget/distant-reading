@@ -8,7 +8,7 @@ Miley Cyrus's 2013 performance for the Video Music Awards (VMA) is still one of 
 
 ### Structural information 
 
-This repository provides a [raw file with 100000 English-language tweets published immediately following the VMA performance](https://raw.githubusercontent.com/MonikaBarget/distant-reading/main/Twitter_VMA2013/VMA2013_100000tweets_cleaned.txt). Ingest the data set into Voyant Tools and look at the word cloud. What words tell you something about the set up or structure of the data set? Watch out for the more "technical" terms to answer this question.
+This repository provides a [raw file with 100000 English-language tweets published immediately following the VMA performance](../data/Twitter_VMA2013/VMA2013_100000tweets_cleaned.txt). Ingest the data set into Voyant Tools and look at the word cloud. What words tell you something about the set up or structure of the data set? Watch out for the more "technical" terms to answer this question.
 
 ### Main agents
 
