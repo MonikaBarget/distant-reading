@@ -6,9 +6,7 @@
       "dev": "vitepress dev docs",                      // Development for the docs folder
       "deploy": "gh-pages -d docs/.vitepress/dist",     // Deploys the docs folder output
       "preview": "vitepress preview docs"                // Preview the built docs
-}
-
-  },
+    },
   "dependencies": {
     "vite": "^5.4.4"
   },
