@@ -1,10 +1,14 @@
-# Distant reading case study II
+# Distant reading case study "Miley Cyrus"
 
 ## Feminist and intersectional approaches to Miley Cyrus's VMA2013 performance
 
+### The VMA2013 controversy
+
+Miley Cyrus's 2013 performance for the Video Music Awards (VMA) is still one of greatest social media events ever. Her controversial stage routine, characterised by sexually allusive dance moves and interactions with singer Robin Thicke, challenged traditional notions of family-friendly TV entertainment and female stardom, but also incited accusations of cultural appropriation and stereotyping. Miley Cyrus, who had become famous as a teen idol in the Disney Channel television series Hannah Montana (2006–2011), blurred the lines between childhood and adulthood in her performance. On the one hand, viewers embraced this as a statement of maturity that would free Miley from her former image. On the other hand, viewers negatively perceived the performance as another sexualisation of young women in the media. The intense debate that the performance sparked on social media but also in television shows and newspapers highlighted issues of gender, race, body image, artistic freedom, and cultural identity, making it an interesting case study for intersectional analysis.
+
 ### Structural information 
 
-Ingest the data set into Voyant Tools and look at the word cloud. What words tell you something about the set up or structure of the data set? Watch out for the more "technical" terms to answer this question.
+This repository provides a [raw file with 100000 English-language tweets published immediately following the VMA performance](https://raw.githubusercontent.com/MonikaBarget/distant-reading/main/Twitter_VMA2013/VMA2013_100000tweets_cleaned.txt). Ingest the data set into Voyant Tools and look at the word cloud. What words tell you something about the set up or structure of the data set? Watch out for the more "technical" terms to answer this question.
 
 ### Main agents
 
