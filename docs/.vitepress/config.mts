@@ -6,6 +6,31 @@ export default defineConfig({
   base: '/distant-reading/',  // Base URL for GitHub Pages deployment
   description: "Files and documentation for teaching",
   themeConfig: {
+    // Hero section
+    // Remove or adjust if it's causing issues
+    hero: {
+      name: 'DistantReading',
+      text: 'Explore data science and research tools.',
+      actions: [
+        { text: 'Get Started', link: '/pages_datacollection.md' }
+      ]
+    },
+    
+    // Features section
+    features: [
+      {
+        title: 'Data Collection',
+        details: 'Learn how to scrape data for text analysis using Python scripts.'
+      },
+      {
+        title: 'Data Cleaning',
+        details: 'Find out how to clean and filter data with EXCEL, Open Refine, scripts and browser-based tools.'
+      },
+      {
+        title: 'Data Analysis',
+        details: 'Learn how to use Voyant Tools for computational text analysis.'
+      }
+    ],
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Data Collection', link: '/pages_datacollection.md' },
