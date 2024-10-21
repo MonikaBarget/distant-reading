@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "DistantReading",
-  base: '/DistantReading/',  // Base URL for GitHub Pages deployment
+  base: '/distant-reading/',  // Base URL for GitHub Pages deployment
   description: "Files and documentation for teaching",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
