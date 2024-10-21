@@ -63,7 +63,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'GitHub Code',
-        link: 'https://github.com/your-github-repo' // Update with your actual GitHub repo link
+        link: 'https://github.com/MonikaBarget/distant-reading' // Update with your actual GitHub repo link
       },
       {
         text: 'YouTube Channel',
