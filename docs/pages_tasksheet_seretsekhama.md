@@ -14,35 +14,39 @@ The data sets suggested below may help you get some insights.
 
 ## Data sets (YouTube and Apple Reviews)
 
-An audiobook covering the life stories of Seretse Khama and his wife is available on Apple as well as on other audiobook services:
+On YouTube, Monika has collected four videos with comments in English that cover the (family) life of Seretse Khama in the [Digital Cultures - Seretse Khama](https://youtube.com/playlist?list=PL5XPG366xWVs4-pGWgNu2NLw__olk9I8E&si=KNrZLoROgJUEQDcI) playlist. You can scrape the comments from this playlist to get an idea how present-day YouTube users discuss the historical events and how they feel about interracial relationships in their own time.
 
-https://books.apple.com/gb/audiobook/a-marriage-of-inconvenience-the-persecution/id1215415562
+Alternatively or in comparison, you can also analyse reviews that people have left for podcasts dedicated to interracial dating, relationships and family life. On the Apple Store, the following podcasts may be of interest:
 
-Podcasts decided to modern-day interracial dating, relationships and family life to be found on the Apple store are:
+- [The Interracial Couple](https://podcasts.apple.com/us/podcast/the-interracial-couple/id1499506342)
 
-- https://tv.apple.com/us/movie/a-united-kingdom/umc.cmc.5uleziwm21s5r64g5rqfam6ye
+- [Interracial Marriage with Christina Adams](https://podcasts.apple.com/us/podcast/interracial-marriage-with-christina-adams/id1534758235)
 
-- https://podcasts.apple.com/us/podcast/the-interracial-couple/id1499506342
+- [Interracial Marriage](https://podcasts.apple.com/at/podcast/interracial-marriage/id1514522005?i=1000513366125)
 
-- https://podcasts.apple.com/us/podcast/interracial-marriage-with-christina-adams/id1534758235
+- [Interracial Odd Couple](https://podcasts.apple.com/us/podcast/interracial-odd-couple/id543807722)
 
-- https://podcasts.apple.com/at/podcast/interracial-marriage/id1514522005?i=1000513366125
+- [The Interracial Couple](https://podcasts.apple.com/sk/podcast/the-interracial-couple/id1499506342)
 
-- https://podcasts.apple.com/us/podcast/interracial-odd-couple/id543807722
+- [Multiracial Family Man](https://podcasts.apple.com/us/podcast/multiracial-family-man/id969793342)
 
-- https://podcasts.apple.com/sk/podcast/the-interracial-couple/id1499506342
+- [Keep it real with Matt](https://podcasts.apple.com/us/podcast/keep-it-real-with-matt/id1470119157)
 
-- https://podcasts.apple.com/us/podcast/multiracial-family-man/id969793342
+- [The Swirl World Podcast](https://podcasts.apple.com/us/podcast/the-swirl-world-podcast/id885695922)
 
-- https://podcasts.apple.com/us/podcast/keep-it-real-with-matt/id1470119157
+## Questions for data analysis
 
-- https://podcasts.apple.com/us/podcast/the-swirl-world-podcast/id885695922
+Here are some research questions that you could explore based on YouTube comments left under videos discussing the story of Seretse Khama:
+
+* What emotions do commenters express about Seretse Khama's story? Which adjectives and phrases are commonly used to describe him and his family?
+* How do viewers’ comments discuss Seretse Khama’s private choices as opposed to his political decisions?
+* What themes related to race, colonialism, and post-colonial identity emerge from the comments?
+* Can you find any stereotypes about African culture or African politics in the data set?
+* Are viewers concerned with the accuracy of the information presented in the videos? Do they point out aspects of Khama's life that they feel are misrepresented or require further exploration?
+* Do the YouTube comments encourage an informed dialogue about identity, heritage, race and the legacy of colonialism?
+
+When analysing the comments in Voyant Tools, use different tools to explore these questions. While the word cloud can give you an idea of the most frequent terms, you should also use tools that show co-occurrences or allow you to analyse keywords in context.
 
 ## Idea for further data analysis: historical novels that cover romantic relations across perceived color boundaries
 
-For your final essays or in future research, you may also want to explore how historical novels address romantic relationships across perceived color boundaries. Take, for instance, Vanessa Riley's book "Island Queen," which offers a fictionalised account of the life of [Dorothy Kirwan Thomas](https://en.wikipedia.org/wiki/Dorothy_Thomas_(entrepreneur)) — a freed woman of color who rose from slavery to become a prominent landowner in the colonial West Indies. This detailed first-person narrative highlights how the main character navigates family ties, business connections and several romantic relationships despite social constraints:
-
-https://books.apple.com/us/audiobook/island-queen/id1561061014
-
-
-
+For your final essays or in future research, you may also want to explore how historical novels address romantic relationships across perceived color boundaries. Take, for instance, Vanessa Riley's book [Island Queen](https://books.apple.com/us/audiobook/island-queen/id1561061014), which offers a fictionalised account of the life of [Dorothy Kirwan Thomas](https://en.wikipedia.org/wiki/Dorothy_Thomas_(entrepreneur)) — a freed woman of color who rose from slavery to become a prominent landowner in the colonial West Indies. This detailed first-person narrative highlights how the main character navigates family ties, business connections and several romantic relationships despite social constraints.
