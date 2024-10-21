@@ -1,6 +1,6 @@
 {
-  "name": "DistantReading",
-  "version": "1.0.0",
+  "name": "distant-reading",
+  "version": "3.0.0",
   "scripts": {
     "build": "vitepress build",
     "dev": "vitepress dev",
