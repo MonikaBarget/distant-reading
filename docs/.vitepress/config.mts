@@ -74,31 +74,6 @@ export default defineConfig({
     // Social links that appear in the footer
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ],
-
-    // Add hero section for call-out boxes
-    hero: {
-      name: 'DistantReading',
-      text: 'Explore data science and research tools.',
-      actions: [
-        { text: 'Get Started', link: '/pages_datacollection.md' }
-      ]
-    },
-
-    // Features section for call-out boxes
-    features: [
-      {
-        title: 'Data Collection',
-        details: 'Learn how to scrape data for text analysis using Python scripts.'
-      },
-      {
-        title: 'Data Cleaning',
-        details: 'Find out how to clean and filter data with EXCEL, Open Refine, scripts and browser-based tools.'
-      },
-      {
-        title: 'Data Analysis',
-        details: 'Learn how to use Voyant Tools for computational text analysis.'
-      }
     ]
   }
 })
