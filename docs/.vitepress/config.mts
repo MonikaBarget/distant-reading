@@ -33,7 +33,7 @@ export default defineConfig({
           { text: 'VPN Client', link: '/pages_skills1_0_VPNclient.md' },
           { text: 'DSRI', link: '/pages_skills1_1_DSRI.md' },
           { text: 'Scrape Apple Reviews', link: '/pages_skills1_2a_scrapeAPPLEreviews.md' },
-          { text: 'Scrape Apple Reviews', link: '/pages_skills1_2b_scrapeYOUTUBEcomments.md' },
+          { text: 'Scrape YouTube Comments', link: '/pages_skills1_2b_scrapeYOUTUBEcomments.md' },
           { text: 'OpenRefine', link: '/pages_skills1_3_OpenRefine.md' },
           { text: 'Batch Download', link: '/pages_skills1_4_batchdownload.md' },
           { text: 'Case Study', link: '/pages_skills2_2_casestudy.md' },
