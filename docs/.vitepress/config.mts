@@ -59,21 +59,48 @@ export default defineConfig({
       }
     ],
 
-    // Sidebar configuration with different sections and links
+    // Sidebar configuration with new links
     sidebar: [
       {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
+        text: 'GitHub Code',
+        link: 'https://github.com/your-github-repo' // Update with your actual GitHub repo link
+      },
+      {
+        text: 'YouTube Channel',
+        link: 'https://www.youtube.com/@digitalhistory7990'
       }
     ],
 
     // Social links that appear in the footer
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    ],
+
+    // Add hero section for call-out boxes
+    hero: {
+      name: 'DistantReading',
+      text: 'Explore data science and research tools.',
+      actions: [
+        { text: 'Get Started', link: '/pages_datacollection.md' }
+      ]
+    },
+
+    // Features section for call-out boxes
+    features: [
+      {
+        title: 'Data Collection',
+        details: 'Learn how to scrape data for text analysis using Python scripts.'
+      },
+      {
+        title: 'Data Cleaning',
+        details: 'Find out how to clean and filter data with EXCEL, Open Refine, scripts and browser-based tools.'
+      },
+      {
+        title: 'Data Analysis',
+        details: 'Learn how to use Voyant Tools for computational text analysis.'
+      }
     ]
   }
 })
+
 
