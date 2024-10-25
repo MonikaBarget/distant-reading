@@ -21,15 +21,17 @@ However, it is not entirely clear what exactly the post-#girlboss business woman
 After all, the Covid pandemic seems to have led to a certain revival of the "career queen" ethos. [Rhiannon Lucy Cosslett's piece in The Guardian, published in 2022](https://www.theguardian.com/commentisfree/2022/mar/01/decline-girlboss-culture-career-queen) 
 claims that the "girlboss culture" is, post-pandemic, "more ubiquitous than ever." 
 
-### Debating the girlboss phenomenon on YouTube
+### Debating the girlboss phenomenon on YouTube and in podcasts
 
 Datasets that can give us an insight into how different social groups discuss the girlboss phenomenon and the role of female entrepreneurs more generally are reactions to relevant YouTube videos. Monika has created a playlist with some interesting videos for you that can serve as a starting point for your analysis:
 
 [Digital Cultures - Girlboss](https://youtube.com/playlist?list=PL5XPG366xWVs657iGVt3MXFiaj45B_fEX&si=MIu1IXo4iiPEHENt)
 
+Besides, there are many podcasts discussing women leaders and entrepreneurs, or the role of women in formerly male-dominated domains such as tech. Reviews to these podcasts can also be an interesting data set. To give you a starting point for your data exploration in Voyant, I have already scraped [reviews for some relevant podcasts](../data/Data_AppStore_Girlboss) that you can explore as one data set or in comparison (with YouTube comments). Many other podcasts also cover female leadership in a single episode, but filtering reviews on just that topic from a larger pool of themes can be difficult.
+
 ### Questions for data analysis
 
-Here are some questions that you could explore based on YouTube comments left under videos and talks discussing the girlboss movement and female entrepreneurship:
+In your data analysis, you can try and follow the steps outlined in Skill 2.1. Voyant Tools and Skills 2.2. Case Study. Here are some questions that you could explore based on YouTube comments left under videos and talks discussing the girlboss movement and female entrepreneurship:
 
 * What emotions do commenters express regarding the girlboss movement? Which adjectives and phrases are frequently used to describe female entrepreneurs?
 * How do viewers evaluate empowerment and agency among women in entrepreneurship? Is there a dominant view or significant division?
