@@ -8,6 +8,20 @@ Individuals who grow up in one culture with a background in another often face c
 
  In the YouTube playlist [Digital Cultures - Soraya](https://youtube.com/playlist?list=PL5XPG366xWVvfpXZh_joch7pZp2ubV9w_&si=Xp1EaM2EgDo_5wh7), Monika has collected five different videos on Saraya's life and its pop-cultural perceptions with user comments (mostly) in English. Scrape these comments with the provided Python script. Before you put the comments into Voyant Tools, you may want to use Open Refine or EXCEL to delete non-English comments from the data sets.
 
+ Alternatively or in comparison, you may find reviews of podcasts covering topics such as migration, living in a foreign culture, multicultural family life etc. interesting. Here are a few recommendations:
+
+- [She's in Russia](https://podcasts.apple.com/us/podcast/shes-in-russia/id1247502890)
+- [Asylum Speakers Podcast](https://podcasts.apple.com/us/podcast/asylum-speakers-podcast-with-jaz-ohara-stories/id1468264562)
+- [Latino USA](https://podcasts.apple.com/us/podcast/latino-usa/id79681317)
+- [Your Muslim Girl Podcast](https://podcasts.apple.com/us/podcast/your-muslim-girl-podcast/id1646727259)
+- [Third Culture](https://podcasts.apple.com/us/podcast/third-culture/id1170910763)
+- [The Expat Chat](https://podcasts.apple.com/us/podcast/the-expat-chat/id1039954169)
+- [Expat Empire Podcast](https://podcasts.apple.com/us/podcast/expat-empire-podcast/id1440665985)
+- [World Collide](https://podcasts.apple.com/us/podcast/worlds-collide-the-podcast-about-moving-abroad/id1682067381)
+- [Flourish in the Foreign](https://podcasts.apple.com/us/podcast/flourish-in-the-foreign-black-women-living-thriving-abroad/id1509976748)
+
+While each of the podcasts may not have so many reviews per country, it can be interesting to scrape the data for all countries. And several smaller sets of podcast reviews can also be combined to form an insightful data set.
+
  ## Suggestions for data analysis
 
 Here are some research questions that you could explore based on the YouTube comments left under videos retelling the life of Princess Soraya:
