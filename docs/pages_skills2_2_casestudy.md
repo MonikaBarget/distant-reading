@@ -1,10 +1,28 @@
 ## **Distant Reading Case Study**
 
-### **Analysing reviews of True Crime podcasts**
+### **Available data sets in this repository**
 
-*True crime* is one of the most popular media genres of the digital age. Its popularity can be attributed to a captivating blend of mystery, suspense, real-world drama and, in many cases, troubling insights into subcultures, politics, and police work. It taps into our fascination with the darker aspects of human nature, providing a window into the minds of both criminals and investigators. Analysing true crime podcast reviews via distant reading offers a unique opportunity to better understand why listeners tune in and what they like about their favourite shows, but also what they think should be improved. By employing computational tools to sift through countless reviews, we can identify recurring themes and patterns that we might overlook in a close reading approach.
+In the [data section](../data) of this repository, you find different types of sample data with a link to the Machines of Knowledge course. Older data sets, which were used for teaching in the past, can still be helpful as testing and practicing data, but you may not use them for your graded group presentations or your final essays.
 
-For your first distant reading experiments, we would like you to work with a relatively small dataset of [reviews](https://raw.githubusercontent.com/MonikaBarget/DistantReading/main/Webscraping_samplePodcastReviews/Serial-1-and-2-stars-sub-corpus-csv.txt) on the successful American true crime podcast [Serial](https://podcasts.apple.com/us/podcast/serial/id917918570). All the reviews selected for the dataset have 1 or 2-star ratings, so listeners who left the reviews obviously did not like it all that much. The dataset only contains the reviews and does not give you any indication of who posted them or when. To find that out, you can consult the [full dataset in CSV format](https://github.com/MonikaBarget/DistantReading/blob/main/Webscraping_samplePodcastReviews/Serial_1-and-2-stars_sub-corpus.csv).
+The data sets we will use in Machines of Knowledge this year are the following:
+
+1) First tests with Voyant tools in class: [Menstruation Awareness data set](../data/Data_AppStore_Menstruation), based on podcast reviews scraped during the first skills session
+
+2) Voyant experiments in the data feminism lecture: [Miley Cyrus and the VMA2013 scandal data set](../data/Twitter_VMA2013)
+
+3) Data sets you may use for your group presentations:
+
+- [Race and Diversity data set](../data/Data_AppStore_Race_Diversity)
+- [Domestic Violence data set](../data/Data_AppleStore_DomesticViolence)
+- [Epstein Abuse Network data set](../data/Data_AppStore_Epstein)
+- [Girlboss data set](../data/Data_AppStore_Girlboss)
+
+4) Case studies you can use (as an inspiration for) your final essays:
+
+- [Seretse Khama](../docs/pages_tasksheet_seretsekhama)
+- [SorayaEsfandiary](../docs/pages_tasksheet_sorayaesfandiary)
+
+For the Khama and Esfandiary case studies, I have made YouTube playlists whose reviews you can scrape and use as a starting point for your essays. You can also use the suggested podcasts and scrape their reviews. 
 
 ### **Ingest your data into Voyant Tools**
 
