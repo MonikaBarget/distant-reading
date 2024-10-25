@@ -2,7 +2,7 @@
 
 ### **Available data sets in this repository**
 
-In the [data section](../data) of this repository, you find different types of sample data with a link to the Machines of Knowledge course. Older data sets, which were used for teaching in the past, can still be helpful as testing and practicing data, but you may not use them for your graded group presentations or your final essays.
+In the [data section](https://github.com/MonikaBarget/distant-reading/data) of this repository, you find different types of sample data with a link to the Machines of Knowledge course. Older data sets, which were used for teaching in the past, can still be helpful as testing and practicing data, but you may not use them for your graded group presentations or your final essays.
 
 The data sets we will use in Machines of Knowledge this year are the following:
 
