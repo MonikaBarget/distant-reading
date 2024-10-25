@@ -19,4 +19,6 @@ Many podcasts worldwide are now contributing to menstruation awareness, and the 
 - Menstruation ReWritten: (https://podcasts.apple.com/us/podcast/menstruation-rewritten/id1522223331)
 - Code Red Conversations (Women's Relief Initiative): https://podcasts.apple.com/us/podcast/code-red-conversations-a-period-podcast/id1516676612
 
-Many other podcasts cover menstruation in a single episode, but filtering reviews on just that topic can be difficult.
+To give you a starting point for your data exploration in Voyant, I have already scraped [reviews for three relevant podcasts](../data/Data_AppStore_Menstruation) that you can explore as one data set or in comparison. Many other podcasts also cover menstruation in a single episode, but filtering reviews on just that topic can be difficult. So sticking with podcasts that focus on this particular topic is best.
+
+In your data analysis, you can try and follow the steps outlined in Skill 2.1. Voyant Tools and Skills 2.2. Case Study.
