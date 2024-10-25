@@ -48,7 +48,7 @@ export default defineConfig({
         items: [
           { text: 'Elon Musk', link: '/pages_tasksheet_elonmusk.md' },
           { text: 'Girlboss', link: '/pages_tasksheet_girlboss.md' },
-          { text: 'Jeffrey Epstein', link: '/pages_tasksheet_epstein.md' }
+          { text: 'Jeffrey Epstein', link: '/pages_tasksheet_epstein.md' },
           { text: 'Menstruation', link: '/pages_tasksheet_menstruation.md' },
           { text: 'Miley Cyrus', link: '/pages_tasksheet_mileycyrus.md' },
           { text: 'Seretse Khama', link: '/pages_tasksheet_seretsekhama.md' },
