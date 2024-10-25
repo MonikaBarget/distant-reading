@@ -13,7 +13,7 @@ One internationally successful podcast on the Epstein case was [Devil in the Dar
 released in autumn 2019. Monika has scraped [reviews of this podcast](../data/Data_AppStore_Epstein) as a training data set to practice distant reading and feminist theory. 
 This dataset offers insights into listeners' attitudes towards masculinity, issues of privilege, justice, and morality.
 
-## Question for data analysis
+## Questions for data analysis
 
 In your data analysis, you can try and follow the steps outlined in Skill 2.1. Voyant Tools and Skills 2.2. Case Study. You may also want to discuss the following questions with the other students:
 
