@@ -17,10 +17,12 @@ The data sets we will use in Machines of Knowledge this year are the following:
 - [Epstein Abuse Network data set](../data/Data_AppStore_Epstein)
 - [Girlboss data set](../data/Data_AppStore_Girlboss)
 
+To read brief descriptions of the data and find ideas for analysis, please go to the relevant tasksheet pages in the page menu.
+
 4) Case studies you can use (as an inspiration) for your final essays:
 
-- [Seretse Khama](../docs/pages_tasksheet_seretsekhama)
-- [SorayaEsfandiary](../docs/pages_tasksheet_sorayaesfandiary)
+- [Seretse Khama](../docs/pages_tasksheet_seretsekhama.html)
+- [SorayaEsfandiary](../docs/pages_tasksheet_sorayaesfandiary.html)
 
 For the Khama and Esfandiary case studies, I have made YouTube playlists whose reviews you can scrape and use as a starting point for your essays. You can also use the suggested podcasts and scrape their reviews. If you want to compare these data with different data sets or apply a different theoretical approach, this is also possible.
 
