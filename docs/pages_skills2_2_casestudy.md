@@ -6,16 +6,16 @@ In the [data section](../data) of this repository, you find different types of s
 
 The data sets we will use in Machines of Knowledge this year are the following:
 
-1) First tests with Voyant tools in class: [Menstruation Awareness data set](../data/Data_AppStore_Menstruation), based on podcast reviews scraped during the first skills session
+1) First tests with Voyant tools in class: [Menstruation Awareness data set](https://github.com/MonikaBarget/distant-reading/data/Data_AppStore_Menstruation), based on podcast reviews scraped during the first skills session
 
-2) Voyant experiments in the data feminism lecture: [Miley Cyrus and the VMA2013 scandal data set](../data/Twitter_VMA2013)
+2) Voyant experiments in the data feminism lecture: [Miley Cyrus and the VMA2013 scandal data set](https://github.com/MonikaBarget/distant-reading/data/Twitter_VMA2013)
 
 3) Data sets you may use for your group presentations:
 
-- [Race and Diversity data set](../data/Data_AppStore_Race_Diversity)
-- [Domestic Violence data set](../data/Data_AppleStore_DomesticViolence)
-- [Epstein Abuse Network data set](../data/Data_AppStore_Epstein)
-- [Girlboss data set](../data/Data_AppStore_Girlboss)
+- [Race and Diversity data set](https://github.com/MonikaBarget/distant-reading/data/Data_AppStore_Race_Diversity)
+- [Domestic Violence data set](https://github.com/MonikaBarget/distant-reading/data/Data_AppleStore_DomesticViolence)
+- [Epstein Abuse Network data set](https://github.com/MonikaBarget/distant-reading/data/Data_AppStore_Epstein)
+- [Girlboss data set](https://github.com/MonikaBarget/distant-reading/data/Data_AppStore_Girlboss)
 
 To read brief descriptions of the data and find ideas for analysis, please go to the relevant tasksheet pages in the page menu.
 
