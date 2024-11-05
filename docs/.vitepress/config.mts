@@ -26,6 +26,18 @@ export default defineConfig({
         ]
       },
       
+      // NLP Section with dropdown
+      {
+        text: 'Skills',
+        items: [
+          { text: 'Segmentation', link: '/pages_nlp_segmentation.md' },
+          { text: 'Topic Models', link: '/pages_nlp_topicmodels.md' },
+          { text: 'Plotting Distribution', link: '/pages_nlp_plottingdistribution.md' },
+          { text: 'Multiple Languages', link: '/pages_nlp_multiplelanguages.md' },
+          { text: 'Spatial Data', link: '/pages_nlp_spatialdata.md' }
+        ]
+      },
+
       // Skills Section with dropdown
       {
         text: 'Skills',
