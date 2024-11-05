@@ -2,7 +2,7 @@
 
 ## Reasons for studying witchcraft records and witch trials
 
-On the one hand, analysing (historical) records on witchcraft and witch trials offers insight into how societies construct and perpetuate narratives around “otherness,” fear, and social control. On the other hand, the self-perceptions of individuals embracing magic and seeing themselves as practisioners of witchcraft can tell us something about (alternative) spirituality, practices of empowerment, and attempts to reconnect with (marginalised) traditions. In many historical and cultural contexts, witchcraft is also a highly gendered concept, which offers opportunities for feminist and intersectional readings.
+On the one hand, analysing (historical) records on witchcraft and witch trials offers insight into how societies construct and perpetuate narratives around "otherness", fear, and social control. On the other hand, the self-perceptions of individuals embracing magic and seeing themselves as practisioners of witchcraft can tell us something about (alternative) spirituality, self-empowerment, and attempts to reconnect with (marginalised) traditions. In many historical and cultural contexts, witchcraft is also a highly gendered concept, which creates opportunities for feminist and intersectional readings.
 
 ## Resources for witchcraft and witch trial data
 
