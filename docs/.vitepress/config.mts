@@ -63,14 +63,13 @@ export default defineConfig({
     // Sidebar configuration with new links
     sidebar: [
       {
-        text: 'GitHub Code',
-        link: 'https://github.com/MonikaBarget/distant-reading' // Update with your actual GitHub repo link
-      },
-      {
-        text: 'YouTube Channel',
-        link: 'https://www.youtube.com/@digitalhistory7990'
+        text: 'External Links',
+        items: [
+          { text: 'GitHub Code', link: 'https://github.com/MonikaBarget/distant-reading' },
+          { text: 'YouTube Channel', link: 'https://www.youtube.com/@digitalhistory7990' }
+        ]
       }
-    ],
+    ]    
 
     // Social links that appear in the footer
     socialLinks: [
