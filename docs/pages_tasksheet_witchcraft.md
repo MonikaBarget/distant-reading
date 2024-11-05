@@ -15,7 +15,7 @@ Data sets related to witchcraft and witch trials can range from historical recor
 - The [Danish Archive of Folklore](https://www.kb.dk/en/find-materials/guides/folklore-and-material-about-culture-everyday-life) is an example of a more recent collection that does not have an explicit focus on witchcraft but includes records relating to magic and ideas of the supranational, e.g. in the form of folktales and songs. Archives of this kind can be an interesting resource to find out about concepts of witchcraft in cultural memory and customs.
 - The [Salem Witch Trials Documentary Archive and Transcription Project (University of Virginia, USA)](http://salem.lib.virginia.edu/) focuses on the well-known Salem witch trials of 1692.
 - The [Digital Witchcraft Collection (Cornell University Library, USA)](https://digital.library.cornell.edu/collections/witchcraft) offers pamphlets, books, and legal documents on witch trials in England and New England during the early modern period.
-- [Witch Trials in Early Modern Switzerland (Archives de l'État de Fribourg, Switzerland)](https://www.fr.ch/de/staatsarchiv/forschungsprojekte/hexenprozesse-im-kanton-freiburg) provides archival documents on witch trials in the Canton of Fribourg.
+- Witch trials in early modern Switzerland can be traced through legal documents assembled by the Canton of Fribourg and published online in the [Collection of Swiss Law Sources](https://editio.sls-online.ch/FR/I_2_8/).
 
 ### Modern debates on witchcraft in social media posts and YouTube comments
 
