@@ -10,7 +10,7 @@ Data sets related to witchcraft and witch trials can range from historical recor
 
 ### Digitised historical records
 
-- The [Survey of Scottish Witchcraft (University of Edinburgh, Scotland)](http://www.shca.ed.ac.uk/Research/witches/) provides a detailed database of witch trials in Scotland from 1563 to 1736, including information on accused individuals, accusations, and trial outcomes.
+- The [Survey of Scottish Witchcraft (University of Edinburgh, Scotland)](http://witches.hca.ed.ac.uk/) provides a detailed database of witch trials in Scotland from 1563 to 1736, including information on accused individuals, accusations, and trial outcomes.
 - [Witchcraft Trials in Early Modern Europe and America (Hanover Historical Texts Project, USA)](https://history.hanover.edu/texts/trials.html) offers transcriptions of witchcraft trial records from various countries, including the USA, England, and Germany.
 - The [Witchcraft Documented Project (National Archives of Denmark)](https://www.sa.dk/brug-arkivet/om-danske-hekseprocesser/) has records on witch trials from the 16th and 17th centuries, documenting the accused, witnesses, and legal proceedings in early modern Denmark.
 - The [Salem Witch Trials Documentary Archive and Transcription Project (University of Virginia, USA)](http://salem.lib.virginia.edu/) focuses on the well-known Salem witch trials of 1692.
