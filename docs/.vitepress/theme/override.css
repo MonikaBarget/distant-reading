@@ -1,23 +1,25 @@
 /* .vitepress/theme/override.css */
 
 .vp-doc {
-    max-width: 800px; /* Adjust the width as needed */
-    margin: auto; /* Center the document */
+  max-width: 800px; /* Limit width for better readability */
+  margin: auto; /* Center the content */
+}
+
+.vp-nav {
+  display: -webkit-box; /* Safari */
+  display: -ms-flexbox; /* IE 10 */
+  display: flex; /* Modern browsers */
+  justify-content: space-between;
+}
+
+.vp-sidebar {
+  display: block; /* Ensure sidebar is visible */
+  width: 250px; /* Set a fixed width for the sidebar */
+}
+
+@media screen and (min-width: 768px) {
+  /* Adjust margins for larger screens */
+  .vp-doc {
+    margin-left: 250px; /* Leave space for the sidebar */
   }
-  
-  .vp-nav {
-    display: flex; /* Ensure the navigation bar is displayed in a row */
-    justify-content: space-between; /* Space between nav items */
-  }
-  
-  .vp-sidebar {
-    display: block; /* Ensure the sidebar is visible */
-    width: 250px; /* Fixed width for sidebar */
-  }
-  
-  @media screen and (min-width: 768px) {
-    .vp-doc {
-      margin-left: 250px; /* Adjust document margin to accommodate sidebar */
-    }
-  }
-  
+}
