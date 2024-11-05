@@ -74,7 +74,9 @@ export default defineConfig({
     // Social links that appear in the footer
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    ],
+    
+    layout: 'default',
   }
 })
 
