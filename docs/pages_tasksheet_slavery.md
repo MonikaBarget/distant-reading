@@ -28,3 +28,17 @@ The broader topic of slavery offers many opportunities for data analysis, either
 - Another Dutch resource of interest could be the [Database Dutch slave trade, 1600-1800](https://maritiemportal.nl/dutch-slave-trade-dans/), which "contains information on the seavoyage of Dutch slave traders in the 17th and 18th century." The database predominantly assembles structured data such as the number of slaves that boarded the ship in Africa, the number of deaths, places of departure and places of landing.
 - Focused on British colonial administration, [Colonial Despatches (University of Victoria)](https://bcgenesis.uvic.ca/) is a collection of government records that includes information on (slave) trade as well as the treatment of enslaved and indigenous people.
 - The digital collection of African American Newspaper previously hosted by [Accessible Archives](https://www.accessible-archives.com/) has moved to [History Commons](https://www.libraries.rutgers.edu/databases/history-commons) and now requires registration. If you are interested in using this resource, you have to contact Rutgers University Libraries, 169 College Ave, New Brunswick, NJ 08901-1163.
+
+### Questions for Data Analysis on Slavery Case Study
+
+In your data analysis, you can follow the steps outlined in Skill 2.1 on Voyant Tools and Skill 2.2 on Case Study. You may also want to discuss the following questions:
+
+- What (historical) sources did you select and why? What do they reveal about power structures of the past and persisting inequalities today?
+- What groups of people play a particular role in your data? You may want to look for merchants, soldiers, administrators, plantation owners, scientists, journalists, clerics, or teachers. When looking for the enslaved people mentioned, are they predominantly male or female? What is their age? Are children and entire families mentioned?
+- How do descriptions of slaves in your chosen records reflect past and / or present societal attitudes toward certain ethnic and social groups?
+- What role does intersectionality play in understanding the experiences and treatment of enslaved individuals?
+- What justifications are given for slavery and / or involvement in the slave trade? Who voices these justifications and can you find any counter-narratives in your sources?
+- What implications does studying the slave trade have for current anti-racist, decolonial, and human rights advocacy today?
+
+In addition to using multiple tools in Voyant, consider using additional data sets for comparative analysis. Look for recurring patterns in language use, e.g. when it comes to descriptions of enslaved people. Also try and identify minority voices / conflicting opinions and discuss why or why not they have been heard.
+
