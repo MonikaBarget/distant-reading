@@ -6,7 +6,7 @@ On the one hand, analysing (historical) records on witchcraft and witch trials o
 
 ## Resources for witchcraft and witch trial data
 
-Data sets related to witchcraft and witch trials can range from historical records to modern (pop-cultural) perceptions and witchcraft controversies in regions like the Congo, where children and teenagers (from poor backgrounds) are accused of witchcraft and banished from their homes. The article [The agony of Congo's 'child witches'](https://www.africanews.com/2018/03/16/the-agony-of-congo-s-child-witches//), written by Mpoyo Gael for *Africa News*, attributes this problem to "mushrooming cults" but also to a legacy of conflict and war. Below are resources relating to different time periods and geographic areas that you may want to explore:
+Data sets related to witchcraft and witch trials can range from historical records to modern (pop-cultural) perceptions and present-day witchcraft controversies in regions like the Congo, where children and teenagers (from poor backgrounds) are often accused and banished from their homes. The article [The agony of Congo's 'child witches'](https://www.africanews.com/2018/03/16/the-agony-of-congo-s-child-witches//), written by Mpoyo Gael for *Africa News*, attributes this problem to "mushrooming cults" but also to a legacy of conflict and war. Below are resources relating to different time periods and geographic areas that you may want to explore:
 
 ### Digitised historical records
 
