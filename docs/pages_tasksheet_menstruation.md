@@ -1,4 +1,6 @@
-## Exploring Menstruation Through a Feminist and Intersectional Lens
+# Case study "menstruation"
+
+## Menstruation as a social sciences concern
 
 Menstruation is an interesting topic for feminist and intersectional analysis because it links issues of gender, social justice, and bodily autonomy. In different time periods and places, menstruation was and is stigmatized and marginalized. Therefore, examining menstruation experiences and perceptions can reveal how societal attitudes shape health experiences, access to menstrual products, and overall well-being. An intersectional approach draws our attention to additional factors such as race, class, disability, and geography. For instance, access to menstrual hygiene products varies significantly worldwide, and debates about the provision of menstrual products in schools and companies highlight that menstruation is not just a personal issue but has systemic impact.
 
