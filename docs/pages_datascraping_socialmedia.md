@@ -1,4 +1,4 @@
-## information on which platforms can be used
+## information on which platforms can be used, e.g. restrictions on Meta services
 
 ## mention available GUI tools
 

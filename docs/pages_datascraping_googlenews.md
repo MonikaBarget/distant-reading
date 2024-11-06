@@ -6,7 +6,7 @@ When working on contemporary political and social issues, getting "treding" news
 
 ## Overview of available Google News API scraper on Github
 
-Github has a helpful [overview of code and apps](https://github.com/topics/google-news-scraper) that can be used to scrape Google News. Most of these respositories provide information on scraping metadata, but not the actual text behind the articles (see information below). A considerable number of the scripts for extracting news via the Google API are written in Python, a programming language that is very popular in the digital humanities and social sciences.
+Github has a helpful [overview of code and apps](https://github.com/topics/google-news-scraper) that can be used to scrape Google News. Most of these respositories provide information on scraping metadata, but not the actual text behind the articles (see information below). A considerable number of the scripts for extracting news via the Google API are written in Python, a programming language that is very popular in the digital humanities and social sciences. What you have to keep in mind is that most of the scripts are written by developers who are not paid for maintenance and who may therefore abandon the scripts after a while. API changes on the side of Google can then result in depricated code.
  
 ## options to scrape content by time or region
 

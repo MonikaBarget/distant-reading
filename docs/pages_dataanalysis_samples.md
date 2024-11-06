@@ -2,7 +2,7 @@
 
 ## Analyses of smaller data sets
 
-The [Sample analyses](https://github.com/MonikaBarget/DistantReading/tree/main/Sample%20analyses) folder contains slides / presentations with interpretations of the datasets shared here. Most of the presentations were created by students of Digital Cultures at the University of Maastricht and were (anonymously) shared with their permission.
+The [Sample analyses](https://github.com/MonikaBarget/DistantReading/tree/main/sample_analyses) folder contains slides / presentations with interpretations of the datasets shared here. Most of the presentations were created by students of Digital Cultures at the University of Maastricht and were (anonymously) shared with their permission.
 
 ## BA and MA projects with a distant reading component
 

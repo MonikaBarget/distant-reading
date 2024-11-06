@@ -14,4 +14,4 @@ Up to a range of about 50000 social media posts, data can still be cleaned semi-
 
 Large data sets can cause severe performance issues when opened in tools like EXCEL, so cleaning via script is recommended. The following script permits the cleaning of all kinds of social media collected in .txt format, with a special focus on deleting @ signs, hashtags, URLs and emojis:
 
-- [Clean data with Python](https://github.com/MonikaBarget/DistantReading/blob/main/Clean_data.py)
+- [Clean data with Python](https://github.com/MonikaBarget/distant-reading/tree/main/python/Clean_data.py)
