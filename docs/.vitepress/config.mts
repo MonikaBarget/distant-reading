@@ -28,7 +28,7 @@ export default defineConfig({
       
       // NLP Section with dropdown
       {
-        text: 'Skills',
+        text: 'NLP',
         items: [
           { text: 'Segmentation', link: '/pages_nlp_segmentation.md' },
           { text: 'Topic Models', link: '/pages_nlp_topicmodels.md' },

@@ -5,7 +5,7 @@ In our course, Open Refine helps us filter podcast reviews to create sub-collect
 
 ## Using filters in Open Refine
 
-You can filter the data displayed in OpenRefine by applying a ‘Text Filter’, which looks for a particular piece of text appearing in a column. Text filters are applied by clicking the drop-down menu at the top of the column you want to apply the filter to and choosing **Text filter**. The filter options appear in the left-hand panel. Simply type in the text you want to use in the Filter to display only rows which contain that text in the relevant column. You can also use [regular expressions](https://librarycarpentry.github.io/lc-data-intro/04-regular-expressions/) in the filter. 
+You can filter the data displayed in OpenRefine by applying a ‘Text Filter’, which looks for a particular piece of text appearing in a column. Text filters are applied by clicking the drop-down menu at the top of the column you want to apply the filter to and choosing **Text filter**. The filter options appear in the left-hand panel. Simply type in the text you want to use in the Filter to display only rows which contain that text in the relevant column. You can also use [regular expressions](https://librarycarpentry.github.io/lc-data-intro/04-regular-expressions) in the filter. 
 
 It is very important to note that when you have filtered the data displayed in OpenRefine, any operations you carry out will apply only to the rows that match the filter – that is, the data currently being displayed. This also means that only the current selection will be saved when you export your data while a filter is active!
 

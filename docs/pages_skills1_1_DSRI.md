@@ -1,6 +1,6 @@
 # Getting started with the DSRI (DCU4008)
 
-[DSRI](https://dsri.maastrichtuniversity.nl/) is the *Data Science Research Infrastructure* provided my Maastricht University. Although getting started with DSRI is a bit challenging for most students, it is well worth the effort! DSRI allows you to easily re-use the Python code provided by your teacher without any installations on your own machine. DSRI makes use of [Docker](https://docs.docker.com/get-started/docker-overview/) containers, which hold all the parts a program needs to run. Once you have set up your own project on DSRI, using the so-called Docker image we provide, you will have all the necessary components in place and the risk of technical errors is reduced. You will save a lot of time going forward. Moreover, DSRI makes it much easier for us to work together as a group.
+[DSRI](https://dsri.maastrichtuniversity.nl) is the *Data Science Research Infrastructure* provided my Maastricht University. Although getting started with DSRI is a bit challenging for most students, it is well worth the effort! DSRI allows you to easily re-use the Python code provided by your teacher without any installations on your own machine. DSRI makes use of [Docker](https://docs.docker.com) containers, which hold all the parts a program needs to run. Once you have set up your own project on DSRI, using the so-called Docker image we provide, you will have all the necessary components in place and the risk of technical errors is reduced. You will save a lot of time going forward. Moreover, DSRI makes it much easier for us to work together as a group.
 
 So be patient with yourselves if logging in to DSRI and starting your project does not work the first time you try --- your teacher is there to help and, in previous years, all students got there eventually! The different steps for launching your project are explained below. Please look at the screenshots carefully.
 
@@ -9,7 +9,7 @@ So be patient with yourselves if logging in to DSRI and starting your project do
 You must be connected to the UM network to access the DSRI.
 
 - Connect to the UM VPN Maastricht University [VPN client](http://vpn.maastrichtuniversity.nl).
-- Access the DSRI web UI at [https://console-openshift-console.apps.dsri2.unimaas.nl](https://console-openshift-console.apps.dsri2.unimaas.nl).
+- Access the DSRI web UI at **https://console-openshift-console.apps.dsri2.unimaas.nl** (page gives you an error when accessed OUTSIDE the UM network)
 - Your username (1) will always be your student ID at Maastricht University (a.k.a. your I-number), e.g. I6000000.
 - Use your general UM password.
 
