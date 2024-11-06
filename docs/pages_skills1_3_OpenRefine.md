@@ -21,7 +21,7 @@ To create a Text Facet for a column, click on the drop-down menu at the top of t
 Facets can be a great way to select podcast reviews by user names, time periods, or star ratings.
 
 **Screenshot 2**: facet applied to "user" column, showing all user names and the number of reviews written  
-![Screenshot 2](../screenshots_distant_reading/OpenRefine_text facet.png)
+![Screenshot 2](../screenshots_distant_reading/OpenRefine_textfacet.png)
 
 Please also read the documentation for "Exporting your Work" in the official [Open Refine](https://openrefine.org/docs/manual/exporting) documentation!
 
@@ -29,4 +29,4 @@ Please also read the documentation for "Exporting your Work" in the official [Op
 ![Screenshot 3](../screenshots_distant_reading/OpenRefine_export.png)
 
 **Screenshot 4**: raw text from "reviews" column copied into a .txt file  
-![Screenshot 4](../screenshots_distant_reading/OpenRefine_save raw text.png)
+![Screenshot 4](../screenshots_distant_reading/OpenRefine_saverawtext.png)
