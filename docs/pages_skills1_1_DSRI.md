@@ -38,7 +38,7 @@ When instantiating the template, you will need to provide some parameters, such 
 - Name of the application: `<course-id>-<application-name>` (7).
 - Choose a password to access the notebook with the script you are going to run (8).
 - Specify the Docker image to use for the notebook: `ghcr.io/maastrichtu-ids/jupyterlab:knowledge-graph` (9).
-- URL of Git repository: `https://gitlab.maastrichtuniversity.nl/the-plant/dcu4008-machines-of-knowledge.git` (10).
+- URL of Git repository: `https://gitlab.maastrichtuniversity.nl/the-plant/dcu4008-2024-machines-of-knowledge.git` (10).
 - Enter your username as *Git name* and your UM email as *Git email* (11).
 - Click on *Create*. It will take a few seconds (up to 1 minute) to get your notebook environment up and running.
 
