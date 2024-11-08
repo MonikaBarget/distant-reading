@@ -29,13 +29,10 @@ jobs:
          
       - name: Deploy
         run: npm run deploy
-<<<<<<< HEAD
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-=======
 
       - name: Check for leftover error messages
         if: failure()
-        run: dmesg | tail -20  # Prints the last few error logs, helpful for debugging system issues
->>>>>>> 208a61c340a327844c66dffeba99683c72604cab
+        run: dmesg | tail -20  # Prints the last few error logs, helpful for debugging system issue
 
