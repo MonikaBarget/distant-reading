@@ -29,6 +29,10 @@ When selecting a data set for your papers or final works, you should make sure t
 
 If you are not comfortable using code, you can also collect YouTube comments with several ready-made tools such as [Netlytic](https://socialmedialab.ca/apps/netlytic/). However, these tools typically have rate limits and / or do not allow you to capture all the available comments.
 
+## Packages for R
+
+If you prefer using R instead of Python, the [**tuber**](https://cran.r-project.org/web/packages/tuber/index.html) package is recommended for accessing YouTube data, allowing collection of video metadata and comments.
+
 ## Code demo video
 
 [MONIKA WILL PROVIDE A DEMO VIDEO SOON!]

@@ -30,3 +30,10 @@ Please also read the documentation for "Exporting your Work" in the official [Op
 
 **Screenshot 4**: raw text from "reviews" column copied into a .txt file  
 ![Screenshot 4](../screenshots_distant_reading/OpenRefine_saverawtext.png)
+
+The following YouTube video by Monika explains the process of filtering data in Open Refine and exporting them step-by-step:
+
+[![Thumbnail](https://img.youtube.com/vi/oMWIUf5_9jM/maxresdefault.jpg)](https://youtu.be/oMWIUf5_9jM?si=ibxc2zxcn335uGOo)
+
+The focus is on using a general text filter to find keywords and using the facet filter to explore rankings. However, OpenRefine has many other
+exciting functionalities not covered in this brief introduction! If you want to learn more, check out other videos shared by researchers and librarians on YouTube. One [Open Refine tutorial provided by researchers from Edinburgh](https://www.youtube.com/watch?v=wfS1qTKFQoI) does not only explain editing spreadsheets but also covers uploading data easily to Wikidata, which may be of interest to you in the future.

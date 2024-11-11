@@ -1,7 +1,7 @@
-## Social Media Analysis with Twitter
+# Social Media Analysis with Twitter
 
 ::justify
-Some of the scripts and data shared here relate to social media analysis with Twitter. The Twitter academic API access was used to harvest the data. It is important to note that the academic Twitter API is no longer accessible as a consequence of Elon Musk's restructuring of the platform, which is now known as X. Therefore, the following documentation merely serves as a general example of social media scraping. The Python script I used to get Twitter data until 2023 was the following:
+	:no_entry_sign: Some of the scripts and data shared here relate to social media analysis with Twitter. The Twitter academic API access was used to harvest the data. It is important to note that the original academic Twitter API is no longer accessible as a consequence of Elon Musk's restructuring of the platform, which is now known as X. Therefore, the following documentation merely serves as an archive and general example of social media scraping. The Python script I used to collect Twitter data until 2023 was the following:
 
 - [Python script for Twitter full archive search](https://github.com/MonikaBarget/DistantReading/blob/main/Twitter_full-archive-search_extended.py)
 

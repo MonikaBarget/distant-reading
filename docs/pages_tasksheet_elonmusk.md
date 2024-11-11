@@ -12,7 +12,7 @@ last but not least on Twitter itself.
 
 The following data set contains 100,000 tweets referencing #Twitter and #ElonMusk immediately after the announcement of the takeover (till 31st October):
 
-[ElonMusk2022](../data/Twitter_ElonMusk2022/ElonMusk2022_cleaned-with-Python.txt)
+[ElonMusk2022](../tree/main/data/Twitter_ElonMusk2022/ElonMusk2022_cleaned-with-Python.txt)
 
 Please keep in mind that the time period captured is very short and that some debates which we now associate with Twitter and Musk may only have arisen at a later point in time.
 

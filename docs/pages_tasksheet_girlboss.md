@@ -27,7 +27,7 @@ Datasets that can give us an insight into how different social groups discuss th
 
 [Digital Cultures - Girlboss](https://youtube.com/playlist?list=PL5XPG366xWVs657iGVt3MXFiaj45B_fEX&si=MIu1IXo4iiPEHENt)
 
-Besides, there are many podcasts discussing women leaders and entrepreneurs, or the role of women in formerly male-dominated domains such as tech. Reviews to these podcasts can also be an interesting data set. To give you a starting point for your data exploration in Voyant, I have already scraped [reviews for some relevant podcasts](https://github.com/MonikaBarget/distant-reading/data/Data_AppStore_Girlboss) that you can explore as one data set or in comparison (with YouTube comments). Many other podcasts also cover female leadership in a single episode, but filtering reviews on just that topic from a larger pool of themes can be difficult.
+Besides, there are many podcasts discussing women leaders and entrepreneurs, or the role of women in formerly male-dominated domains such as tech. Reviews to these podcasts can also be an interesting data set. To give you a starting point for your data exploration in Voyant, I have already scraped [reviews for some relevant podcasts](https://github.com/MonikaBarget/distant-reading/tree/main/data/Data_AppStore_Girlboss) that you can explore as one data set or in comparison (with YouTube comments). Many other podcasts also cover female leadership in a single episode, but filtering reviews on just that topic from a larger pool of themes can be difficult.
 
 ### Questions for data analysis
 
