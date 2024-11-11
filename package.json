@@ -5,8 +5,9 @@
     "build": "vitepress build docs",
     "dev": "vitepress dev docs",
     "deploy": "gh-pages -d docs/.vitepress/dist -r https://x-access-token:${GITHUB_TOKEN}@github.com/MonikaBarget/distant-reading.git",
-    "preview": "vitepress preview docs"
-  },
+    "preview": "vitepress preview docs",
+    "check-links": "blc https://monikabarget.github.io/distant-reading/ -ro"
+},
   "dependencies": {
     "vite": "^5.4.4"
   },
