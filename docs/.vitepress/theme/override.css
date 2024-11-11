@@ -1,7 +1,7 @@
 /* .vitepress/theme/override.css */
 
 .vp-doc {
-  max-width: 900px; /* Limit width for better readability */
+  max-width: 1200px; /* Limit width for better readability */
   margin: auto; /* Center the content */
 }
 
