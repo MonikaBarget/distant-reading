@@ -10,7 +10,7 @@ You can filter the data displayed in OpenRefine by applying a ‘Text Filter’,
 It is very important to note that when you have filtered the data displayed in OpenRefine, any operations you carry out will apply only to the rows that match the filter – that is, the data currently being displayed. This also means that only the current selection will be saved when you export your data while a filter is active!
 
 **Screenshot 1**: applying a text filter to the reviews column to find all reviews mentioning "victims"  
-![Screenshot 1](../screenshots_distant_reading/OpenRefine_filter.png){:target="_blank"}
+[![Screenshot 1](../screenshots_distant_reading/OpenRefine_filter.png)](../screenshots_distant_reading/OpenRefine_filter.png)
 
 ## Working with facets in Open Refine
 
@@ -21,15 +21,15 @@ To create a Text Facet for a column, click on the drop-down menu at the top of t
 Facets can be a great way to select podcast reviews by user names, time periods, or star ratings.
 
 **Screenshot 2**: facet applied to "user" column, showing all user names and the number of reviews written  
-![Screenshot 2](../screenshots_distant_reading/OpenRefine_textfacet.png){:target="_blank"}
+[![Screenshot 2](../screenshots_distant_reading/OpenRefine_textfacet.png)](../screenshots_distant_reading/OpenRefine_textfacet.png)
 
 Please also read the documentation for "Exporting your Work" in the official [Open Refine](https://openrefine.org/docs/manual/exporting) documentation!
 
 **Screenshot 3**: using the "export" option to save a data selection in a new file  
-![Screenshot 3](../screenshots_distant_reading/OpenRefine_export.png){:target="_blank"}
+[![Screenshot 3](../screenshots_distant_reading/OpenRefine_export.png)](../screenshots_distant_reading/OpenRefine_export.png)
 
 **Screenshot 4**: raw text from "reviews" column copied into a .txt file  
-![Screenshot 4](../screenshots_distant_reading/OpenRefine_saverawtext.png){:target="_blank"}
+[![Screenshot 4](../screenshots_distant_reading/OpenRefine_saverawtext.png)](../screenshots_distant_reading/OpenRefine_saverawtext.png)
 
 The following YouTube video by Monika explains the process of filtering data in Open Refine and exporting them step-by-step:
 
