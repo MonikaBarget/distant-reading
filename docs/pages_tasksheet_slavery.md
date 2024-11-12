@@ -33,7 +33,7 @@ The broader topic of slavery offers many opportunities for data analysis, either
 
 ## Data sets regarding modern slavery debates
 
-If you want to focus on recent discussion of the legacy of past slavery or on debates regarding modern forms of slavery (including human trafficking), the following data sources can be of interest:
+If you want to focus on recent discussions of the legacy of slavery or on debates regarding modern forms of slavery (including human trafficking), the following data sources can be of interest:
 
 - [Distant Reading - Modern Slavery](https://www.youtube.com/@digitalhistory7990/playlists) YouTube playlist, containing documentaries and talks for comparative analysis
 - listener reviews for the [Voices from the Days of Slavery: Stories, Songs and Memories](https://podcasts.apple.com/us/podcast/voices-from-the-days-of-slavery-stories-songs-and-memories/id310780631) podcast
