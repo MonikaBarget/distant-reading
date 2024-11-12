@@ -4,9 +4,9 @@ Voyant Tools is a web-based text analysis and visualization platform that is pop
 
 ## Ingest your data into Voyant Tools
 
-Go to the [Voyant Tools](https://voyant-tools.org/) website and simply paste your raw text or the URL of raw text data (as stored in Github) into the "add text" field. Press the blue "reveal" button and start exploring the data set! You can also upload text in a .txt or XML file format.
+Go to the [Voyant Tools](https://voyant-tools.org/) website and simply paste your raw text or the URL of raw text data (as stored in Github) into the "add text" field. If you have data in .txt format (individual file) or several files in a .zip archive, you can use the upload option to ingest the files. Press the blue "reveal" button and start exploring the data set!
 
-![Screenshot (4).png](https://canvas.maastrichtuniversity.nl/courses/19304/files/4556394/preview)
+[![Landing Page](../screenshots_distant_reading/Landing page Voyant.png)](../screenshots_distant_reading/Landing page Voyant.png)
 
 ## Steps of text analysis in Voyant
 
@@ -21,7 +21,7 @@ The following four steps describe an exemplary text analysis in Voyant and can s
 - Take note of any places (e.g., cities and countries) mentioned in the data and consider why they might be included.
 - Reflect on any surprising findings or information that is challenging to contextualise.
 
-![Screenshot (6).png](https://canvas.maastrichtuniversity.nl/courses/19304/files/4556398/preview)
+[![Word Cloud](../screenshots_distant_reading/Word Cloud.png)](../screenshots_distant_reading/Word Cloud.png)
 
 **Step 2: Comparative Analysis with the "Trends" Tool**
 
@@ -31,7 +31,11 @@ The following four steps describe an exemplary text analysis in Voyant and can s
 - Make sure to know what time frame your data set covers. In data sets collected from the web, the timeline is often reversed, so the newest data are shown first. This means that you may need to read your graph from right to left unless you carefully sort your data by time first (e.g. using Open Refine). In a narrative text such as a novel, the trend graph simply reflects the story line across the different chapters.
 - Explore groups of words for comparative analysis within the "Trends" tool. Ensure that the word groups are homogeneous, such as looking at different place names or tracking trends for specific adjectives like "good," "bad," "exciting," or "boring." Avoid combining terms from different word groups.
 
-![Screenshot (8).png](https://canvas.maastrichtuniversity.nl/courses/19304/files/4556399/preview)
+[![Trends graph](../screenshots_distant_reading/Trends graph COUNTRIES.png)](../screenshots_distant_reading/Trends graph COUNTRIES.png)
+
+If you have more than one text, you will see that the trends graph show each text in your corpus as one column by default, allowing you to compare the frequencies of words in the different texts. You can also change the description of the y-axis to either show relative frequencies (meaning a fraction of 1) or absolute numbers.
+
+[![Trends in corpus](../screenshots_distant_reading/Voyant_trend-in-corpus.png)](../screenshots_distant_reading/Voyant_trend-in-corpus.png)
 
 **Step 3: Co-Occurrences and Correlations**
 
@@ -41,7 +45,7 @@ The following four steps describe an exemplary text analysis in Voyant and can s
 - Use the "correlations" tool or the "terms berry" and investigate words that are commonly associated with key terms that you found in the word cloud. Analyse what the correlations imply about the podcast reviewers' opinions.
 - Experiment with several important keywords and carefully interpret the results. Consider how they shed light on the podcast's content and potential broader debates in a specific country or even worldwide.
 
-![Screenshot (9).png](https://canvas.maastrichtuniversity.nl/courses/19304/files/4556401/preview)
+[![Correlations](../screenshots_distant_reading/Correlations.png)](../screenshots_distant_reading/Correlations.png)
 
 **Step 4: Reading Keywords in Context**
 
@@ -50,7 +54,7 @@ The following four steps describe an exemplary text analysis in Voyant and can s
 - Use the "context" tool or the "word tree" to examine full sentences in which especially frequent or controversial words appear.
 - What does this more detailed perspective tell you about your data set?
 
-![Screenshot (10).png](https://canvas.maastrichtuniversity.nl/courses/19304/files/4556397/preview)
+[![Keywords in context](../screenshots_distant_reading/Keywords in context.png)](../screenshots_distant_reading/Keywords in context.png)
 
 **Step 4: Drawing General Conclusions**
 
