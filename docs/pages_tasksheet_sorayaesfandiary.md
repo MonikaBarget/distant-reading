@@ -20,7 +20,7 @@ Individuals who grow up in one culture with a background in another often face c
 - [World Collide](https://podcasts.apple.com/us/podcast/worlds-collide-the-podcast-about-moving-abroad/id1682067381)
 - [Flourish in the Foreign](https://podcasts.apple.com/us/podcast/flourish-in-the-foreign-black-women-living-thriving-abroad/id1509976748)
 
-While each of the podcasts may not have so many reviews per country, it can be interesting to scrape the data for all countries. And several smaller sets of podcast reviews can also be combined to form an insightful data set.
+:bangbang: While each of the podcasts may not have so many reviews per country, it can be interesting to scrape the data for all countries. And several smaller sets of podcast reviews can also be combined to form an insightful data set.
 
  ## Suggestions for data analysis
 

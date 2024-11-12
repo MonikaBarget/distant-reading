@@ -1,4 +1,6 @@
-# Distant reading case study "Waste Colonialism"
+# Distant reading case study "waste colonialism"
+
+:book: I use this case study in my postcolonialism lecture to showcase a postcolonial reading of a contemporary data set.
 
 ## Waste management and waste reduction as global issues
 
@@ -12,6 +14,6 @@ One data set that can give us an insight how different user communities online d
 
 In a data analysis with Voyant Tools, we can try and answer the following questions:
 
-- What patterns do we see in the origins and destinations of plastic waste, textile waste, and e-waste in the Pacific?
+- What patterns do we see in global flows of plastic waste, textile waste, and e-waste?
 - How do different YouTube users from different countries and social backgrounds respond to the environmental impact of these waste exports?
 - What opportunities for change are discussed in the data set? Who is pushing for change and why?

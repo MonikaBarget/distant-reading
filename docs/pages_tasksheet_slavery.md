@@ -10,7 +10,7 @@ Slavery is an important theme in postcolonial studies but also societally releva
 
 For media studies students, working with slavery-related data from the past can, therefore, be a way to better understand ongoing legacies of colonial power and (problematic) media portrayals of different ethnic and social groups today. It is also important to remember that slave trade and slavery were sustained by many agents, including people from countries which we would consider small and of lesser influence today. One example is the Dutch involvement in the slave trade, which can be overlooked when the focus is on the English-speaking world. According to the Colonial Williamsburg Foundation's [Slavery and Remembrance](https://slaveryandremembrance.org/articles/article/?id=A0145) website, "the Dutch transported about half a million Africans across the Atlantic" between 1596 and 1829. Moreoever, they shipped "about a half million Africans to their settlements in Dutch Guiana, notably Suriname, where they worked primarily on sugar plantations."
 
-## Data sets related to slavery and its legacies
+## Data sets related to historical slavery
 
 The broader topic of slavery offers many opportunities for data analysis, either based on historical records or based on modern perceptions and debates. On the internet, you will find several projects dedicated to making records from the colonial period accessible. Here is a list of resources worth consulting:
 
@@ -30,6 +30,25 @@ The broader topic of slavery offers many opportunities for data analysis, either
 - Another Dutch resource of interest could be the [Database Dutch slave trade, 1600-1800](https://maritiemportal.nl/dutch-slave-trade-dans/), which "contains information on the seavoyage of Dutch slave traders in the 17th and 18th century." The database predominantly assembles structured data such as the number of slaves that boarded the ship in Africa, the number of deaths, places of departure and places of landing.
 - Focused on British colonial administration, [Colonial Despatches (University of Victoria)](https://bcgenesis.uvic.ca/) is a collection of government records that includes information on (slave) trade as well as the treatment of enslaved and indigenous people.
 - The digital collection of African American Newspaper previously hosted by [Accessible Archives](https://www.accessible-archives.com/) has moved to [History Commons](https://www.libraries.rutgers.edu/databases/history-commons) and now requires registration. If you are interested in using this resource, you have to contact Rutgers University Libraries, 169 College Ave, New Brunswick, NJ 08901-1163.
+
+## Data sets regarding modern slavery debates
+
+If you want to focus on recent discussion of the legacy of past slavery or on debates regarding modern forms of slavery (including human trafficking), the following data sources can be of interest:
+
+- [Distant Reading - Modern Slavery](https://www.youtube.com/@digitalhistory7990/playlists) YouTube playlist, containing documentaries and talks for comparative analysis
+- listener reviews for the [Voices from the Days of Slavery: Stories, Songs and Memories](https://podcasts.apple.com/us/podcast/voices-from-the-days-of-slavery-stories-songs-and-memories/id310780631) podcast
+- listener reviews for the podcast [Abolition, Liberation, Solidarity: A Here4TheKids Production](https://podcasts.apple.com/us/podcast/abolition-liberation-solidarity-a-here4thekids/id1719169060)
+- listener reviews for the podcast [UNSEEN: The Trafficked Truth Podcast](https://podcasts.apple.com/us/podcast/unseen-the-trafficked-truth-podcast/id1529659754)
+- listener reviews for the podcast [Emancipation Nation](https://podcasts.apple.com/us/podcast/emancipation-nation/id1471116928)
+- listener reviews for the podcast [Sold in America](https://podcasts.apple.com/us/podcast/sold-in-america/id1437315032)
+- listener reviews for the podcast [Ending Human Trafficking](https://podcasts.apple.com/us/podcast/ending-human-trafficking-podcast/id434716755)
+- listener reviews for the [Heirs of Enslavement](https://podcasts.apple.com/us/podcast/heirs-of-enslavement/id1714812668) podcast
+
+:bangbang: While one individual podcast may not give you many reviews to work with, it is often worth scraping reviews from several related podcasts to get a more comprehensive picture and perform comparative analysis.
+
+You may also want to scrape the reviews for the [History Extra](https://podcasts.apple.com/at/podcast/history-extra-podcast/id256580326) podcast and search for reactions to one of their several episodes on slavery, slave revolts, and abolitionism.
+
+
 
 ### Questions for Data Analysis on Slavery Case Study
 

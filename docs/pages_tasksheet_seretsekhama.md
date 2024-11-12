@@ -34,7 +34,7 @@ Alternatively or in comparison, you can also analyse reviews that people have le
 
 - [The Swirl World Podcast](https://podcasts.apple.com/us/podcast/the-swirl-world-podcast/id885695922)
 
-While each of the podcasts may not have so many reviews per country, it can be interesting to scrape the data for all countries. And several smaller sets of podcast reviews can also be combined to form an insightful data set.
+:bangbang: While each of the podcasts may not have so many reviews per country, it can be interesting to scrape the data for all countries. And several smaller sets of podcast reviews can also be combined to form a larger insightful data set.
 
 ## Questions for data analysis
 

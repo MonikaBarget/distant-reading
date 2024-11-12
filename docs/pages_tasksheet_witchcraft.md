@@ -6,7 +6,7 @@
 
 On the one hand, analysing (historical) records on witchcraft and witch trials offers insight into how societies construct and perpetuate narratives around "otherness", fear, and social control. On the other hand, the self-perceptions of individuals embracing magic and seeing themselves as practisioners of witchcraft can tell us something about (alternative) spirituality, self-empowerment, and attempts to reconnect with (marginalised) traditions. In many historical and cultural contexts, witchcraft is also a highly gendered concept, which creates opportunities for feminist and intersectional readings.
 
-## Resources for witchcraft and witch trial data
+## Sources on witchcraft and witch trials
 
 Data sets related to witchcraft and witch trials can range from historical records to modern (pop-cultural) perceptions and present-day witchcraft controversies in regions like the Congo, where children and teenagers (from poor backgrounds) are often accused and banished from their homes. The article [The agony of Congo's 'child witches'](https://www.africanews.com/2018/03/16/the-agony-of-congo-s-child-witches//), written by Mpoyo Gael for *Africa News*, attributes this problem to "mushrooming cults" but also to a legacy of conflict and war. Below are resources relating to different time periods and geographic areas that you may want to explore:
 

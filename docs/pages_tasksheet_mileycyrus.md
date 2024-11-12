@@ -1,5 +1,7 @@
 # Distant reading case study "Miley Cyrus"
 
+:book: I generally use this case study in my data feminism lecture to showcase possible feminist and intersectional readings.
+
 ## Feminist and intersectional approaches to Miley Cyrus's VMA2013 performance
 
 ### The VMA2013 controversy
