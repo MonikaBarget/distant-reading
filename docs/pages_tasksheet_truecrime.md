@@ -1,5 +1,7 @@
 # Distant reading case study "True Crime"
 
+🙌 This case study was inspired by my MA student Nicole Schanzmeyer who wrote her thesis on this topic in the academic year of 2022/2023.
+
 ## The cultural relevance of True Crime podcasts
 
 **True crime** is one of the most popular media genres of the digital age. Its popularity can be attributed to a captivating blend of mystery, suspense, real-world drama and, in many cases, troubling insights into subcultures, politics, and police work. It taps into our fascination with the darker aspects of human nature, providing a window into the minds of both criminals and investigators. Analysing true crime podcast reviews via distant reading offers a unique opportunity to better understand why listeners tune in and what they like about their favourite shows, but also what they think should be improved. By employing computational tools to sift through countless reviews, we can identify recurring themes and patterns that we might overlook in a close reading approach.

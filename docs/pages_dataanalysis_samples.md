@@ -1,4 +1,4 @@
-# Sampla analyses
+# Sample analyses
 
 ## Analyses of smaller data sets
 
