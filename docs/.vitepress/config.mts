@@ -20,7 +20,8 @@ export default defineConfig({
           { text: 'Apple Store', link: '/pages_datascraping_applestore.md' },
           { text: 'Google News', link: '/pages_datascraping_googlenews.md' },
           { text: 'Mastodon', link: '/pages_datascraping_mastodon.md' },
-          { text: 'Social Media', link: '/pages_datascraping_socialmedia.md' },
+          { text: 'Meta', link: '/pages_datascraping_Meta.md' },
+          { text: 'Reddit', link: '/pages_datascraping_reddit.md' },
           { text: 'Twitter', link: '/pages_datascraping_twitter.md' },
           { text: 'YouTube', link: '/pages_datascraping_youtube.md' },
         ]
@@ -86,10 +87,6 @@ export default defineConfig({
     // Social links that appear in the footer
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ],
-    
-    layout: 'default',
+    ]
   }
 })
-
-

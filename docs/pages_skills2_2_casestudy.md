@@ -1,6 +1,6 @@
-## **Distant Reading Case Study**
+# **Working on a distant reading case study**
 
-### **Available data sets in this repository**
+## **Available data sets in this repository**
 
 In the [data section](https://github.com/MonikaBarget/distant-reading/data) of this repository, you find different types of sample data with a link to the Machines of Knowledge course. Older data sets, which were used for teaching in the past, can still be helpful as testing and practicing data, but you may not use them for your graded group presentations or your final essays.
 
@@ -26,35 +26,35 @@ To read brief descriptions of the data and find ideas for analysis, please go to
 
 For the Khama and Esfandiary case studies, I have made YouTube playlists whose reviews you can scrape and use as a starting point for your essays. You can also use the suggested podcasts and scrape their reviews. If you want to compare these data with different data sets or apply a different theoretical approach, this is also possible.
 
-### **Ingest your data into Voyant Tools**
+## **Ingest your data into Voyant Tools**
 
 Go to the [Voyant Tools](https://voyant-tools.org/) website and simply paste the URL of the data (as indicated in the link above) into the "add text" field. Press the blue "reveal" button and start exploring the dataset!
 
-### **Tasks to perform in Voyant**
+## **Tasks to perform in Voyant**
 
-#### **High-level analysis with word cloud and frequencies table**
+### **High-level analysis with word cloud and frequencies table**
 
 - Look at the word cloud and the corresponding frequencies table. What words are the most prominent? What different topics or themes can you identify in the data?
 - Who are the "protagonists" mentioned in the data? Are any people mentioned by name, and who are they? Show hosts, politicians, police officers?
 - What places (e.g. cities) are mentioned in the data? Why do you think that could be the case?
 - What surprises you? What information is hard to contextualise?
 
-#### **Comparative analysis with the "trends" tool**
+### **Comparative analysis with the "trends" tool**
 
 - Write down words that express emotions/people's feelings towards the show and its hosts. Put them into the trends tool. How did these emotions develop over time?
 - Try to find groups of words for comparative analysis in "trends". This group of words has to be homogeneous. You can, for example, look at different place names or trace the trends for different adjectives (e.g. "good", "bad", "exciting", "boring"). It does not make sense to combine terms from different word groups.
 
-#### **Analysing co-occurrences/correlations with the "links" tool or the "correlations" tool**
+### **Analysing co-occurrences/correlations with the "links" tool or the "correlations" tool**
 
 - What words are most prominently associated with the words "police" and "cop"? What does this say about the listeners' opinions?
 - Try other words such as "criminals", "journalism" or "investigators". What are the results? What do they tell us about the podcast and perhaps also about more general debates in the United States?
 
-#### **Reading keywords in context**
+### **Reading keywords in context**
 
 - Put the words which you have used to find co-occurrences in the "context" tool to see the full sentences in which they are used. Does this give you any additional insights?
 - Alternatively, you can also experiment with the "word tree".
 
-#### **Drawing general conclusions**
+### **Drawing general conclusions**
 
 - What conclusions can you draw from all the individual distant reading results?
 - What is (un)expected?

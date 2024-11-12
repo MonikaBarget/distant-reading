@@ -20,6 +20,6 @@
 @media screen and (min-width: 768px) {
   /* Adjust margins for larger screens */
   .vp-doc {
-    margin-left: 250px; /* Leave space for the sidebar */
+    margin-left: 15px; /* Leave space for the sidebar */
   }
 }

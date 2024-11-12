@@ -21,15 +21,15 @@ To create a Text Facet for a column, click on the drop-down menu at the top of t
 Facets can be a great way to select podcast reviews by user names, time periods, or star ratings.
 
 **Screenshot 2**: facet applied to "user" column, showing all user names and the number of reviews written  
-[![Screenshot 2](../screenshots_distant_reading/OpenRefine_textfacet.png)](../screenshots_distant_reading/OpenRefine_textfacet.png)
+[![Screenshot 2](../screenshots_distant_reading/OpenRefine_textfacet.png)](https://github.com/MonikaBarget/distant-reading/tree/main/screenshots_distant_reading/OpenRefine_textfacet.png)
 
 Please also read the documentation for "Exporting your Work" in the official [Open Refine](https://openrefine.org/docs/manual/exporting) documentation!
 
 **Screenshot 3**: using the "export" option to save a data selection in a new file  
-[![Screenshot 3](../screenshots_distant_reading/OpenRefine_export.png)](../screenshots_distant_reading/OpenRefine_export.png)
+[![Screenshot 3](../screenshots_distant_reading/OpenRefine_export.png)](https://github.com/MonikaBarget/distant-reading/tree/main/screenshots_distant_reading/OpenRefine_export.png)
 
 **Screenshot 4**: raw text from "reviews" column copied into a .txt file  
-[![Screenshot 4](../screenshots_distant_reading/OpenRefine_saverawtext.png)](../screenshots_distant_reading/OpenRefine_saverawtext.png)
+[![Screenshot 4](../screenshots_distant_reading/OpenRefine_saverawtext.png)](https://github.com/MonikaBarget/distant-reading/tree/main/screenshots_distant_reading/OpenRefine_saverawtext.png)
 
 The following YouTube video by Monika explains the process of filtering data in Open Refine and exporting them step-by-step:
 

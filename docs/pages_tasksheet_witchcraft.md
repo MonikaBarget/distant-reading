@@ -1,5 +1,7 @@
 # Distant reading case study "witchcraft"
 
+🙌 This case study was inspired by a course I teach with Prof. Susan Schreibman (FASoS Maastricht) and links to some historical sources suggested by her. 
+
 ## Reasons for studying witchcraft records and witch trials
 
 On the one hand, analysing (historical) records on witchcraft and witch trials offers insight into how societies construct and perpetuate narratives around "otherness", fear, and social control. On the other hand, the self-perceptions of individuals embracing magic and seeing themselves as practisioners of witchcraft can tell us something about (alternative) spirituality, self-empowerment, and attempts to reconnect with (marginalised) traditions. In many historical and cultural contexts, witchcraft is also a highly gendered concept, which creates opportunities for feminist and intersectional readings.

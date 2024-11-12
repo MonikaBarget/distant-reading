@@ -1,5 +1,7 @@
 # Distant reading case study "slavery"
 
+🙌 This case study was inspired by a course I teach with Prof. Susan Schreibman (FASoS Maastricht) and links to some historical sources suggested by her. 
+
 ## Slavery as an important theme in media studies
 
 Slavery is an important theme in postcolonial studies but also societally relevant. As James W. Loewen wrote in 2017, "we are a product of our history — even the history we don’t like to think about." (Adapted excerpt from the first chapter of *Understanding and Teaching American Slavery*, published in [Learning for Justice, Issue 55, Spring 2017](https://www.learningforjustice.org/magazine/spring-2017/what-learning-about-slavery-can-teach-us-about-ourselves)) Slavery undoubtedly is a global phenomenon that shaped the cultures and economic fortunes of many present-day countries and communities. One lasting challenge that cannot be detached from slavery is racism. Loewen reminds us in his article:
