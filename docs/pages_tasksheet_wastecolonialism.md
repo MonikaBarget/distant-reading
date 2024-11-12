@@ -1,4 +1,4 @@
-# Distant Reading Case Study "Waste Colonialism"
+# Distant reading case study "Waste Colonialism"
 
 ## Waste management and waste reduction as global issues
 

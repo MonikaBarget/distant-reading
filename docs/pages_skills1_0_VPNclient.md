@@ -17,3 +17,5 @@ On MacOS and Windows: download and install the Maastricht University VPN client 
 - Enter your one-time passcode (5).
 
 ![image.png](../screenshots_dsri/image-c77c660a-fb92-45eb-8d3b-20bfd30dcfbe.png)
+
+🙌 These instructions were provided by Arnoud Wils (The Plant, FASoS). 

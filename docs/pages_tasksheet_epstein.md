@@ -1,4 +1,4 @@
-# Distant reading case study Epstein
+# Distant reading case study "Jeffrey Epstein"
 
 ## Analysing networks of exploitation
 

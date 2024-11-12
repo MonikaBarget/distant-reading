@@ -29,3 +29,5 @@ $ oc rsh <POD_ID>
 6) In the final step, you can download your folders or files from the POD to your local drive:
 
 [Copy from pod to local](https://dsri.maastrichtuniversity.nl/docs/openshift-load-data#copy-from-pod-to-local)
+
+🙌 These instructions were provided by Arnoud Wils (The Plant, FASoS) and the DSRI team at Maastricht University. 

@@ -8,14 +8,14 @@ This repository contains teaching materials catered to the technical skills of h
 
 ## Credits and updates
 
-I have developed the resources shared here in close collaboration with my students and several colleagues / co-teachers. Arnould Wils (The Plant, FASoS) has kindly reviewed my code and provided instructions for using infrastructures specific to Maastricht University. Susan Schreibman (Professor of Digital Arts and Culture, FASoS) and some of my MA students have inspired case studies and are credited in the relevant sections. More case studies and tutorials will be added over time, and some sections are clearly work in progress. Please also be aware that code can quickly deprecate. If you have any questions or would like to flag missing / outdated information, please use the issue section in the code repository to inform me.
+I have developed the resources shared here in close collaboration with my students and several colleagues / co-teachers. Arnoud Wils (The Plant, FASoS) has kindly reviewed my code and provided instructions for using infrastructures specific to Maastricht University. Susan Schreibman (Professor of Digital Arts and Culture, FASoS) and some of my MA students have inspired case studies and are credited in the relevant sections. More case studies and tutorials will be added over time, and some sections are clearly work in progress. Please also be aware that code can quickly deprecate. If you have any questions or would like to flag missing / outdated information, please use the issue section in the code repository to inform me.
 
-## Recommended Tutorials and Readings on Zotero
+## Readings on Zotero
 
-For additional (video) tutorials and readings that have been beneficial to our team, we’ve created a **Distant Reading and Data Collection** Zotero group library, which we will update continuously to reflect new tools and techniques.
+For additional readings on text analysis and the tools recommended in this repository, you can consult the relevant folders in my public [Digital Society and Digital Cultures Zotero group library](https://www.zotero.org/groups/4457227/fasos_-_digital_society__digital_cultures/collections/YAGEDFPB).
 
 ## Contact
 
-If you have questions or would like to collaborate, please reach out! You can connect with me in the Faculty of Arts and Social Sciences (FASoS) at Maastricht University or follow my updates on Mastodon.
+If you have questions or would like to collaborate, please reach out! You can connect with me in the Faculty of Arts and Social Sciences (FASoS) at Maastricht University or [find me on Mastodon](https://akademienl.social/@mob).
 
 

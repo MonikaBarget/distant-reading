@@ -1,6 +1,6 @@
 # Distant reading case study "slavery"
 
-🙌 This case study was inspired by a course I teach with Prof. Susan Schreibman (FASoS Maastricht) and links to some historical sources suggested by her. 
+🙌 This case study was inspired by a course I teach with Prof. Susan Schreibman (FASoS Maastricht), who suggested some of the digitised historical sources and databases. 
 
 ## Slavery as an important theme in media studies
 

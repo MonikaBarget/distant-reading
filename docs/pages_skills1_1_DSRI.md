@@ -59,3 +59,5 @@ When instantiating the template, you will need to provide some parameters, such 
 ![File Explorer Screenshot](../screenshots_dsri/image-5.png)
 
 **IMPORTANT: Always download your datasets to your local machine and make sure to have backups!**
+
+🙌 These instructions were provided by Arnoud Wils (The Plant, FASoS). 

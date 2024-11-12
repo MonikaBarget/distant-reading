@@ -1,4 +1,4 @@
-# Case study "menstruation"
+# Distant reading case study "menstruation awareness"
 
 ## Menstruation as a social sciences concern
 
