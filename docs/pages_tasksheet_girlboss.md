@@ -31,7 +31,7 @@ Besides, there are many podcasts discussing women leaders and entrepreneurs, or 
 
 ### Questions for data analysis
 
-In your data analysis, you can try and follow the steps outlined in Skill 2.1. Voyant Tools and Skills 2.2. Case Study. Here are some questions that you could explore based on YouTube comments left under videos and talks discussing the girlboss movement and female entrepreneurship:
+Here are some questions that you could explore based on YouTube comments left under videos and talks discussing the girlboss movement and female entrepreneurship:
 
 * What emotions do commenters express regarding the girlboss movement? Which adjectives and phrases are frequently used to describe female entrepreneurs?
 * How do viewers evaluate empowerment and agency among women in entrepreneurship? Is there a dominant view or significant division?
