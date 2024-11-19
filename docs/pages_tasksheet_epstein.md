@@ -23,4 +23,4 @@ In your data analysis, you can try and follow the steps outlined in Skill 2.1. V
 - What do listeners think about the role of law enforcement and the judicial system in preventing abuse and punishing abusers?
 - What implications does the Epstein case have for feminist activism and advocacy regarding sexual violence and trafficking?
 
-Please make sure to use several different tools in Voyant. If you need help with the analysis workflow, consult the advice in the [Skills](#) menu. You can also scrape your own additional data for comparative analysis.
+Please make sure to use several different tools in Voyant. If you need help with the analysis workflow, consult the advice in the ==Skills== menu. You can also scrape your own additional data for comparative analysis.

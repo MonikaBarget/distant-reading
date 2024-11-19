@@ -39,4 +39,4 @@ In your data analysis, you can try and follow the steps outlined in Skill 2.1. V
 * In what ways do the comments reveal past or present stereotypes about women in leadership roles?
 * Do the YouTube comments contribute to more awareness of the challenges faced by women in the business world? Can the comments contribute to a positive change?
 
-In Voyant Tools, consider employing a variety of tools to address these questions. Beyond just word cloud or cirrus visualisation, use tools that show co-occurrences or keywords in context. If you need help with your analysis workflow, consult the advice in the [Skills](#) menu.
+In Voyant Tools, consider employing a variety of tools to address these questions. Beyond just word cloud or cirrus visualisation, use tools that show co-occurrences or keywords in context. If you need help with your analysis workflow, consult the advice in the ==Skills== menu.

@@ -23,3 +23,12 @@
     margin-left: 15px; /* Leave space for the sidebar */
   }
 }
+
+/* Customize the highlight syntax (==highlight==) */
+mark {
+  background-color: #3bdeff;  /* Yellow background */
+  color: #000;                /* Black text color */
+  padding: 2px 6px;           /* Optional padding */
+  border-radius: 4px;         /* Optional rounded corners */
+}
+

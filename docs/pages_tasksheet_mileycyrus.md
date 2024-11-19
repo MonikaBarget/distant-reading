@@ -37,4 +37,4 @@ Put "black", "white", "dancers", "rape", "twerk*" and "women" into the trends to
 
 ## General workflow advice
 
-If you need further advice on the analysis workflow, please go to the Voyant Tools section in the [Skills](#) menu!
+If you need further advice on the analysis workflow, please go to the Voyant Tools section in the ==Skills== menu!

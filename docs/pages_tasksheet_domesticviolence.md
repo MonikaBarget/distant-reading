@@ -33,4 +33,4 @@ These podcasts feature personal accounts of survivors but also give advice to fr
 - What are the personal stories that listeners share in their reviews?
 - In what ways do podcasts create a sense of community for survivors / their friends and family members?
 
-Please use different tools in Voyant to answer these questions and consult the Voyant Tool advice in the [Skills](#) menu!
+Please use different tools in Voyant to answer these questions and consult the Voyant Tool advice in the ==Skills== menu!

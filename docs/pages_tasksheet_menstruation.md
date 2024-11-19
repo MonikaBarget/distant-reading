@@ -25,4 +25,4 @@ Many podcasts worldwide are now contributing to menstruation awareness, and the 
 
 To give you a starting point for your data exploration in Voyant, I have already scraped [reviews for three relevant podcasts](https://github.com/MonikaBarget/distant-reading/tree/main/data/Data_AppStore_Menstruation) that you can explore as one data set or in comparison. Many other podcasts also cover menstruation in a single episode, but filtering reviews on just that topic can be difficult. So sticking with podcasts that focus on this particular topic is best.
 
-In your data analysis, you can try and follow the steps outlined in the Voyant Tools section of the [Skills](#) menu.
+In your data analysis, you can try and follow the steps outlined in the Voyant Tools section of the ==Skills== menu.

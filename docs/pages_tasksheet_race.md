@@ -19,4 +19,4 @@ For your data analysis, Monika has scraped [several hundred reviews](https://git
 - What are recommendations for improvement made by the listeners?
 - Do listeners comment on political developments and changes they would still like to see in society?
 
-Use different tools in Voyant Tools for the analysis and consult the advice for distant reading in the [Skills](#) menu of this repository!
+Use different tools in Voyant Tools for the analysis and consult the advice for distant reading in the ==Skills== menu of this repository!
