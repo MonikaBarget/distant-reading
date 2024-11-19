@@ -10,8 +10,8 @@ enable such exploitation. We can also reflect on systemic gender inequalities an
 ## Reviews to the Devil in the Darkness podcast
 
 One internationally successful podcast on the Epstein case was [Devil in the Darkness](https://podcasts.apple.com/us/podcast/epstein-devil-in-the-darkness/id1478027784),
-released in autumn 2019. Monika has scraped [reviews of this podcast](https://github.com/MonikaBarget/distant-reading/tree/main/data/Data_AppStore_Epstein) as a training data set to practice distant reading and feminist theory. 
-This dataset offers insights into listeners' attitudes towards masculinity, issues of privilege, justice, and morality.
+released in autumn 2019. Monika has scraped [reviews of this podcast](https://github.com/MonikaBarget/distant-reading/tree/main/data/Data_AppStore_Epstein) as a training data set to practice distant reading and feminist theory / intersectional theory. In addition, Monika has scraped reviews for the [Epstein Chronicles](https://podcasts.apple.com/us/podcast/the-epstein-chronicles/id1575753383) podcast and for the podcast [The Mysterious Mr. Epstein](https://podcasts.apple.com/us/podcast/the-mysterious-mr-epstein/id1480055524). 
+This dataset offers insights into listeners' attitudes towards masculinity, issues of privilege, justice, and morality. The data sets are comparatively small and can be used in comparison with each other or as a combined data set.
 
 ## Questions for data analysis
 
