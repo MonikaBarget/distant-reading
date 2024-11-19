@@ -59,11 +59,13 @@ export default defineConfig({
       {
         text: 'Task Sheets',
         items: [
+          { text: 'Domestic Violence', link: '/pages_tasksheet_domesticviolence.md' },
           { text: 'Elon Musk', link: '/pages_tasksheet_elonmusk.md' },
           { text: 'Girlboss', link: '/pages_tasksheet_girlboss.md' },
           { text: 'Jeffrey Epstein', link: '/pages_tasksheet_epstein.md' },
           { text: 'Menstruation', link: '/pages_tasksheet_menstruation.md' },
           { text: 'Miley Cyrus', link: '/pages_tasksheet_mileycyrus.md' },
+          { text: 'Race', link: '/pages_tasksheet_race.md' },
           { text: 'Seretse Khama', link: '/pages_tasksheet_seretsekhama.md' },
           { text: 'Slavery', link: '/pages_tasksheet_slavery.md' },
           { text: 'Soraya Esfandiary', link: '/pages_tasksheet_sorayaesfandiary.md' },
