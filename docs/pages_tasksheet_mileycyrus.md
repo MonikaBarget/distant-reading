@@ -34,3 +34,7 @@ What does that say about common perceptions of gender roles and/or racial dynami
 ### Narrative developments in trends
 
 Put "black", "white", "dancers", "rape", "twerk*" and "women" into the trends tool. What does that tell you about the enfolding of the Twitter debate?
+
+## General workflow advice
+
+If you need further advice on the analysis workflow, please go to the Voyant Tools section in the [Skills](#) menu!
