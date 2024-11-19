@@ -10,9 +10,15 @@ This could also be analysed from a postcolonial perspective.
 
 ## Podcasts communicating domestic violence awareness
 
-Podcasts have become a powerful tool survivor voices and to rais general awareness about domestic violence. Popular shows that cover this topic include:
+Podcasts have become a powerful tool survivor voices and to rais general awareness about domestic violence. Shows that cover this topic include:
 
-- [After Dark](https://podcasts.apple.com/us/podcast/after-dark-overcoming-domestic-violence/id1444601572)
+- [After Dark](https://podcasts.apple.com/us/podcast/after-dark-overcoming-domestic-violence/id1444601572) (only two text reviews!)
+  
+- [I'm not in an abusive relationship](https://podcasts.apple.com/us/podcast/im-not-in-an-abusive-relationship/id1457515257) (only five text reviews!)
+
+- [I'm a survivor](https://podcasts.apple.com/us/podcast/im-a-survivor-podcast/id1452383423)
+  
+- [It's not normal - it's toxic](https://podcasts.apple.com/us/podcast/its-not-normal-its-toxic-rid-your-life-of-toxic-people/id1363585196)
 
 - [Narcissist Apocalypse](https://podcasts.apple.com/us/podcast/narcissist-apocalypse-patterns-of-abuse/id1452117002)
 
