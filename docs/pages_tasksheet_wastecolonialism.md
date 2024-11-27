@@ -8,7 +8,7 @@ The term [waste colonialism](https://stopwastecolonialism.org/) is used by resea
 
 <img src="https://mikroplastik.org/wp-content/uploads/2024/03/Basliksiz-1.jpg" alt="book cover waste" style="float: left; width: 20%;">
 
-Several academic books now give an introduction to waste colonialism, often focussing on specific aspects such as plastic waste exports. One book you might find helpful is {Plastic Waste Trade: A New Colonialist Means of Pollution Transfer](https://link.springer.com/book/10.1007/978-3-031-51358-9), edited by Sedat Gündoğdu and published by Springer Nature in 2024.
+Several academic books now give an introduction to waste colonialism, often focussing on specific aspects such as plastic waste exports. One book you might find helpful is [Plastic Waste Trade: A New Colonialist Means of Pollution Transfer](https://link.springer.com/book/10.1007/978-3-031-51358-9), edited by Sedat Gündoğdu and published by Springer Nature in 2024.
 
 ## Case Study: Waste Impact in the Global South discussed in YouTube comments
 
