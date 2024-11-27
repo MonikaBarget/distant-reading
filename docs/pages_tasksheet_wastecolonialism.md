@@ -10,11 +10,11 @@ The term [waste colonialism](https://stopwastecolonialism.org/) is used by resea
 
 Several academic books now give an introduction to waste colonialism, often focussing on specific aspects such as plastic waste exports. One book you might find helpful is [Plastic Waste Trade: A New Colonialist Means of Pollution Transfer](https://link.springer.com/book/10.1007/978-3-031-51358-9), edited by Sedat Gündoğdu and published by Springer Nature in 2024.
 
-## Case Study: Waste Impact in the Global South discussed in YouTube comments
+## Waste impact in the Global South discussed in YouTube comments
 
 Many videos on YouTube cover aspects of what we consider data colonialism, but not all videos may officially use that term, which is why building a suitable playlist for data scraping can be difficult. One playlist whose videos unfortunately have no or very few reviews is the [Stop Waste Colonialism YouTube playlist](https://www.youtube.com/playlist?list=PL9MlUgj6K-_ihjD1IlNvjS4uKI6Q--xjP) curated by the [Or Foundation](https://theor.org/). This foundation is "a public charity in the USA and a registered charity in Ghana that has been operating in both countries since 2011" and helps disadvantaged groups and regions "escape the predominant violent socio-economic system of corporate colonialism and to change it from within." [Or Foundation mission](https://theor.org/mission) In this effort, the vision of the Or Foundation aligns with many other NGOs fighting global waste problems, e.g. in the Pacific Ocean, and of scientists that track the journeys of waste from country to country. Although their playlist is not suitable for text analysis per se, it can lead you to similar YouTube content with a sufficient number of comments. You can also search for terms like "waste export", "fast fashion" or "climate colonialism" to find interesting videos. 
 
-## Questions for Data Analysis
+## Questions for data analysis
 
 In a data analysis with Voyant Tools, you can try and answer the following questions:
 
