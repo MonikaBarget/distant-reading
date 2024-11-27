@@ -70,6 +70,7 @@ export default defineConfig({
           { text: 'Slavery', link: '/pages_tasksheet_slavery.md' },
           { text: 'Soraya Esfandiary', link: '/pages_tasksheet_sorayaesfandiary.md' },
           { text: 'True Crime', link: '/pages_tasksheet_truecrime.md' },
+          { text: 'Waste Colonialism', link: '/pages_tasksheet_wastecolonialism.md' },
           { text: 'Witchcraft', link: '/pages_tasksheet_witchcraft.md' }
         ]
       }
