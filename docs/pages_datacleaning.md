@@ -1,5 +1,31 @@
 # Advice for data cleaning
 
+## Why data cleaning can be necessary in computational text analysis
+
+Text data that comes from digital sources such as websites and social media platforms can pose several challenges for text analysis, 
+especially when third-party tools such as [Voyant](https://voyant-tools.org/) are used. One challenge is the frequent use of emojis and weblinks in digital communication.
+They can distract from the text content you wish to analyse, and many emojis don't resolve properly in Voyant Tools. 
+Special characters and certain punctuation marks can also appear distorted, e.g. when originally typed on Asian computers. 
+To avoid a messy "character salad" during your data analysis, you have two options:
+
+a) You can decide to remove emojis, links, and punctuation marks before ingesting the text data into your analysis tool. Check the sections below for further details.
+
+b) You can try to encode the entire file differently. Voyant Tools is designed to handle [UTF-8 encoding](https://www.w3schools.com/charsets/ref_html_utf8.asp) by default, as this is the most widely-used and robust standard for multilingual text processing. However, if special characters interfere with the parsing, you can also try one of the following encodings:
+
+- ISO-8859-1 (Latin-1):
+This is a simpler encoding for Western European languages and excludes emojis or certain symbols. It’s less robust than UTF-8 but might be useful for plain text without too many special characters.
+
+- ASCII:
+A basic encoding that only supports standard Latin characters. It will strip non-standard characters and emojis but may fail if your corpus includes accented characters (e.g., é, ñ, ü), so it is less useful for languages such as French, Spanish or German.
+
+To change the encoding of a plain text file, you can open it in a powerful text editor such as [Sublime](https://www.sublimetext.com/), which has a "Save with Encoding" option and allows you to select from a wide range of ISO encodings (see screenshot). 
+
+![image.png](../screenshots_distant_reading/Sublime_change-encoding.png)
+
+If you are working with Open Refine, you can also adjust the encoding there before saving the file to *.txt*. In Open Refine, the standard encoding also is UTF-8, but ASCII and Latin-1 are also available (see screenshot).
+
+![image.png](../screenshots_distant_reading/OpenRefine_change-encoding.png)
+
 ## Semi-manual data cleaning
 
 Up to a range of about 50000 social media posts, data can still be cleaned semi-manually in EXCEL, Open Refine or a browser-based cleaning tool. 
