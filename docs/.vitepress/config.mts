@@ -59,6 +59,7 @@ export default defineConfig({
       {
         text: 'Task Sheets',
         items: [
+          { text: 'Body Image', link: '/pages_tasksheet_bodyimage.md' },
           { text: 'Domestic Violence', link: '/pages_tasksheet_domesticviolence.md' },
           { text: 'Elon Musk', link: '/pages_tasksheet_elonmusk.md' },
           { text: 'Girlboss', link: '/pages_tasksheet_girlboss.md' },
