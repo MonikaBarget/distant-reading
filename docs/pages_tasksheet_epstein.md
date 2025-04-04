@@ -7,6 +7,12 @@ because Epstein, supported by his partner Ghislaine Maxwell, build a high-profil
 above all young girls and women from difficult backgrounds. Feminist analysis of how the Epstein case was discussed in 2019 when reporting peaked can help us understand how societal structures of power and privilege 
 enable such exploitation. We can also reflect on systemic gender inequalities and the role of female collaborators in predatory behaviour.
 
+### References on the Epstein case and abuse
+
+- Title 1
+- Title 2
+- Title 3
+
 ## Reviews to the Devil in the Darkness podcast
 
 One internationally successful podcast on the Epstein case was [Devil in the Darkness](https://podcasts.apple.com/us/podcast/epstein-devil-in-the-darkness/id1478027784),
