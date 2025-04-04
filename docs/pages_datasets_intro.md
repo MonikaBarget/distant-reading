@@ -1,6 +1,6 @@
 # Overview of data sets provided in this repository
 
-### Teaching text analyse with Twitter data in 2021 and 2022
+### Teaching text analysis with Twitter data in 2021 and 2022
 
 In 2021 and 2022, the coordinators of the Machines of Knowledge course taught computational text analysis with Twitter data because the Twitter API allowed allowed user-friendly access to a large amount of social media data on current topics. Among the topics that we explore in class in winter 2022 were the attack on a gay bar in Oslo, ethical debates around the FIFA Worldcup in Qatar, and Elon Musk's contested acquisition of Twitter: 
 
