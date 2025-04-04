@@ -4,11 +4,16 @@
 
 ## Waste management and waste reduction as global issues
 
-The term [waste colonialism](https://stopwastecolonialism.org/) is used by researchers, activists and NGOs. It refers to the practice of affluent nations exporting their waste, including plastics, e-waste or used fashion, to poorer countries. This practice, critics argue, disproportionately impacts vulnerable populations and ecosystems. As developed nations reduce waste in their own countries, also to meet environmental goals in the face of climate change, they often ship their garbage to the Global South, which gives the problem a (post)colonial dimension.
+The term [waste colonialism](https://stopwastecolonialism.org/) is used by researchers, activists and NGOs. (Author, date) It refers to the practice of affluent nations exporting their waste, including plastics, e-waste or used fashion, to poorer countries. This practice, critics argue, disproportionately impacts vulnerable populations and ecosystems. As developed nations reduce waste in their own countries, also to meet environmental goals in the face of climate change, they often ship their garbage to the Global South, which gives the problem a (post)colonial dimension.
 
 <img src="https://mikroplastik.org/wp-content/uploads/2024/03/Basliksiz-1.jpg" alt="book cover waste" style="float: left; width: 20%;">
 
-Several academic books now give an introduction to waste colonialism, often focussing on specific aspects such as plastic waste exports. One book you might find helpful is [Plastic Waste Trade: A New Colonialist Means of Pollution Transfer](https://link.springer.com/book/10.1007/978-3-031-51358-9), edited by Sedat Gündoğdu and published by Springer Nature in 2024.
+Several academic books now give an introduction to waste colonialism, often focussing on specific aspects such as plastic waste exports. One book you might find helpful is [Plastic Waste Trade: A New Colonialist Means of Pollution Transfer](https://link.springer.com/book/10.1007/978-3-031-51358-9), edited by Sedat Gündoğdu (date) and published by Springer Nature in 2024.
+
+### References on waste management and further reading
+
+- Title in full APA
+- Title in full APA
 
 ## Waste impact in the Global South discussed in YouTube comments
 
