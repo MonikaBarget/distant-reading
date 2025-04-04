@@ -6,31 +6,37 @@ In the [data section](https://github.com/MonikaBarget/distant-reading/data) of t
 
 The data sets we will use in Machines of Knowledge this year are the following:
 
-1) First tests with Voyant tools in class: [Menstruation Awareness data set](https://github.com/MonikaBarget/distant-reading/data/Data_AppStore_Menstruation), based on podcast reviews scraped during the first skills session
+1) First tests with Voyant tools in class: [Menstruation Awareness](https://monikabarget.github.io/distant-reading/pages_tasksheet_menstruation.html), based on podcast reviews scraped during the first skills session
 
-2) Voyant experiments in the data feminism lecture: [Miley Cyrus and the VMA2013 scandal data set](https://github.com/MonikaBarget/distant-reading/data/Twitter_VMA2013)
+2) Voyant experiments in the data feminism lecture: [Miley Cyrus and the VMA2013 scandal data set](https://monikabarget.github.io/distant-reading/pages_tasksheet_mileycyrus.html)
 
 3) Data sets you may use for your group presentations:
 
-- [Race and Diversity data set](https://github.com/MonikaBarget/distant-reading/data/Data_AppStore_Race_Diversity)
-- [Domestic Violence data set](https://github.com/MonikaBarget/distant-reading/data/Data_AppleStore_DomesticViolence)
-- [Epstein Abuse Network data set](https://github.com/MonikaBarget/distant-reading/data/Data_AppStore_Epstein)
-- [Girlboss data set](https://github.com/MonikaBarget/distant-reading/data/Data_AppStore_Girlboss)
+- [Body Image](https://monikabarget.github.io/distant-reading/pages_tasksheet_bodyimage.html)
+- [Domestic Violence](https://monikabarget.github.io/distant-reading/pages_tasksheet_domesticviolence.html)
+- [Epstein Abuse Network](https://monikabarget.github.io/distant-reading/pages_tasksheet_epstein.html)
+- [Girlboss](https://monikabarget.github.io/distant-reading/pages_tasksheet_girlboss.html)
+- [Race and Diversity](https://monikabarget.github.io/distant-reading/pages_tasksheet_race.html)
 
 To read brief descriptions of the data and find ideas for analysis, please go to the relevant tasksheet pages in the page menu.
 
 4) Case studies you can use (as an inspiration) for your final essays:
 
-- [Seretse Khama](../docs/pages_tasksheet_seretsekhama.md)
-- [SorayaEsfandiary](../docs/pages_tasksheet_sorayaesfandiary.md)
+[Seretse Khama](https://monikabarget.github.io/distant-reading/pages_tasksheet_seretsekhama.html)
+[Slavery](https://monikabarget.github.io/distant-reading/pages_tasksheet_slavery.html)
+[Soraya Esfandiary](https://monikabarget.github.io/distant-reading/pages_tasksheet_sorayaesfandiary.html)
+[Waste Colonialism](https://monikabarget.github.io/distant-reading/pages_tasksheet_wastecolonialism.html)
+[Witchcraft](https://monikabarget.github.io/distant-reading/pages_tasksheet_witchcraft.html)
 
-For the Khama and Esfandiary case studies, I have made YouTube playlists whose reviews you can scrape and use as a starting point for your essays. You can also use the suggested podcasts and scrape their reviews. If you want to compare these data with different data sets or apply a different theoretical approach, this is also possible.
+For these case studies, Monika Barget has created sample YouTube playlists whose reviews you can scrape and use as a starting point for your essays. You can also use the suggested podcasts and scrape their reviews. If you want to compare these data with different data sets or apply a different theoretical approach, this is also possible.
 
 ## **Ingest your data into Voyant Tools**
 
 Go to the [Voyant Tools](https://voyant-tools.org/) website and simply paste the URL of the data (as indicated in the link above) into the "add text" field. Press the blue "reveal" button and start exploring the dataset!
 
 ## **Tasks to perform in Voyant**
+
+Students often find it challenging to develop a logical workflow in Voyant as the interface offers so many analytical opportunities and show different visualisations at once. For beginners, a focus on a limited amount of tools, starting with a simple frequency analysis, is recommended. The steps below can easily be applied to different data sets and offer insights that ideally inspire critical close reading.
 
 ### **High-level analysis with word cloud and frequencies table**
 
@@ -42,7 +48,7 @@ Go to the [Voyant Tools](https://voyant-tools.org/) website and simply paste the
 ### **Comparative analysis with the "trends" tool**
 
 - Write down words that express emotions/people's feelings towards the show and its hosts. Put them into the trends tool. How did these emotions develop over time?
-- Try to find groups of words for comparative analysis in "trends". This group of words has to be homogeneous. You can, for example, look at different place names or trace the trends for different adjectives (e.g. "good", "bad", "exciting", "boring"). It does not make sense to combine terms from different word groups.
+- Try to find groups of words for comparative analysis in "trends". This group of words should be homogeneous in terms of word type or theme. You can, for example, look at different place names or trace the distribution of different adjectives (e.g. "good", "bad", "exciting", "boring"). It does not make sense to randomly combine terms from different word groups. 
 
 ### **Analysing co-occurrences/correlations with the "links" tool or the "correlations" tool**
 
@@ -60,4 +66,3 @@ Go to the [Voyant Tools](https://voyant-tools.org/) website and simply paste the
 - What is (un)expected?
 - What would have been difficult to find via close reading?
 - What research questions would be interesting to explore based on this dataset?
-
