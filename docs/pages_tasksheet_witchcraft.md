@@ -31,10 +31,10 @@ Data sets related to witchcraft and witch trials can range from historical recor
 
 ### Further readings on sources on witchcraft and witch trials
 
-- Espina-Jerez, B., Siles-González, J., Solano-Ruiz, M. C., & Gómez-Cantarino, S. (2023). Women health providers: materials on cures, remedies and sexuality in inquisitorial processes (15th–18th century). Frontiers in Psychology, 14. https://doi.org/10.3389/fpsyg.2023.1178499
-- Niehaus, I. (2013). Confronting uncertainty: Anthropology and zones of the extraordinary. American Ethnologist, 40(4), 651–660. https://doi.org/10.1111/amet.12045
--  Nkrumah-Pobi, S. K. B. (2024). The lynching of witches in northern Ghana. African Theological Journal for Church and Society, 5(1). https://doaj.org/article/f2e1d3f76fe744c39281c3a0396b6d35
--   Yadav, T. (2020). Witch Hunting: A Form of violence against Dalit Women in India. CASTE / a Global Journal on Social Exclusion, 1(2), 169–182. https://doi.org/10.26812/caste.v1i2.203
+- Espina-Jerez, B., Siles-González, J., Solano-Ruiz, M. C., & Gómez-Cantarino, S. (2023). Women health providers: materials on cures, remedies and sexuality in inquisitorial processes (15th–18th century). *Frontiers in Psychology*, 14. https://doi.org/10.3389/fpsyg.2023.1178499
+- Niehaus, I. (2013). Confronting uncertainty: Anthropology and zones of the extraordinary. *American Ethnologist*, 40(4), 651–660. https://doi.org/10.1111/amet.12045
+-  Nkrumah-Pobi, S. K. B. (2024). The lynching of witches in northern Ghana. *African Theological Journal for Church and Society*, 5(1). https://doaj.org/article/f2e1d3f76fe744c39281c3a0396b6d35
+-   Yadav, T. (2020). Witch Hunting: A Form of violence against Dalit Women in India. *CASTE / a Global Journal on Social Exclusion*, 1(2), 169–182. https://doi.org/10.26812/caste.v1i2.203
 
 ## Modern debates on witchcraft in social media posts and YouTube comments
 
