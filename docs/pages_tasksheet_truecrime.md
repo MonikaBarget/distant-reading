@@ -4,9 +4,21 @@
 
 ## The cultural relevance of True Crime podcasts
 
-**True crime** is one of the most popular media genres of the digital age. Its popularity can be attributed to a captivating blend of mystery, suspense, real-world drama and, in many cases, troubling insights into subcultures, politics, and police work. It taps into our fascination with the darker aspects of human nature, providing a window into the minds of both criminals and investigators. Analysing true crime podcast reviews via distant reading offers a unique opportunity to better understand why listeners tune in and what they like about their favourite shows, but also what they think should be improved. By employing computational tools to sift through countless reviews, we can identify recurring themes and patterns that we might overlook in a close reading approach.
+**True crime** is one of the most popular media genres of the digital age (Richards, 2023). Its popularity can be attributed to a captivating blend of mystery, suspense, real-world drama and, in many cases, troubling insights into subcultures, politics, and police work. It taps into our fascination with the darker aspects of human nature, providing a window into the minds of both criminals and investigators. Analysing true crime podcast reviews via distant reading offers a unique opportunity to better understand why listeners tune in and what they like about their favourite shows, but also what they think should be improved. By employing computational tools to sift through countless reviews, we can identify recurring themes and patterns that we might overlook in a close reading approach.
 
-For your first distant reading experiments, we would like you to work with a relatively small datasets of [reviews](https://raw.githubusercontent.com/MonikaBarget/distant-reading/tree/main/data/Webscraping_samplePodcastReviews/Serial-1-and-2-stars-sub-corpus-csv.txt) on the successful American true crime podcast [Serial](https://podcasts.apple.com/us/podcast/serial/id917918570). All the reviews selected for the dataset have 1 or 2 star ratings, so listeners who left the reviews obviously did not like it all that much. The dataset only contains the reviews and does not give you any indication who posted them when. To find that out, you can consult the [full data set in CSV format](https://github.com/MonikaBarget/distant-reading/blob/main/data/Webscraping_samplePodcastReviews/Serial_1-and-2-stars_sub-corpus.csv).
+For your first distant reading experiments, we would like you to work with a relatively small datasets of [reviews](https://raw.githubusercontent.com/MonikaBarget/distant-reading/tree/main/data/Webscraping_samplePodcastReviews/Serial-1-and-2-stars-sub-corpus-csv.txt) on the successful American true crime podcast [Serial](https://podcasts.apple.com/us/podcast/serial/id917918570) (Reed et al., 2014–present). All the reviews selected for the dataset have 1 or 2 star ratings, so listeners who left the reviews obviously did not like it all that much. The dataset only contains the reviews and does not give you any indication who posted them when. To find that out, you can consult the [full data set in CSV format](https://github.com/MonikaBarget/distant-reading/blob/main/data/Webscraping_samplePodcastReviews/Serial_1-and-2-stars_sub-corpus.csv).
+
+### References on cultural relevance of True Crime podcasts
+
+- Reed, B., Chace, Z., Joffe-Walt, C., Syed, H., Updike, N., & Koenig, S. (Hosts). (2014–present). *Serial* [Audio podcast]. Serial Productions & The New York Times. https://podcasts.apple.com/us/podcast/serial/id917918570
+- Richards, E. (2023, July 17). True crime: Insight into the human fascination with the who-done-it. *Social Science Space*. https://www.socialsciencespace.com/2023/07/true-crime-insight-into-the-human-fascination-with-the-who-done-it/
+
+## Further Readings on cultural relevance of True Crime media
+
+- Fathallah, J. (2022). ‘BEING a FANGIRL OF a SERIAL KILLER IS NOT OK’: Gatekeeping Reddit’s true crime community. New Media & Society, 26(10), 5638–5657. https://doi.org/10.1177/14614448221138768
+- Linke, C., & Brune, L. (2025). Intimate yet exploitative: Representations of Gender-Based violence in platformed true crime narratives. Media and Communication, 13. https://doi.org/10.17645/mac.8964
+- Peters, F. (2020). True crime narratives. Crime Fiction Studies, 1(1), 23–40. https://doi.org/10.3366/cfs.2020.0005
+- Sherrill, L. A. (2020). The “Serial Effect” and the True Crime Podcast Ecosystem. Journalism Practice, 16(7), 1473–1494. https://doi.org/10.1080/17512786.2020.1852884
 
 ## Ingest your data into Voyant Tools
 
