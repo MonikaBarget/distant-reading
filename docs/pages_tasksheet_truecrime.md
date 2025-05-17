@@ -15,10 +15,10 @@ For your first distant reading experiments, we would like you to work with a rel
 
 ## Further Readings on cultural relevance of True Crime media
 
-- Fathallah, J. (2022). ‘BEING a FANGIRL OF a SERIAL KILLER IS NOT OK’: Gatekeeping Reddit’s true crime community. New Media & Society, 26(10), 5638–5657. https://doi.org/10.1177/14614448221138768
-- Linke, C., & Brune, L. (2025). Intimate yet exploitative: Representations of Gender-Based violence in platformed true crime narratives. Media and Communication, 13. https://doi.org/10.17645/mac.8964
-- Peters, F. (2020). True crime narratives. Crime Fiction Studies, 1(1), 23–40. https://doi.org/10.3366/cfs.2020.0005
-- Sherrill, L. A. (2020). The “Serial Effect” and the True Crime Podcast Ecosystem. Journalism Practice, 16(7), 1473–1494. https://doi.org/10.1080/17512786.2020.1852884
+- Fathallah, J. (2022). ‘BEING a FANGIRL OF a SERIAL KILLER IS NOT OK’: Gatekeeping Reddit’s true crime community. *New Media & Society*, 26(10), 5638–5657. https://doi.org/10.1177/14614448221138768
+- Linke, C., & Brune, L. (2025). Intimate yet exploitative: Representations of Gender-Based violence in platformed true crime narratives. *Media and Communication*, 13. https://doi.org/10.17645/mac.8964
+- Peters, F. (2020). True crime narratives. *Crime Fiction Studies*, 1(1), 23–40. https://doi.org/10.3366/cfs.2020.0005
+- Sherrill, L. A. (2020). The “Serial Effect” and the True Crime Podcast Ecosystem. *Journalism Practice*, 16(7), 1473–1494. https://doi.org/10.1080/17512786.2020.1852884
 
 ## Ingest your data into Voyant Tools
 
