@@ -58,7 +58,7 @@ If you are more interested in how present-day audiences discuss historical witch
 
 ## Further Reading on Witchcraft and TikTok
 
-- Miller, C. (2022). How Modern Witches Enchant TikTok: Intersections of Digital, Consumer, and Material Culture(s) on #WitchTok. Religions, 13(2), 118. https://doi.org/10.3390/rel13020118
+- Miller, C. (2022). How Modern Witches Enchant TikTok: Intersections of Digital, Consumer, and Material Culture(s) on #WitchTok. *Religions*, 13(2), 118. https://doi.org/10.3390/rel13020118
 
 ## Questions for Data Analysis
 
