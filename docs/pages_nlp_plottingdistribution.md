@@ -2,9 +2,60 @@
 
 ## Definition of probability distribution
 
-According to the Geeks for Geeks article [Statistics in natural langauge processing](https://www.geeksforgeeks.org/statistics-in-natural-language-processing/), a variety of statistical concepts and methods are used in NLP. One aspect so-called *Descriptive Statistics*, which include frequency counts (e.g. represented in word clouds), measures of Central Tendency (mean, median, mode), and measures of dispersion (e.g. for analysing "variability in word or sentence lengths"). Another important statistical concept often used in NLP are the so-called *Probability Distributions*. 
+According to the Geeks for Geeks article [Fundamentals of statistics in natural langauge processing](https://www.geeksforgeeks.org/statistics-in-natural-language-processing/), a variety of statistical concepts and methods are used in NLP. One aspect are so-called *descriptive statistics*, which include frequency counts (e.g. represented in word clouds), measures of Central Tendency (mean, median, mode), and measures of dispersion (e.g. for analysing "variability in word or sentence lengths"). Another important statistical concept often used in NLP are so-called *probability distributions*. 
 
-:hammer_and_wrench: Under construction
+Julia Hockenmaier, lecturer at the Sibel Center, University of Illinois, has outlined the most common probability models for NLP in [a lecture for the course CS447: Natural Language Processing](https://courses.grainger.illinois.edu/cs447/fa2020/Slides/Lecture03.pdf). This lecture introduces students to how language models "define probability distributions over the strings in a language" (slide 5), explains n-gram models and outlines "some very basic probability theory".
+
+Slides 11 and 12 explain sampling with replacement (often covered in secondary school mathematics courses as well) and applies this process to a text as a "bag of words" (slide 13).
+
+Page 16 defines a probability distribution over omega as frequently used in NLP. Page 17 explains discrete probability (fixed, often finite, number of outcomes), Bernoulli distribution, and categorical distribution. Page 18 moves on to the importance of joint probability (of two attributes, such as shape + colour), which leads to the so-called chain rule. (Slide 19) After defining the concept of an independent variable, slide 21 explains how a probability model (in NLP) is constructed from the model definition and the estimation of the model's parameters:
+
+<blockquote>Probability models (almost) always make
+independence assumptions.
+— Even though X and Y are not actually independent,
+our model may treat them as independent.
+— This can drastically reduce the number of parameters to estimate.
+— Models without independence assumptions have (way)
+too many parameters to estimate reliably from the data we have
+— But since independence assumptions are often incorrect,
+those models are often incorrect as well:
+they assign probability mass to events that cannot occur</blockquote>
+
+Slide 23: <blockquote>An n-gram language model assumes each word
+depends only on the last n−1 words.</blockquote>
+
+Slide 29 is important because it recounts a mathematical definition of language:
+
+<blockquote>CS447 Natural Language Processing (J. Hockenmaier) https://courses.grainger.illinois.edu/cs447/
+From n-gram probabilities to language models
+Recall: a language L ⊆ V* is a (possibly infinite) set of strings
+over a (finite) vocabulary V.
+P(w(i) | w(i-1)) defines a distribution over the words in V:
+By multiplying this distribution N times, we get
+one distribution over all strings of the same length N (VN):
+Prob. of one N-word string:
+Prob. of all N-word strings
+But instead of N separate distributions…
+…we want one distribution over strings of any length
+∀w ∈ V : [ ∑
+w′∈V
+P(w(i) = w′ ∣ w(i−1) = w)] = 1
+P(w1 . . . wN) = ∏
+i=1...N
+P(w(i) = wi ∣ w(i−1) = wi−1)
+P(VN) = ∑
+w,w′∈</blockquote>
+
+Elements that matter in language models are "end-of-sentence" (EOS) tokens. We end up with strings of varying lengths, but we want to be able to compare probabilities across all strings in a typical text, so it is important to calculate one distribution over the entire text. Vice versa, having one distribution makes it possible to "generate strings of arbitrary length with one model." (Slide 32)
+
+A large amount of text is needed as training data to "learn" or "estimate" the parameters typical of a language model and develop reliable probabilities. One basic technique is "relative frequency estimation", also known as "Maximum Likelihood Estimation" (MLE), see slide 34. This can be fine-tuned by not only using EOS but also operating with "beginning-of-sentence" (BOS) symbols.
+
+Language models cannot only be used to analyse language but also to (randomly) create sentences. (Slide 39) The examples given on the following slides do not necessarily make sense (yet) but show typical features of the text types chosen, e.g. frequently used vocabulary in a business journal or a Shakespeare work, combined with typical sentence structures. Differences between adjectives, verbs, adverbs and nouns are not recognized in this symbol model to a sufficient degree, but it is clear that the quadrigram output is more logical than the unigram output that just puts individual words behind each other. A quadigram output includes grammatically correct sentences like "Will you not tell me who I am?"
+
+Slide 47 ff. describe "smoothing methods", but those are not relevant for students who merely want to work with language models analytically.
+
+Slide 50 differentiates between intrinsic and extrinsic evaluations of language models and addresses the challenges of defining evaluation metrics more generally.
+
 
 Recommended lecture on [Probability Models for NLP](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://courses.grainger.illinois.edu/cs447/fa2020/Slides/Lecture03.pdf&ved=2ahUKEwibh46n28yJAxXx9bsIHauuDNkQFnoECBMQAQ&usg=AOvVaw2q5YGp2ei5kG-8cN3PGHY5)
 
@@ -86,3 +137,7 @@ The terms grid functions like other grids and you can sort terms alphabetically 
     Add Term: you can search for and add new terms
 
 :hammer_and_wrench: Under construction
+
+### Works cited and recommendations for further reading
+
+Fundamentals of statistics in natural language processing(Nlp). (2024, July 15). GeeksforGeeks. [https://www.geeksforgeeks.org/statistics-in-natural-language-processing](https://www.geeksforgeeks.org/statistics-in-natural-language-processing)
