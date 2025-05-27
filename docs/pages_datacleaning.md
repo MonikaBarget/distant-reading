@@ -41,3 +41,14 @@ Up to a range of about 50000 social media posts, data can still be cleaned semi-
 Large data sets can cause severe performance issues when opened in tools like EXCEL, so cleaning via script is recommended. The following script permits the cleaning of all kinds of social media collected in .txt format, with a special focus on deleting @ signs, hashtags, URLs and emojis:
 
 - [Clean data with Python](https://github.com/MonikaBarget/distant-reading/tree/main/python/Clean_data.py)
+
+### Cited works and recommendations for further reading
+
+- Maloney, K. (2021, September 27). Subject guides: Text and data mining: 4. Cleaning and preparing data. https://libguides.library.usyd.edu.au/text_data_mining/cleaning
+- Metaweb Technologies, Inc. (2012). OpenRefine. https://openrefine.org/
+- Rinker, T. (2020). Textstem [R]. https://github.com/trinker/textstem (Original work published 2017)
+- Text Cleaner: Text Cleaning and Text Formatting Online. (n.d.). Text Cleaner. Retrieved October 13, 2021, from https://textcleaner.net/
+- Text Cleanser app (no longer under active development). (n.d.). Retrieved October 13, 2021, from https://apps.nozavi.com/apps/others/older-apps.html
+- TextCleanr—Text Cleaner Tool. (n.d.). Retrieved October 13, 2021, from https://www.textcleanr.com/
+- Trifacta Wrangler. (n.d.). Retrieved October 14, 2021, from https://cloud.trifacta.com/sign-in
+
