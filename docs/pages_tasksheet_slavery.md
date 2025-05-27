@@ -48,7 +48,15 @@ If you want to focus on recent discussions of the legacy of slavery or on debate
 
 You may also want to scrape the reviews for the [History Extra](https://podcasts.apple.com/at/podcast/history-extra-podcast/id256580326) podcast and search for reactions to one of their several episodes on slavery, slave revolts, and abolitionism.
 
+#### Cited works and recommended readings
 
+@Johanna: Please add more and maybe find links for the books below! :-)
+
+- Balkenhol, M. (2021). Tracing Slavery: The Politics of Atlantic Memory in The Netherlands. Berghahn Books.
+- Reybrouck, D. van. (2014). Congo. HarperCollins UK.
+- Wickramasinghe, N. (2020). Slave in a Palanquin: Colonial Servitude and Resistance in Sri Lanka. Columbia University Press.
+- Qureshi, S. (2011). Peoples on Parade: Exhibitions, Empire, and Anthropology in Nineteenth-Century Britain. University of Chicago Press.
+- Oostindie, G., & Roitman, J. V. (2014). Dutch Atlantic Connections, 1680-1800: Linking Empires, Bridging Borders. BRILL.
 
 ### Questions for Data Analysis on Slavery Case Study
 
