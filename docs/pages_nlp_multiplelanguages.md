@@ -14,7 +14,7 @@ When you decide that individual words in a non-dominant language distort your da
 
 ## Language-coding with AI
 
-To give you an example of how LLMs can be used to language-code your data, I am sharing the prompt that I gave to Mistral AI to add language information to a small sample CSV file:
+To give you an example of how LLMs can be used to language-code your data, I am sharing the prompt that I gave to [Mistral AI](https://mistral.ai/) to add language information to a small sample CSV file:
 
 <blockquote>I am giving you a test CSV file with social media posts. Your task is to expand the table with a "language" column and add a country code for the language in which each post is written.</blockquote>
 
