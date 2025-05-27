@@ -12,4 +12,21 @@ There are different ways to handle multilingual data, and it is important that y
 
 When you decide that individual words in a non-dominant language distort your data analysis and are not necessary for answering your research question, you can remove those words by adding them to the stopword list in Voyant Tools. Most foreign words in an English-dominated data set will not be very frequent and may thus not even appear in the top-100 most frequent words, so you may also want to keep them and perhaps check their context when they are important for the social identities of people that use them or when they introduce a particular discourse to your dataset. When a data set is rather equally divided between languages and you would like to analyse them separately, filtering the data in Open Refine first is highly recommended. Data collected via an official social media API often come with a country code per post that can help you with this process, but there can also be cases where you may need to create your own `language` column. You can then either manually go through the data and assign a language code such as `en` for English there, are use AI to help you with the process. When using AI, it is important to fully anonymise the data first so that no sensitive information is stored on a third-party could and / or used for model training.
 
-ADD CONCRETE STEPS HOW TO USE AI (e.g. MISTRAL) for language-coding!
+## Language-coding with AI
+
+To give you an example of how LLMs can be used to language-code your data, I am sharing the prompt that I gave to Mistral AI to add language information to a small sample CSV file:
+
+<blockquote>I am giving you a test CSV file with social media posts. Your task is to expand the table with a "language" column and add a country code for the language in which each post is written.</blockquote>
+
+Below the prompt, I pasted in several tables rows from a social media file containing text both in English and in Japanese. The result I received was the following:
+
+<blockquote>I understand your task. You want to add a "language" column to the table and identify the language of each post using the country code. Let's start by processing the data to add the new column and then determine the language for each post. It seems that the `langdetect` library is not available in this environment. However, I can manually identify the languages and map them to country codes based on the content of the posts. Let's proceed with that approach. Here is the updated table with the "language" column: (...)</blockquote>
+
+As you can see in the screenshot, Mistral's AI chatbot <em>Le Chat</em> was able to correctly identify the post language. It was then possible for me to copy the data from the new column into my existing CSV file and proceed with data filtering in Open Refine. As AI tools tend to hallucinate and change text, e.g. when they hit the output rate limit, you absolutely have to double-check the results, however, and I would not recommend letting AI re-create the entire file for you as it can also manipulate the original posts without you noticing.
+
+## Script-based approaches to recognising and filtering languages
+
+ADD USEFUL PYTHON AND R PACKAGES HERE!
+
+
+
