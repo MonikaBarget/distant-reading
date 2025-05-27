@@ -1,3 +1,5 @@
+# An introduction to Voyant Tools
+
 ## Why text analysis with Voyant Tools
 
 Voyant Tools is a web-based text analysis and visualization platform that is popular in the humanities and social sciences. Voyant Tools is user-friendly and freely available online. It can be used by researchers without any technical expertise. The platform offers a variety of data visualisations, such as word clouds, word frequency charts, and dispersion plots, which can help users identify patterns, trends, and anomalies in a text corpus. Visualisations can make it easier to engage with and interpret large amounts of textual data (that may be impossible to read in a reasonable amount of time). Researchers can adjust parameters, apply filters, and experiment with various visualizations to uncover new perspectives. This process of computational text analysis is also called *distant reading* (as opposed to traditional *close reading*).
@@ -65,3 +67,12 @@ If you have more than one text, you will see that the trends graph show each tex
 - Propose future research topics that could be interesting to explore based on your findings.
 
 Of course, you do not have to follow these instructions verbatim. They are merely a suggestion to help you get started. Depending on your corpus, [other tools in Voyant](https://voyant-tools.org/docs/#!/guide/) might also be of interest, and you may not want to follow the steps in the exact same order.
+
+### Cited works and recommended tutorials
+
+- Dickerson, M. (2018, November). A Gentle Introduction to Text Analysis with Voyant Tools [Presentation].
+- Priestley, A. (2014). Voyant Tools: A Tutorial for Text Analysis. Medium. https://medium.com/@priestleyal/voyant-tools-a-tutorial-for-text-analysis-df265d85d214
+- Story, D. (n.d.). Library Guides: Tutorials + Resources: Voyant. Retrieved October 11, 2021, from https://guides.library.ucsc.edu/DS/Resources/Voyant
+- Villanova University Library. (n.d.). Text Analysis 101: Voyant Tools. Retrieved October 11, 2021, from https://library.villanova.edu/application/files/9815/8739/5480/VoyantToolsParadiseLostTutorial.pdf
+- Voyant Official Website. (2018). Tutorial/Workshop—Voyant Tools Help. https://voyant-tools.org/docs/#!/guide/tutorial
+
