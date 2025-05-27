@@ -1,6 +1,8 @@
 # Distant reading case study "waste colonialism"
 
-:book: I use this case study in my postcolonialism lecture to showcase a postcolonial reading of a contemporary data set.
+:book: This case study is discussed in my postcolonialism lecture for the MA DC Machines of Knowledge course to showcase a postcolonial reading of a contemporary data set. The lecture introduces postcolonial theory as a diverse academic approach that developed over time and is now practised by researchers from different backgrounds. As a consequence, definitions and goals of postcolonial theory are also contested, and some scholars have offered provocative revisions of how we read the colonial past. 
+
+<a href="https://mediasite.maastrichtuniversity.nl/Mediasite/Play/a77329409890416782957b122e9c094a1d">Watch the lecture on the UM mediasite.</a>
 
 ## Waste management and waste reduction as global issues
 
