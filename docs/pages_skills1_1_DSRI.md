@@ -58,6 +58,44 @@ When instantiating the template, you will need to provide some parameters, such 
 
 ![File Explorer Screenshot](../screenshots_dsri/image-5.png)
 
-**IMPORTANT: Always download your datasets to your local machine and make sure to have backups!**
+>[!NOTE]
+> Always download your datasets to your local machine and make sure to have backups!**
 
 🙌 These instructions were provided by Arnoud Wils (The Plant, FASoS). 
+
+# Restarting a pod after not using DSRI for a longer period of time
+
+In order to save resources, our IT department at Maastricht University scales down unused pods, so when you log in to DSRI after a longer period of time, you can still find the project, but all the active pods are gone. Please do not worry: this is common practice and does not mean that your data are lost. You can easily restart the pod and continue from where you left off by scaling it from "0" "1" under ```details``` after clicking the pod. If you find this too difficult to handle, you can also contact the DSRI support at Maastricht University to do this for you.
+Other institutional coding infrastructures running on Kubernetes most likely have similar procedures. Advanced users who can manage a Linux command line can also open the terminal for their respective project and restart the pod there.
+
+Here is what restarting an OCR4all project hosted on the UM DSRI looked like in the terminal:
+
+## Welcome message in the terminal after opening it
+
+```Welcome to the OpenShift Web Terminal. Type "help" for a list of installed CLI tools.```
+
+## Command to check for active pods in bash-4.4
+
+```kubectl get pods```
+
+This retrieved the following status information:
+
+```
+NAME           READY   STATUS    RESTARTS   AGE
+workspace$$$   2/2     Running   0          2m36s
+```
+
+## Command to see deployments within the project
+
+```kubectl get deployments```
+
+In our case, two deployments were available:
+
+```
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE
+ocr4all-$$$           0/0     0            0           451d
+workspace$$$   1/1     1            1           3m24s
+```
+## Command to scale pod for selected project to "1"
+
+```kubectl scale deployment ocr4all-p70088617 --replicas=1```
