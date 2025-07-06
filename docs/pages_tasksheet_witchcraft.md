@@ -43,7 +43,7 @@ In your data analysis, you can follow the steps outlined in Skill 2.1 on Voyant 
 
 Be sure to use several different tools in Voyant for your analysis. Additionally, consider comparing different types of records, e.g. those representing the perspectives of different social agents.
 
-##Cited Works and Further Readings
+### Cited Works and Further Readings
 
 - Cornell University Library. (n.d.). *Digital Witchcraft Collection.* https://digital.library.cornell.edu/catalog?f%5Bcollection_tesim%5D%5B%5D=Digital+Witchcraft+Collection&q=&search_field=all_fields
 - Espina-Jerez, B., Siles-González, J., Solano-Ruiz, M. C., & Gómez-Cantarino, S. (2023). Women health providers: Materials on cures, remedies and sexuality in inquisitorial processes (15th–18th century). *Frontiers in Psychology,* 14. https://doi.org/10.3389/fpsyg.2023.1178499
