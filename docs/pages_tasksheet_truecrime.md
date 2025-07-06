@@ -8,18 +8,6 @@
 
 For your first distant reading experiments, we would like you to work with a relatively small datasets of [reviews](https://raw.githubusercontent.com/MonikaBarget/distant-reading/tree/main/data/Webscraping_samplePodcastReviews/Serial-1-and-2-stars-sub-corpus-csv.txt) on the successful American true crime podcast [Serial](https://podcasts.apple.com/us/podcast/serial/id917918570) (Reed et al., 2014–present). All the reviews selected for the dataset have 1 or 2 star ratings, so listeners who left the reviews obviously did not like it all that much. The dataset only contains the reviews and does not give you any indication who posted them when. To find that out, you can consult the [full data set in CSV format](https://github.com/MonikaBarget/distant-reading/blob/main/data/Webscraping_samplePodcastReviews/Serial_1-and-2-stars_sub-corpus.csv).
 
-### References on cultural relevance of True Crime podcasts
-
-- Reed, B., Chace, Z., Joffe-Walt, C., Syed, H., Updike, N., & Koenig, S. (Hosts). (2014–present). *Serial* [Audio podcast]. Serial Productions & The New York Times. https://podcasts.apple.com/us/podcast/serial/id917918570
-- Richards, E. (2023, July 17). True crime: Insight into the human fascination with the who-done-it. *Social Science Space*. https://www.socialsciencespace.com/2023/07/true-crime-insight-into-the-human-fascination-with-the-who-done-it/
-
-## Further Readings on cultural relevance of True Crime media
-
-- Fathallah, J. (2022). ‘BEING a FANGIRL OF a SERIAL KILLER IS NOT OK’: Gatekeeping Reddit’s true crime community. *New Media & Society*, 26(10), 5638–5657. https://doi.org/10.1177/14614448221138768
-- Linke, C., & Brune, L. (2025). Intimate yet exploitative: Representations of Gender-Based violence in platformed true crime narratives. *Media and Communication*, 13. https://doi.org/10.17645/mac.8964
-- Peters, F. (2020). True crime narratives. *Crime Fiction Studies*, 1(1), 23–40. https://doi.org/10.3366/cfs.2020.0005
-- Sherrill, L. A. (2020). The “Serial Effect” and the True Crime Podcast Ecosystem. *Journalism Practice*, 16(7), 1473–1494. https://doi.org/10.1080/17512786.2020.1852884
-
 ## Ingest your data into Voyant Tools
 
 Go the the [Voyant Tools](https://voyant-tools.org/) website and simply paste the URL of the data (as indicated in the link above) into the "add text" field. Press the blue "reveal" button and start exploring the data set!
@@ -53,3 +41,12 @@ Go the the [Voyant Tools](https://voyant-tools.org/) website and simply paste th
 - What is (un)expected?
 - What would have been difficult to find via close reading?
 - What research questions would be interesting to explore based on this data set?
+
+### Cited Works and Further Readings
+
+- Fathallah, J. (2022). ‘Being a fangirl of a serial killer is not OK’: Gatekeeping Reddit’s true crime community. *New Media & Society, 26*(10), 5638–5657. https://doi.org/10.1177/14614448221138768
+- Linke, C., & Brune, L. (2025). Intimate yet exploitative: Representations of gender-based violence in platformed true crime narratives. *Media and Communication, 13.* https://doi.org/10.17645/mac.8964
+- Peters, F. (2020). True crime narratives. *Crime Fiction Studies, 1*(1), 23–40. https://doi.org/10.3366/cfs.2020.0005
+- Reed, B., Chace, Z., Joffe-Walt, C., Syed, H., Updike, N., & Koenig, S. (Hosts). (2014–present). *Serial* [Audio podcast]. Serial Productions & The New York Times. https://podcasts.apple.com/us/podcast/serial/id917918570
+- Richards, E. (2023, July 17). *True crime: Insight into the human fascination with the who-done-it.* Social Science Space. https://www.socialsciencespace.com/2023/07/true-crime-insight-into-the-human-fascination-with-the-who-done-it/
+- Sherrill, L. A. (2020). The “Serial Effect” and the true crime podcast ecosystem. *Journalism Practice, 16*(7), 1473–1494. https://doi.org/10.1080/17512786.2020.1852884
