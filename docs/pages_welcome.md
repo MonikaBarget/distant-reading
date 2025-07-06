@@ -17,20 +17,21 @@ I have developed the resources shared here in close collaboration with my studen
 
 If you have questions or would like to collaborate, please reach out! You can connect with me in the Faculty of Arts and Social Sciences (FASoS) at Maastricht University or [find me on Mastodon](https://akademienl.social/@mob).
 
-### Works cited and recommended readings
+### Cited Works and Further Readings
 
-- Aurnhammer, C., Cuppen, I., Ven, I. van de, & Zaanen, M. van. (2019). Manual Annotation of Unsupervised Models: Close and Distant Reading of Politics on Reddit. Digital Humanities Quarterly, 013(3).
-- BEST PRACTICES IN READING: A 21st Century Skill Update. (n.d.). Retrieved August 15, 2019, from https://www.jstor.org/stable/pdf/24573611.pdf?ab_segments=0%2Fbasic_SYC-4341%2Fcontrol&refreqid=search%3A7b29a972a321a069c2998667a72c7ecd
-- Caulfield, J. (2019, November 8). Textual Analysis | Guide, 3 Approaches & Examples. Scribbr. https://www.scribbr.com/methodology/textual-analysis/
-- Fleming, P. (2017). Tragedy, for Example: Distant Reading and Exemplary Reading (Moretti). New Literary History, 48(3), 437–455.
-- Gabi, K. (2022). Computation as Context: New Approaches to the Close/Distant Reading Debate. College Literature, 49(1), 1–25. https://doi.org/10.1353/lit.2022.0000
-- Gelfgren, S., & Drakman, A. (2023). How to combine close and distant reading within the history of science and ideas: Two examples from ongoing research. Lychnos: Lärdomshistoriska Samfundets Årsbok = Annual of the Swedish History of Science Society, 85–108. https://doi.org/10.48202/24128
-- Jänicke, S., Franzini, G., Cheema, M. F., & Scheuermann, G. (n.d.). On Close and Distant Reading in Digital Humanities: A Survey and Future Challenges.
-- Stokes, L. (2022, September 11). DISTANT-READING: Changing how European literary history is written. COST. https://www.cost.eu/distant-reading/
-- Taylor, J., Gregory, I., & Donaldson, C. (2018). Combining Close and Distant Reading: A Multiscalar Analysis of the English Lake District’s Historical Soundscape. International Journal of Humanities and Arts Computing, 12, 163–182. https://doi.org/10.3366/ijhac.2018.0220
-- Bludau, M.-J., Brüggemann, V., Busch, A., & Dörk, M. (2020). Reading Traces: Scalable Exploration in Elastic Visualizations of Cultural Heritage Data. Computer Graphics Forum, 39(3), 77–87. https://doi.org/10.1111/cgf.13964
-- Fickers, A., & Clavert, F. (2021). On pyramids, prisms, and scalable reading. Journal of Digital History, jdh001. https://journalofdigitalhistory.org/en/article/jXupS3QAeNgb
-- Weitin, T. (2017). Scalable Reading. Zeitschrift für Literaturwissenschaft und Linguistik, 47(1), 1–6. https://doi.org/10.1007/s41244-017-0048-4
+- Aurnhammer, C., Cuppen, I., van de Ven, I., & van Zaanen, M. (2019). Manual Annotation of Unsupervised Models: Close and Distant Reading of Politics on Reddit. *DHQ: Digital Humanities Quarterly, 13*(3).
+- Bludau, M.-J., Brüggemann, V., Busch, A., & Dörk, M. (2020). Reading traces: Scalable exploration in elastic visualizations of cultural heritage data. *Computer Graphics Forum, 39*(3), 77–87. https://doi.org/10.1111/cgf.13964
+- Caulfield, J. (2019, November 8). *Textual Analysis | Guide, 3 approaches & examples.* Scribbr. https://www.scribbr.com/methodology/textual-analysis/
+- Clavert, F., & Fickers, A. (2018). On pyramids, prisms, and scalable reading. *Journal of Digital History, 1*(1). https://journalofdigitalhistory.org/en/article/jXupS3QAeNgb
+- COST Association. (2022, September 12). *Changing the way European literary history is written with distant-reading.* COST. https://www.cost.eu/distant-reading/
+- Drakman, A., & Gelfgren, S. (2023). How to combine close and distant reading within the history of science and ideas: Two examples from ongoing research. *Lychnos, 2022,* 85–108. https://doi.org/10.48202/24128
+- Fleming, P. (2017). Tragedy, for example: distant reading and exemplary reading (Moretti). *New Literary History, 48*(3), 437–455. https://doi.org/10.1353/nlh.2017.0021
+- Gabi, K. (2022). Computation as Context: New Approaches to the Close/Distant Reading Debate. *College Literature, 49*(1), 1–25. https://doi.org/10.1353/lit.2022.0000
+- Jänicke, S., Franzini, G., Cheema, M. F., & Scheuermann, G. (2015). On close and distant reading in digital humanities: A survey and future challenges. *Eurographics,* 83–103. https://doi.org/10.2312/eurovisstar.20151113
+- Roskos, K., & Neuman, S. B. (2014). Best practices in reading: A 21st century skill update. *The Reading Teacher, 67*(7), 507–511. http://www.jstor.org/stable/24573611
+- Taylor, J. E., Gregory, I. N., & Donaldson, C. (2018). Combining close and distant reading: A multiscalar analysis of the English Lake District’s historical soundscape. *International Journal of Humanities and Arts Computing, 12*(2), 163–182. https://doi.org/10.3366/ijhac.2018.0220
+- Weitin, T. (2017). Scalable reading. *Zeitschrift für Literaturwissenschaft und Linguistik, 47*(1), 1–6. https://doi.org/10.1007/s41244-017-0048-4
+
 
 
 
