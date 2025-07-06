@@ -34,3 +34,17 @@ Here are some research questions that you could explore based on the YouTube com
 * Do you think that the YouTube comments represent a form of public dialogue about history, identity, and gender?
 
 In Voyant Tools, you may need different tools to answer these questions, so do not just focus on the word cloud / cirrus but also make use of tools showing you co-occurrences and keywords in context.
+
+## Cited Works and Further Readings 
+
+- Atlas Wealth Management. (2017–present). *The Expat Chat Podcast* [Audio podcast]. https://podcasts.apple.com/us/podcast/the-expat-chat-podcast/id1229534614
+- Capozzalo, O., & Freeman, S. (2017–2022). *She’s in Russia* [Audio podcast]. https://podcasts.apple.com/us/podcast/shes-in-russia/id1247502890
+- Daute, V. (2023–present). *Worlds Collide: The podcast about moving abroad* [Audio podcast]. https://podcasts.apple.com/us/podcast/worlds-collide-the-podcast-about-moving-abroad/id1682067381
+- DigitalHistory. (n.d.). *Digital Cultures – Soraya* [YouTube playlist]. YouTube. https://www.youtube.com/playlist?list=PL5XPG366xWVvfpXZh_joch7pZp2ubV9w_
+- Futuro Media & PRX. (2005–present). *Latino USA* [Audio podcast]. https://podcasts.apple.com/us/podcast/latino-usa/id79681317
+- Job, C. (2020–present). *Flourish in the Foreign: Black women living & thriving abroad* [Audio podcast]. https://podcasts.apple.com/us/podcast/flourish-in-the-foreign-black-women-living-thriving-abroad/id1509976748
+- McNeill, D. (2018–2022). *Expat Empire Podcast* [Audio podcast]. https://podcasts.apple.com/us/podcast/expat-empire-podcast/id1440665985
+- O'Hara, J. (2019–2024). *Asylum Speakers Podcast with Jaz O'Hara: Stories of migration and displacement* [Audio podcast]. https://podcasts.apple.com/us/podcast/asylum-speakers-podcast-with-jaz-ohara-stories/id1468264562
+- Sabir, F. (2022–present). *Your Muslim Girl Podcast* [Audio podcast]. https://podcasts.apple.com/us/podcast/your-muslim-girl-podcast/id1646727259
+- Sakande, N. (2016–2017). *Third Culture: A podcast for mixed up people everywhere!* [Audio podcast]. https://podcasts.apple.com/us/podcast/third-culture/id1170910763
+- Soraya Esfandiary-Bakhtiary. (2025, June 28). *Wikipedia.* https://en.wikipedia.org/wiki/Soraya_Esfandiary-Bakhtiary
