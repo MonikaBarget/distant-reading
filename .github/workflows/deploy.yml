@@ -36,3 +36,5 @@ jobs:
         if: failure()
         run: dmesg | tail -20  # Prints the last few error logs, helpful for debugging system issue
 
+      - name: Broken Link Checker Action
+        uses: technote-space/broken-link-checker-action@v2.3.1
