@@ -18,8 +18,7 @@ Israel Fianyi and Soonja Yeom (2024) from the University of Tasmania, Australia,
 
 P. 52 describes their model architecture:
 
-<blockquote>We tokenize the input text using language-specific tokenizers (NLTK
-Tokenizer, spaCy Tokenizer, StandfordNLP Tokenizer and TokTokTokenizer) to obtain word as well as subword embeddings. Furthermore, the study uses a shared embedding layer to map input tokens into dense vector representations, making the model capture shared linguistic features across languages. We used word2vec, GloVe and FastText to pretrain the word
+<blockquote>We tokenize the input text using language-specific tokenizers (NLTK Tokenizer, spaCy Tokenizer, StandfordNLP Tokenizer and TokTokTokenizer) to obtain word as well as subword embeddings. Furthermore, the study uses a shared embedding layer to map input tokens into dense vector representations, making the model capture shared linguistic features across languages. We used word2vec, GloVe and FastText to pretrain the word
 embedding to initialize word representations [22-24]. The study explores all three (3) pretraining algorithms, each with unique features and challenges critical to our experiment.</blockquote>
 
 P. 53:
@@ -65,7 +64,7 @@ However, Grancharov also notes that both algorithms which he tested made mistake
 
 ### Sources cited and recommendations for further reading
 
-Barget, M., & Schreibman, S. (2025). Feminist DH: A Historical Perspective. In: Feminist Digital Humanities: Intersections in Practice, ed. by L. M. Rhody & S. Schreibman. Champaign: University of Illinois Press, pp. 35-58. [https://muse.jhu.edu/book/132502]([https://muse.jhu.edu/book/132502]).
+Barget, M., & Schreibman, S. (2025). [Feminist DH: A Historical Perspective. In: Feminist Digital Humanities: Intersections in Practice](https://muse.jhu.edu/book/132502), ed. by L. M. Rhody & S. Schreibman. Champaign: University of Illinois Press, pp. 35-58.
 
 Grancharov, S. (2023, May 29). Text language detection with python. Medium. [https://medium.com/@monigrancharov/text-language-detection-with-python-beb49d9667b3](https://medium.com/@monigrancharov/text-language-detection-with-python-beb49d9667b3)
 
