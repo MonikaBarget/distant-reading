@@ -46,6 +46,15 @@ If you prefer looking at YouTube comments, here are two possible directions to l
 - **almond moms and the cult of generational diet culture – Rowan Ellis**
    Rowan Ellis is a channel with just over 300 thousand subscribers hosting videos by a creator of the same name. The videos focus on (queer) history, (queer) representation, and (queer) pop culture. In this video, Rowan covers the generational elements of diet culture through the lens of the almond moms discourse which had recently gotten notoriety. The highlighted video has over 400 thousand views, and more than 1100 comments.
 
+## Additional Reading
+- Chuck, C., Fernandes, S. A., & Hyers, L. L. (2016). Awakening to the politics of food: Politicized diet as social identity. Appetite, 107, 425-436. https://doi.org/10.1016/j.appet.2016.08.106 
+- Faw, M. H., Davidson, K., Hogan, L., & Thomas, K. (2021). Corumination, diet culture, intuitive eating, and body dissatisfaction among young adult women. Personal Relationships, 28(2), 406-426. https://doi.org/https://doi.org/10.1111/pere.12364 
+- Hogan, L., Johnson, K. J., & Faw, M. H. (2025). Diet Culture Beliefs, Co-Rumination, Intuitive Eating, and Experiences of Internalized Weight Stigma in the Adjustment to College Among Emerging Adult Women. Emerging Adulthood, 13(4), 833-844. https://doi.org/10.1177/21676968251338573 
+- Jovanovski, N., & Jaeger, T. (2022). Demystifying ‘diet culture’: Exploring the meaning of diet culture in online ‘anti-diet’ feminist, fat activist, and health professional communities. Women's Studies International Forum, 90, 102558. https://doi.org/https://doi.org/10.1016/j.wsif.2021.102558 
+- Jovanovski, N., & Jaeger, T. (2024). Unpacking the 'anti-diet movement': domination and strategies of resistance in the broad anti-diet community. Social Movement Studies, 23(2), 172-189. https://doi.org/10.1080/14742837.2022.2070736 
+
+### Note
+The Chuck et al. (2016) and Jovanovski & Jaeger(2022,2024) texts offer a focus on the political elements of diet culture and body image, while Faw et al. (2021) and Hogen et al. (2025) give you a more in depth look at the relationship between diet culture and body dissatisfaction. The first three can guide an analysis of feelings and discussions of the larger structures at play (the more sociological aspects), while the other two can be more useful for analyzing the psychological elements.
 
 ## Data analysis with Voyant
 
