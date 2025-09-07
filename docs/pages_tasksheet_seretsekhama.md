@@ -6,7 +6,7 @@
 heir to the throne of the Bangwato Tribe in Serowe, with his British wife Ruth Williams Khama. In the 1940s, when Seretse met Ruth, Serowe was part of the Bechuanaland Protectorate, which was established by the UK in 1885 and, after independence, became the Republic of Botswana.
 
 The couple faced many obstacles and discriminations although Seretse Khama came from a royal African family and received an excellent education,
-studying law in England. Have things changed since Botswana`s indepencende in the 1960s, and can couples coming from different cultural and ethnic
+studying law in England (Wikipedia contributors, n.d.-a). Have things changed since Botswana`s indepencende in the 1960s, and can couples coming from different cultural and ethnic
 backgrounds now enjoy a better life? Have opinions about the relationship between Seretse and Ruth changed over time? And what can we learn from how their
 relationship was and is discussed in terms of a larger postcolonial discourse?
 
@@ -14,25 +14,23 @@ The data sets suggested below may help you get some insights.
 
 ## Data sets (YouTube and Apple Reviews)
 
-On YouTube, Monika has collected four videos with comments in English that cover the (family) life of Seretse Khama in the [Digital Cultures - Seretse Khama](https://youtube.com/playlist?list=PL5XPG366xWVs4-pGWgNu2NLw__olk9I8E&si=KNrZLoROgJUEQDcI) playlist. You can scrape the comments from this playlist to get an idea how present-day YouTube users discuss the historical events and how they feel about interracial relationships in their own time.
+On YouTube, Monika has collected four videos with comments in English that cover the (family) life of Seretse Khama in the [Digital Cultures - Seretse Khama](https://youtube.com/playlist?list=PL5XPG366xWVs4-pGWgNu2NLw__olk9I8E&si=KNrZLoROgJUEQDcI) playlist (Digital History, n.d.). You can scrape the comments from this playlist to get an idea how present-day YouTube users discuss the historical events and how they feel about interracial relationships in their own time.
 
 Alternatively or in comparison, you can also analyse reviews that people have left for podcasts dedicated to interracial dating, relationships and family life. On the Apple Store, the following podcasts may be of interest:
 
-- [The Interracial Couple](https://podcasts.apple.com/us/podcast/the-interracial-couple/id1499506342)
+- [The Interracial Couple](https://podcasts.apple.com/us/podcast/the-interracial-couple/id1499506342) (Cera & Matthew, 2020–2021)
 
-- [Interracial Marriage with Christina Adams](https://podcasts.apple.com/us/podcast/interracial-marriage-with-christina-adams/id1534758235)
+- [Interracial Marriage with Christina Adams](https://podcasts.apple.com/us/podcast/interracial-marriage-with-christina-adams/id1534758235) (Ab123, 2020)
 
-- [Interracial Marriage](https://podcasts.apple.com/at/podcast/interracial-marriage/id1514522005?i=1000513366125)
+- [Interracial Marriage](https://podcasts.apple.com/at/podcast/interracial-marriage/id1514522005?i=1000513366125) (Black History for White People, 2021)
 
-- [Interracial Odd Couple](https://podcasts.apple.com/us/podcast/interracial-odd-couple/id543807722)
+- [Interracial Odd Couple](https://podcasts.apple.com/us/podcast/interracial-odd-couple/id543807722) (Interracial Odd Couple, 2021–2023)
 
-- [The Interracial Couple](https://podcasts.apple.com/sk/podcast/the-interracial-couple/id1499506342)
+- [Multiracial Family Man](https://podcasts.apple.com/us/podcast/multiracial-family-man/id969793342) (Barnett, 2015–2019)
 
-- [Multiracial Family Man](https://podcasts.apple.com/us/podcast/multiracial-family-man/id969793342)
+- [Keep it real with Matt](https://podcasts.apple.com/us/podcast/keep-it-real-with-matt/id1470119157) (Chappell, 2019)
 
-- [Keep it real with Matt](https://podcasts.apple.com/us/podcast/keep-it-real-with-matt/id1470119157)
-
-- [The Swirl World Podcast](https://podcasts.apple.com/us/podcast/the-swirl-world-podcast/id885695922)
+- [The Swirl World Podcast](https://podcasts.apple.com/us/podcast/the-swirl-world-podcast/id885695922) (The Swirl World, 2014–2019)
 
 :bangbang: While each of the podcasts may not have so many reviews per country, it can be interesting to scrape the data for all countries. And several smaller sets of podcast reviews can also be combined to form a larger insightful data set.
 
@@ -51,4 +49,18 @@ When analysing the comments in Voyant Tools, use different tools to explore thes
 
 ## Idea for further data analysis: historical novels that cover romantic relations across perceived color boundaries
 
-For your final essays or in future research, you may also want to explore how historical novels address romantic relationships across perceived color boundaries. Take, for instance, Vanessa Riley's book [Island Queen](https://books.apple.com/us/audiobook/island-queen/id1561061014), which offers a fictionalised account of the life of [Dorothy Kirwan Thomas](https://en.wikipedia.org/wiki/Dorothy_Thomas_(entrepreneur)) — a freed woman of color who rose from slavery to become a prominent landowner in the colonial West Indies. This detailed first-person narrative highlights how the main character navigates family ties, business connections and several romantic relationships despite social constraints.
+For your final essays or in future research, you may also want to explore how historical novels address romantic relationships across perceived color boundaries. Take, for instance, Vanessa Riley's book [Island Queen](https://books.apple.com/us/audiobook/island-queen/id1561061014) (2021), which offers a fictionalised account of the life of [Dorothy Kirwan Thomas](https://en.wikipedia.org/wiki/Dorothy_Thomas_(entrepreneur)) — a freed woman of color who rose from slavery to become a prominent landowner in the colonial West Indies (Apple Books, n.d.; Wikipedia contributors, n.d.-b). This detailed first-person narrative highlights how the main character navigates family ties, business connections and several romantic relationships despite social constraints.
+
+## Cited Works and Further Readings
+- Ab123. (2020). *Interracial Marriage with Christina Adams* [Audio podcast]. https://podcasts.apple.com/us/podcast/interracial-marriage-with-christina-adams/id1534758235
+- Apple Books. (n.d.). *Island queen*. https://books.apple.com/us/audiobook/island-queen/id1561061014
+- Barnett, A. (2015–2019). *Multiracial Family Man* [Audio podcast]. https://podcasts.apple.com/us/podcast/multiracial-family-man/id969793342
+- Black History for White People. (2021, March 17). *Interracial marriage* [Audio podcast episode]. In *Black History for White People*. https://podcasts.apple.com/at/podcast/interracial-marriage/id1514522005?i=1000513366125
+- Cera & Matthew. (2020–2021). *The Interracial Couple* [Audio podcast]. https://podcasts.apple.com/us/podcast/the-interracial-couple/id1499506342
+- Chappell, M. (2019). *Keep it Real with Matt* [Audio podcast]. https://podcasts.apple.com/us/podcast/keep-it-real-with-matt/id1470119157
+- Digital History. (n.d.). *Digital Cultures – Seretse Khama* [YouTube playlist]. YouTube. https://youtube.com/playlist?list=PL5XPG366xWVs4-pGWgNu2NLw__olk9I8E&si=eBRaTw2rsY145Fqe
+- Interracial Odd Couple. (2021–2023). *Interracial Odd Couple* [Audio podcast]. https://podcasts.apple.com/us/podcast/interracial-odd-couple/id543807722
+- Riley, V. (2021). *Island queen*. HarperCollins.
+- The Swirl World. (2014–2019). *The Swirl World Podcast* [Audio podcast]. https://podcasts.apple.com/us/podcast/the-swirl-world-podcast/id885695922
+- Wikipedia contributors. (n.d.-a). *A United Kingdom*. In *Wikipedia*. https://en.wikipedia.org/wiki/A_United_Kingdom
+- Wikipedia contributors. (n.d.-b). Dorothy Thomas (entrepreneur). In Wikipedia. https://en.wikipedia.org/wiki/Dorothy_Thomas_(entrepreneur)
