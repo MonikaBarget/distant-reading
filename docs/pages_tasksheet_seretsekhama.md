@@ -56,11 +56,14 @@ For your final essays or in future research, you may also want to explore how hi
 - Apple Books. (n.d.). *Island queen*. https://books.apple.com/us/audiobook/island-queen/id1561061014
 - Barnett, A. (2015–2019). *Multiracial Family Man* [Audio podcast]. https://podcasts.apple.com/us/podcast/multiracial-family-man/id969793342
 - Black History for White People. (2021, March 17). *Interracial marriage* [Audio podcast episode]. In *Black History for White People*. https://podcasts.apple.com/at/podcast/interracial-marriage/id1514522005?i=1000513366125
+- Camiscioli, E., & Quataert, J.H. (2019). Editorial Note: Colonial Intimacies and Gendered Violence. *Journal of Women's History 31*(2), 7-10. https://dx.doi.org/10.1353/jowh.2019.0011.
 - Cera & Matthew. (2020–2021). *The Interracial Couple* [Audio podcast]. https://podcasts.apple.com/us/podcast/the-interracial-couple/id1499506342
 - Chappell, M. (2019). *Keep it Real with Matt* [Audio podcast]. https://podcasts.apple.com/us/podcast/keep-it-real-with-matt/id1470119157
 - Digital History. (n.d.). *Digital Cultures – Seretse Khama* [YouTube playlist]. YouTube. https://youtube.com/playlist?list=PL5XPG366xWVs4-pGWgNu2NLw__olk9I8E&si=eBRaTw2rsY145Fqe
 - Interracial Odd Couple. (2021–2023). *Interracial Odd Couple* [Audio podcast]. https://podcasts.apple.com/us/podcast/interracial-odd-couple/id543807722
+- Piccini, J., & Money, D. (2021). “A fundamental human right”? Mixed-race marriage and the meaning of rights in the postwar British Commonwealth. *Comparative Studies in Society and History, 63*(3), 655–684. https://doi.org/10.1017/S0010417521000177
 - Riley, V. (2021). *Island queen*. HarperCollins.
+- Stoler, A. L. (2002). *Carnal knowledge and imperial power: race and the intimate in colonial rule.* University of California Press.
 - The Swirl World. (2014–2019). *The Swirl World Podcast* [Audio podcast]. https://podcasts.apple.com/us/podcast/the-swirl-world-podcast/id885695922
 - Wikipedia contributors. (n.d.-a). *A United Kingdom*. In *Wikipedia*. https://en.wikipedia.org/wiki/A_United_Kingdom
 - Wikipedia contributors. (n.d.-b). Dorothy Thomas (entrepreneur). In Wikipedia. https://en.wikipedia.org/wiki/Dorothy_Thomas_(entrepreneur)
