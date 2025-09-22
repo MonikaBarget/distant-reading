@@ -29,6 +29,9 @@ Use different tools in Voyant Tools for the analysis and consult the advice for 
 
 ## Cited Works and Further Readings
 
+- Bonilla-Silva, E. (1997). Rethinking racism: Toward a structural interpretation. *American Sociological Review, 62*(3), 465–480. https://doi.org/10.2307/2657316
+- Carastathis, A. (2014). The concept of intersectionality in feminist theory. *Philosophy Compass, 9*(5), 304–314. https://doi.org/10.1111/phc3.12129
 - Elsevier. (2007). *Race in the social sciences* [Publisher summary]. In S. P. Turner & M. W. Risjord (Eds.), Philosophy of anthropology and sociology: Handbook of the philosophy of science (pp. 735–753). North-Holland. https://doi.org/10.1016/B978-044451542-1/50023-4
 - NPR. (2016–present). *Code switch* [Audio podcast]. https://podcasts.apple.com/us/podcast/code-switch/id1112190608
+- Omi, M., & Winant, H. (2014). *Racial formation in the United States (3rd ed.). Routledge.* https://doi.org/10.4324/9780203076804
 - Root, M. (2007). *Race in the social sciences*. In S. P. Turner & M. W. Risjord (Eds.), *Handbook of the philosophy of science: Philosophy of anthropology and sociology* (pp. 735–753). North-Holland. https://doi.org/10.1016/B978-044451542-1/50023-4
