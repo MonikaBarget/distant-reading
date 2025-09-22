@@ -35,3 +35,4 @@ Use different tools in Voyant Tools for the analysis and consult the advice for 
 - NPR. (2016–present). *Code switch* [Audio podcast]. https://podcasts.apple.com/us/podcast/code-switch/id1112190608
 - Omi, M., & Winant, H. (2014). *Racial formation in the United States (3rd ed.). Routledge.* https://doi.org/10.4324/9780203076804
 - Root, M. (2007). *Race in the social sciences*. In S. P. Turner & M. W. Risjord (Eds.), *Handbook of the philosophy of science: Philosophy of anthropology and sociology* (pp. 735–753). North-Holland. https://doi.org/10.1016/B978-044451542-1/50023-4
+- Schelenz, L., & Vondermaßen, M. (2022). Diversity, identity, oppression: The construction of “Blackness” in *Dear White People. Open Philosophy, 5*(1), 44–56. https://doi.org/10.1515/opphil-2020-0171
