@@ -43,7 +43,9 @@ In Voyant Tools, consider employing a variety of tools to address these question
 
 ## Cited Works and Further Readings
 
+- Ahl, H., & Marlow, S. (2021). Exploring the false promise of entrepreneurship through a postfeminist critique of the enterprise policy discourse in Sweden and the UK. *Human Relations, 74*(1), 41–68. https://doi.org/10.1177/0018726719848480
 - Amoruso, S. (2014). *#GIRLBOSS*. Portfolio.
+- Banet-Weiser, S. (2018). *Empowered: Popular feminism and popular misogyny.* Duke University Press. https://doi.org/10.1215/9781478002772
 - Cosslett, R. L. (2022, March 1). The decline of the girlboss? Post-pandemic, she’s more ubiquitous than ever. *The Guardian*. https://www.theguardian.com/commentisfree/2022/mar/01/decline-girlboss-culture-career-queen
 - Digital History. (n.d.). *Digital cultures – Girlboss* [YouTube playlist]. YouTube. https://www.youtube.com/playlist?list=PL5XPG366xWVs657iGVt3MXFiaj45B_fEX
 - Freeman, H. (2014, June 4). *#Girlboss by Sophia Amoruso – review. The Guardian.* https://www.theguardian.com/books/2014/jun/04/girlboss-sophia-amoruso-review
@@ -53,6 +55,7 @@ In Voyant Tools, consider employing a variety of tools to address these question
 - Mull, A. (2020, June 25). The girlboss has left the building: American workplaces are facing a reckoning. So what comes next?* The Atlantic*. https://www.theatlantic.com/health/archive/2020/06/girlbosses-what-comes-next/613519/
 - Urwin, R. (2022, August 13). Girlboss sabbatical: Minder werken in het tijdperk na de girlboss. *ELLE Nederland*. https://www.elle.com/nl/carriere-en-geld/a40830883/girlboss-sabbatical-minder-werken-tijdperk/
 - Petersson McIntyre, M. (2021). Commodifying feminism: Economic choice and agency in the context of lifestyle influencers and gender consultants. *Gender, Work & Organization, 28*(3), 1069–1085. https://doi.org/10.1111/gwao.12627
+- Rottenberg, C. (2014). The rise of neoliberal feminism. *Cultural Studies, 28*(3), 418–437. https://doi.org/10.1080/09502386.2013.857361
 - Stein, L. (2020). *Self care: A novel*. Penguin Publishing Group.
 - Wikipedia contributors. (n.d.-a). *Sophia Amoruso*. In *Wikipedia*. https://en.wikipedia.org/wiki/Sophia_Amoruso
 - Wikipedia contributors. (n.d.-b). *Nasty Gal.* In *Wikipedia.* https://en.wikipedia.org/wiki/Nasty_Gal
