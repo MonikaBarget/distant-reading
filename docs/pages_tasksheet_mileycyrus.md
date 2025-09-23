@@ -6,7 +6,7 @@
 
 ### The VMA2013 controversy
 
-Miley Cyrus's 2013 performance for the Video Music Awards (VMA) is still one of greatest social media events ever. Her controversial stage routine, characterised by sexually allusive dance moves and interactions with singer Robin Thicke, challenged traditional notions of family-friendly TV entertainment and female stardom, but also incited accusations of cultural appropriation and stereotyping. Miley Cyrus, who had become famous as a teen idol in the Disney Channel television series Hannah Montana (2006–2011), blurred the lines between childhood and adulthood in her performance. On the one hand, viewers embraced this as a statement of maturity that would free Miley from her former image. On the other hand, viewers negatively perceived the performance as another sexualisation of young women in the media. The intense debate that the performance sparked on social media but also in television shows and newspapers highlighted issues of gender, race, body image, artistic freedom, and cultural identity, making it an interesting case study for intersectional analysis.
+Miley Cyrus's 2013 performance for the Video Music Awards (VMA) is still one of greatest social media events ever. Her controversial stage routine, characterised by sexually allusive dance moves and interactions with singer Robin Thicke, challenged traditional notions of family-friendly TV entertainment and female stardom, but also incited accusations of cultural appropriation and stereotyping (Overell, 2013). Miley Cyrus, who had become famous as a teen idol in the Disney Channel television series Hannah Montana (2006–2011), blurred the lines between childhood and adulthood in her performance (Kennedy, 2014). On the one hand, viewers embraced this as a statement of maturity that would free Miley from her former image. On the other hand, viewers negatively perceived the performance as another sexualisation of young women in the media (Overell, 2013). The intense debate that the performance sparked on social media but also in television shows and newspapers highlighted issues of gender, race, body image, artistic freedom, and cultural identity, making it an interesting case study for intersectional analysis.
 
 ### Structural information 
 
@@ -38,3 +38,12 @@ Put "black", "white", "dancers", "rape", "twerk*" and "women" into the trends to
 ## General workflow advice
 
 If you need further advice on the analysis workflow, please go to the Voyant Tools section in the ==Skills== menu!
+
+### Cited Works and Further Readings
+
+- Blue, M. G. (2013). The best of both worlds? Youth, gender, and a post-feminist sensibility in Disney's *Hannah Montana. Feminist Media Studies, 13*(4), 660–675. https://doi.org/10.1080/14680777.2012.724024
+- Fleetwood, N. R. (2011). *Troubling vision : performance, visuality, and blackness.* University of Chicago Press. http://chicago.universitypressscholarship.com/view/10.7208/chicago/9780226253053.001.0001/upso-9780226253022
+- Kennedy, M. (2014). Hannah Montana and Miley Cyrus: ‘becoming’ a woman, ‘becoming’ a star. *Celebrity Studies, 5*(3), 225–241. https://doi.org/10.1080/19392397.2013.839349
+- McRobbie, A. (2004). Post‐feminism and popular culture. *Feminist Media Studies, 4*(3), 255–264. https://doi.org/10.1080/1468077042000309937
+- Overell, R. (2013, August 27). Change in packaging presents a fresh Miley Cyrus commodity. *The Conversation.* https://theconversation.com/change-in-packaging-presents-a-fresh-miley-cyrus-commodity-17523
+- Weidhase, N. (2015). ‘Beyoncé feminism’ and the contestation of the Black feminist body. *Celebrity Studies, 6*(1), 128–131. https://doi.org/10.1080/19392397.2015.1005389
