@@ -1,7 +1,7 @@
 # Distant reading case study "domestic violence" 
 
 ## Societal relevance
-Domestic violence (DV) is a pervasive issue that affects millions globally. There are studies that suggest that DV became especially problematic during the Covid19 pandemic with its long lockdowns. The United Nations have called this [the "shadow pandemic"](https://www.unwomen.org/en/news/in-focus/in-focus-gender-equality-in-covid-19-response/violence-against-women-during-covid-19). However, domestic violence often remains under-discussed or misrepresented in mainstream media. The rise of podcasts has provided an accessible space for victims to share their stories, discuss resources, and raise awareness.
+Domestic violence (DV) is a pervasive issue that affects millions globally. There are studies that suggest that DV became especially problematic during the Covid19 pandemic with its long lockdowns. The United Nations have called this [the "shadow pandemic"](https://www.unwomen.org/en/news/in-focus/in-focus-gender-equality-in-covid-19-response/violence-against-women-during-covid-19) (UN Women, n.d.). However, domestic violence often remains under-discussed or misrepresented in mainstream media. The rise of podcasts has provided an accessible space for victims to share their stories, discuss resources, and raise awareness.
 In this case study, you can analyse how digital platforms enable conversations surrounding an issue silenced by stigma and fear. In addition, you can try and apply some of the theoretical approaches discussed in class.
 Domestic violence disproportionately affects women, and the gendered nature of this violence shapes public discourse. This could lead to a feminist reading of your data. In addition, domestic violence does not affect all social groups in the same way. 
 Survivors of colour, LGBTQIA+ individuals, immigrants, mothers with small children, unemployed people, or those with disabilities experience special challenges and may find it particularly hard to seek help or walk away from an abusive relationship. Also, domestic violence is treated differently by different legal systems.
@@ -11,17 +11,17 @@ This could also be analysed from a postcolonial perspective.
 
 Podcasts have become a powerful tool for survivor voices and to raise general awareness about domestic violence. Shows that cover this topic include:
 
-- [After Dark](https://podcasts.apple.com/us/podcast/after-dark-overcoming-domestic-violence/id1444601572) (only two text reviews!)
+- [After Dark: Overcoming Domestic Violence](https://podcasts.apple.com/us/podcast/after-dark-overcoming-domestic-violence/id1444601572)(Marano, 2018–2022) — only two text reviews!
   
-- [I'm not in an abusive relationship](https://podcasts.apple.com/us/podcast/im-not-in-an-abusive-relationship/id1457515257) (only five text reviews!)
+- [I'm not in an abusive relationship](https://podcasts.apple.com/us/podcast/im-not-in-an-abusive-relationship/id1457515257) (Domestic and Sexual Abuse Services, 2019–2022) - only five text reviews!
 
-- [I'm a survivor](https://podcasts.apple.com/us/podcast/im-a-survivor-podcast/id1452383423)
+- [I'm a survivor podcast](https://podcasts.apple.com/us/podcast/im-a-survivor-podcast/id1452383423) (Misty, 2019–2024)
   
-- [It's not normal - it's toxic](https://podcasts.apple.com/us/podcast/its-not-normal-its-toxic-rid-your-life-of-toxic-people/id1363585196)
+- [It's not normal - it's toxic](https://podcasts.apple.com/us/podcast/its-not-normal-its-toxic-rid-your-life-of-toxic-people/id1363585196) (Dr. Heidi, 2018–present)
 
-- [Narcissist Apocalypse](https://podcasts.apple.com/us/podcast/narcissist-apocalypse-patterns-of-abuse/id1452117002)
+- [Narcissist Apocalypse](https://podcasts.apple.com/us/podcast/narcissist-apocalypse-patterns-of-abuse/id1452117002) (Abuse Survivor Network, 2019–present)
 
-- [There's no place like home](https://podcasts.apple.com/us/podcast/theres-no-place-like-home-by-future-women/id1608086343)
+- [There's no place like home](https://podcasts.apple.com/us/podcast/theres-no-place-like-home-by-future-women/id1608086343) (Future Women, n.d.)
 
 These podcasts feature personal accounts of survivors but also give advice to friends and family members who suspect that their loved ones may be in an abuse relationship. For your data analysis, Monika has scraped reviews from all six podcasts and provided the [CSV tables as well as the plain text files](https://github.com/MonikaBarget/distant-reading/tree/main/data/Data_AppleStore_DomesticViolence). You will see that the amount of reviews per file varies widely. The very short files for the *After Dark* and *I'm not in an abusive relationship* podcasts can be used in a combined data set of all reviews. 
 
@@ -34,3 +34,13 @@ These podcasts feature personal accounts of survivors but also give advice to fr
 - In what ways do podcasts create a sense of community for survivors / their friends and family members?
 
 Please use different tools in Voyant to answer these questions and consult the Voyant Tool advice in the ==Skills== menu!
+
+### Cited Works and Further Readings
+
+- Abuse Survivor Network. (2019–present). *Narcissist Apocalypse: Patterns of abuse* [Podcast]. https://podcasts.apple.com/us/podcast/narcissist-apocalypse-patterns-of-abuse/id1452117002
+- Domestic and Sexual Abuse Services. (2019–2022). *I’m not in an abusive relationship* [Podcast]. https://podcasts.apple.com/us/podcast/im-not-in-an-abusive-relationship/id1457515257
+- Dr. Heidi. (2018–present). *It’s not normal it’s toxic: Rid your life of toxic people* [Podcast].  https://podcasts.apple.com/us/podcast/its-not-normal-its-toxic-rid-your-life-of-toxic-people/id1363585196
+- Future Women. (n.d.). *There’s no place like home* [Podcast]. https://podcasts.apple.com/us/podcast/theres-no-place-like-home-by-future-women/id1608086343
+- Marano, I. (2018–2022). *After Dark: Overcoming domestic violence* [Podcast]. https://podcasts.apple.com/us/podcast/after-dark-overcoming-domestic-violence/id1444601572
+- Misty. (2019–2024). *I’m a survivor podcast* [Podcast]. https://podcasts.apple.com/us/podcast/im-a-survivor-podcast/id1452383423
+- UN Women. (n.d.). *Violence against women during COVID-19.* https://www.unwomen.org/en/news/in-focus/in-focus-gender-equality-in-covid-19-response/violence-against-women-during-covid-19
