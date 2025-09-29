@@ -12,12 +12,12 @@ also highlight intersections between personal empowerment and collective activis
 
 For this case study, you may want to analyse reviews from two podcasts that directly engage with body image themes:
 
-- **I weigh -- with Jameela Jamil**
+- **I weigh (Jamil, 2023–2024)**
 
    This podcast, hosted by actress and activist Jameela Jamil, explores mental health and body positivity. It features guests such as Esther Perel, Greta Thunberg, and Aubrey Gordon,
 who share stories that promote individual progress over perfection. Reviews of this podcast frequently discuss themes like vulnerability, empowerment, and societal change.
 
-- **We can do hard things**
+- **We can do hard things (Doyle et al., 2021–present)**
   
    This podcast does not have a narrow focus on body image but highlights (self-)love and overcoming difficult situations more generally. The podcast is hosted by author Glennon Doyle, her wife Abby Wambach, and her sister Amanda Doyle. The hosts encourage their listeners to "drop the fake and talk honestly about the hard
    things including sex, gender, parenting, blended families, bodies, anxiety, addiction, justice, boundaries, fun, quitting, overwhelm . . . all of it."
@@ -29,32 +29,23 @@ UNDER CONSTRUCTION
 If you prefer looking at YouTube comments, here are two possible directions to look at: the history of diet culture, and the topic of 'almond moms' (parents, usually mothers, who themselves hold extreme views on dieting and body image and try to pass that on to their children).
 
 ### History of Diet Culture
-- **the history of dieting is crazier than you think - Mina Le**
+- **the history of dieting is crazier than you think (Le, 2022)**
 
    Mina Le is a channel where the host, Mina Le, typically posts video essays regarding fashion, cinema, or pop culture topics. It has over 1 million subscribers. In her video, Mina Le covers the history of dieting, including the interplay of gender and race throughout its evolution, and presents the ties between that evolutions and the body image and thinness topics. It has over 1.5 million views and over 2800 comments.
 
-- **Heroin & Cigarettes & Tapeworms: The Dark History of Diet Cultur – Bailey Sarian**
+- **Heroin & Cigarettes & Tapeworms: The Dark History of Diet Culture (Sarian, 2022)**
 
    Bailey Sarian is a channel hosted by Bailey Sarian which contains videos covering true crime, makeup and “dark history”- mostly referring to history that is not typically taught in mainstream spaces. The channel boasts over 7 million subscribers. In her video, Bailey says she was recently asked through internet comments is she was pregnant following some weight gain, which prompted her to cover the history of diet culture. She covers the origins of dieting and the ties to specific body goals, especially the prioritization of thinness. It currently has more than 3 million views, and over 7000 comments
 
 ### Almond Moms
 
-- **almond moms and the illusion of wellness – Madisyn Brown**
+- **almond moms and the illusion of wellness (Brown, 2023)**
 
    Madisyn Brown is a channel with a host of the same name which covers pop culture and health topics. It has over 500 thousand subscribers. In this video, Madisyn starts with a viral clip of celebrity Gwyneth Paltrow and how she was framed as an almond mom in internet discourse. She then expands on the ties between the label of wellness and disordered eating in the pursuit of an ideal body. The video has over 280 thousand views, and more than 750 comments.
 
-- **almond moms and the cult of generational diet culture – Rowan Ellis**
+- **almond moms and the cult of generational diet culture (Ellis, 2023)**
    Rowan Ellis is a channel with just over 300 thousand subscribers hosting videos by a creator of the same name. The videos focus on (queer) history, (queer) representation, and (queer) pop culture. In this video, Rowan covers the generational elements of diet culture through the lens of the almond moms discourse which had recently gotten notoriety. The highlighted video has over 400 thousand views, and more than 1100 comments.
 
-## Additional Reading
-- Chuck, C., Fernandes, S. A., & Hyers, L. L. (2016). Awakening to the politics of food: Politicized diet as social identity. Appetite, 107, 425-436. https://doi.org/10.1016/j.appet.2016.08.106 
-- Faw, M. H., Davidson, K., Hogan, L., & Thomas, K. (2021). Corumination, diet culture, intuitive eating, and body dissatisfaction among young adult women. Personal Relationships, 28(2), 406-426. https://doi.org/https://doi.org/10.1111/pere.12364 
-- Hogan, L., Johnson, K. J., & Faw, M. H. (2025). Diet Culture Beliefs, Co-Rumination, Intuitive Eating, and Experiences of Internalized Weight Stigma in the Adjustment to College Among Emerging Adult Women. Emerging Adulthood, 13(4), 833-844. https://doi.org/10.1177/21676968251338573 
-- Jovanovski, N., & Jaeger, T. (2022). Demystifying ‘diet culture’: Exploring the meaning of diet culture in online ‘anti-diet’ feminist, fat activist, and health professional communities. Women's Studies International Forum, 90, 102558. https://doi.org/https://doi.org/10.1016/j.wsif.2021.102558 
-- Jovanovski, N., & Jaeger, T. (2024). Unpacking the 'anti-diet movement': domination and strategies of resistance in the broad anti-diet community. Social Movement Studies, 23(2), 172-189. https://doi.org/10.1080/14742837.2022.2070736 
-
-### Note
-The Chuck et al. (2016) and Jovanovski & Jaeger(2022,2024) texts offer a focus on the political elements of diet culture and body image, while Faw et al. (2021) and Hogen et al. (2025) give you a more in depth look at the relationship between diet culture and body dissatisfaction. The first three can guide an analysis of feelings and discussions of the larger structures at play (the more sociological aspects), while the other two can be more useful for analyzing the psychological elements.
 
 ## Data analysis with Voyant
 
@@ -74,3 +65,21 @@ have on user reactions.
 
 - **Public Sphere theory** is another possible approach and can draw your attention to how media such as podcasts create participatory spaces and contribute to (political) opinion-making. You can, for example,
 explore whether reviews and comments reflect a shift toward inclusive and democratic conversations, and if the users are empowered to take collective action offline.
+
+### Cited Works and Further Readings
+- Brown, M. (2023, May 4). *Almond moms and the illusion of wellness* [Video]. YouTube. https://youtu.be/HgqC6v3YG8I
+- Chuck, C., Fernandes, S. A., & Hyers, L. L. (2016). Awakening to the politics of food: Politicized diet as social identity. *Appetite, 107*, 425-436. https://doi.org/10.1016/j.appet.2016.08.106
+- Doyle, G., Wambach, A., & Doyle, A. (2021–present). *We can do hard things* [Podcast]. https://podcasts.apple.com/bw/podcast/we-can-do-hard-things/id1564530722
+- Ellis, R. (2023, December 7). *Almond moms and the cult of generational diet culture* [Video]. YouTube. https://youtu.be/A8GI6z0dVVY
+- Faw, M. H., Davidson, K., Hogan, L., & Thomas, K. (2021). Corumination, diet culture, intuitive eating, and body dissatisfaction among young adult women. *Personal Relationships, 28*(2), 406-426. https://doi.org/https://doi.org/10.1111/pere.12364 
+- Hogan, L., Johnson, K. J., & Faw, M. H. (2025). Diet Culture Beliefs, Co-Rumination, Intuitive Eating, and Experiences of Internalized Weight Stigma in the Adjustment to College Among Emerging Adult Women. *Emerging Adulthood, 13*(4), 833-844. https://doi.org/10.1177/21676968251338573
+- Jamil, J. (2023–2024). *I Weigh* [Podcast]. (Now titled Wrong Turns with Jameela Jamil). https://podcasts.apple.com/bw/podcast/wrong-turns-with-jameela-jamil/id1498855031
+- Jovanovski, N., & Jaeger, T. (2022). Demystifying ‘diet culture’: Exploring the meaning of diet culture in online ‘anti-diet’ feminist, fat activist, and health professional communities. *Women's Studies International Forum, 90*, 102558. https://doi.org/https://doi.org/10.1016/j.wsif.2021.102558 
+- Jovanovski, N., & Jaeger, T. (2024). Unpacking the 'anti-diet movement': domination and strategies of resistance in the broad anti-diet community. *Social Movement Studies, 23*(2), 172-189. https://doi.org/10.1080/14742837.2022.2070736
+- Le, M. (2022, January 16). *The history of dieting is crazier than you think* [Video]. YouTube. https://www.youtube.com/watch?v=FoqHB7BMduw
+- Sarian, B. (2022, May 5). *Heroin & cigarettes & tapeworms: The dark history of diet culture* [Video]. YouTube. https://youtu.be/UeNQ9ZGJi7I
+
+### Note
+The Chuck et al. (2016) and Jovanovski & Jaeger(2022,2024) texts offer a focus on the political elements of diet culture and body image, while Faw et al. (2021) and Hogen et al. (2025) give you a more in depth look at the relationship between diet culture and body dissatisfaction. The first three can guide an analysis of feelings and discussions of the larger structures at play (the more sociological aspects), while the other two can be more useful for analyzing the psychological elements.
+
+
