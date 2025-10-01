@@ -45,3 +45,12 @@ Please keep in mind that the time period captured is very short and that some de
 - What conclusions can you draw from the individual distant reading results?
 - What is (un)expected?
 - What would have been difficult to find via close reading?
+
+## Cited Works and Further Readings
+
+- Bisbee, J., & Munger, K. (2025). The vibes are off: Did Elon Musk push academics off Twitter? *PS: Political Science & Politics, 58*(1), 139–146. https://doi.org/10.1017/S1049096524000416
+- Chang, C. H., Deshmukh, N. R., Armsworth, P. R., & Masuda, Y. J. (2023). Environmental users abandoned Twitter after Musk takeover. *Trends in Ecology & Evolution, 38*(10), 893–895. https://doi.org/10.1016/j.tree.2023.07.002
+- Hickey, D., Schmitz, M., Fessler, D., Smaldino, P. E., Muric, G., & Burghardt, K. (2023). Auditing Elon Musk’s impact on hate speech and bots. *Proceedings of the International AAAI Conference on Web and Social Media, 17*(1), 1133–1137. https://doi.org/10.1609/icwsm.v17i1.22222
+- Voinea, D. V. (2022). Taking over Twitter – Balancing free speech and content moderation. *Annals of the University of Craiova for Journalism, Communication and Management, 8*(1), 139–144. https://doi.org/10.5281/zenodo.15249275
+- Wang, R., Zhang, Y., Suk, J., & Levin, S. H. (2024). Empowered or constrained in platform governance? An analysis of Twitter users’ responses to Elon Musk’s takeover. *Social Media + Society, 10*(3), 1–16. https://doi.org/10.1177/20563051241277606
+
