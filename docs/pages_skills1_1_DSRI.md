@@ -99,3 +99,11 @@ workspace$$$   1/1     1            1           3m24s
 ## Command to scale pod for selected project to "1"
 
 ```kubectl scale deployment ocr4all-p70088617 --replicas=1```
+
+## Further Readings
+
+The following works provide theoretical and methodological context to show why data cleaning and preparation in DSRI are essential steps before analysis.
+
+- Ignatow, G., & Mihalcea, R. (2018). *An introduction to text mining: Research design, data collection, and analysis.* Sage. https://doi.org/10.4135/9781506336985
+- Piotrowski, M. (2012). *Natural language processing for historical texts.* Springer. https://doi.org/10.1007/978-3-031-02146-6
+- Schöch, C. (2013). Big? Smart? Clean? Messy? Data in the humanities. *Journal of Digital Humanities, 2*(3). http://journalofdigitalhumanities.org/2-3/big-smart-clean-messy-data-in-the-humanities/
