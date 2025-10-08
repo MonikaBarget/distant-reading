@@ -44,9 +44,9 @@ jobs:
       - name: Build JupyterLite
         run: |
           jupyter lite build \
-            --contents ./jupyterlite \
-            --output-dir dist/jupyterlite \
-            --debug
+             --contents ./jupyterlite/contents \
+             --output-dir dist/jupyterlite \
+             --debug
       - name: Upload JupyterLite artifact
         uses: actions/upload-artifact@v4
         with:
