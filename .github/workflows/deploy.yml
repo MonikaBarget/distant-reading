@@ -1,40 +1,62 @@
-name: Deploy Vitepress to GitHub Pages
-
+name: Deploy VitePress and JupyterLite to GitHub Pages
 on:
   push:
     branches:
       - main
-
 jobs:
-  build:
+  build-vitepress:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'  # Use Node.js 20
-
+          node-version: '20'
       - name: Install dependencies
         run: npm install
-
-      - name: Build
+      - name: Build VitePress
         run: npm run build
+      - name: Upload VitePress artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: vitepress-dist
+          path: docs/.vitepress/dist
 
-      - name: Debug environment variables
-        run: env  # This will list all environment variables, useful for troubleshooting
-         
-      - name: Deploy
-        run: npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  build-jupyterlite:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Build JupyterLite
+        uses: jupyterlite/jupyterlite-action@v1
+        with:
+          output-dir: dist/jupyterlite
+      - name: Upload JupyterLite artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: jupyterlite-dist
+          path: dist/jupyterlite
 
-      - name: Check for leftover error messages
-        if: failure()
-        run: dmesg | tail -20  # Prints the last few error logs, helpful for debugging system issue
-
+  deploy:
+    needs: [build-vitepress, build-jupyterlite]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download VitePress artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: vitepress-dist
+          path: dist/vitepress
+      - name: Download JupyterLite artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: jupyterlite-dist
+          path: dist/jupyterlite
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          keep_files: false
       - name: Broken Link Checker Action
         uses: technote-space/broken-link-checker-action@v2.3.1
