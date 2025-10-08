@@ -1,4 +1,4 @@
-name: Deploy VitePress and JupyterLite to GitHub Pages
+name: Deploy VitePress and JupyterLite to GitHub Pages v2
 on:
   push:
     branches:
