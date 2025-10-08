@@ -1,24 +1,30 @@
-name: Deploy VitePress and JupyterLite to GitHub Pages v2
+name: Build & Deploy VitePress + JupyterLite to GitHub Pages v4
+
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+
+permissions:
+  contents: write  # required by peaceiris/actions-gh-pages
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build-vitepress:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Install dependencies
-        run: npm install
+      - name: Install deps
+        run: npm ci
       - name: Build VitePress
         run: npm run build
       - name: Upload VitePress artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: vitepress-dist
           path: docs/.vitepress/dist
@@ -26,37 +32,51 @@ jobs:
   build-jupyterlite:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      # Prefer a tagged release of the action to avoid breaking changes.
       - name: Build JupyterLite
         uses: jupyterlite/jupyterlite@v1
         with:
           output-dir: dist/jupyterlite
       - name: Upload JupyterLite artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: jupyterlite-dist
           path: dist/jupyterlite
 
-  deploy:
+  assemble-and-deploy:
     needs: [build-vitepress, build-jupyterlite]
     runs-on: ubuntu-latest
     steps:
       - name: Download VitePress artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: vitepress-dist
-          path: dist/vitepress
+          path: _tmp/vitepress
       - name: Download JupyterLite artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: jupyterlite-dist
-          path: dist/jupyterlite
+          path: _tmp/jupyterlite
+      - name: Assemble publish directory
+        run: |
+          set -e
+          rm -rf dist
+          mkdir -p dist
+          # Put VitePress at site root
+          cp -r _tmp/vitepress/* dist/
+          # Place JupyterLite under /lite (adjust if you want a different subpath)
+          mkdir -p dist/lite
+          cp -r _tmp/jupyterlite/* dist/lite/
+          # Optional sanity checks
+          test -f dist/index.html
+          test -f dist/lite/index.html || test -f dist/lite/retro/notebooks/index.html || true
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           keep_files: false
-      - name: Broken Link Checker Action
+      - name: Broken Link Checker
         uses: technote-space/broken-link-checker-action@v2.3.1
+
