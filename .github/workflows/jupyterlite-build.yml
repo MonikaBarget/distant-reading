@@ -2,15 +2,30 @@ name: Build JupyterLite
 on:
   push:
     branches: [ main ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: jupyterlite/jupyterlite@main
+
+      - uses: actions/setup-python@v5
         with:
-          output-dir: dist/jupyterlite
+          python-version: '3.11'
+
+      - name: Install JupyterLite
+        run: |
+          python -m pip install --upgrade pip
+          pip install "jupyterlite-core>=0.6,<0.7" "jupyterlite-pyodide-kernel>=0.6,<0.7"
+
+      - name: Build JupyterLite
+        run: |
+          jupyter lite build \
+            --contents ./jupyterlite \
+            --output-dir dist/jupyterlite
+
       - uses: actions/upload-artifact@v4
         with:
           name: jupyterlite-dist
           path: dist/jupyterlite
+
