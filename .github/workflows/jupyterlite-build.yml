@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: jupyterlite/jupyterlite-action@main
+      - uses: jupyterlite/jupyterlite@main
         with:
           output-dir: dist/jupyterlite
       - uses: actions/upload-artifact@v4
