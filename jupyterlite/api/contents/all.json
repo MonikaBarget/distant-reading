@@ -1,0 +1,29 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2025-10-08T21:20:16.847306Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2025-10-08T21:19:54.254213Z",
+      "mimetype": "application/json",
+      "name": "jupyterlite.config.json",
+      "path": "jupyterlite.config.json",
+      "size": 96,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2025-10-08T21:20:16.847306Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2025-10-08T21:20:16.847306Z",
+  "mimetype": null,
+  "name": "",
+  "path": "",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}
