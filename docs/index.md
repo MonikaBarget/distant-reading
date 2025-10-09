@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: Github repository
       link: https://github.com/MonikaBarget/distant-reading
+    - theme: alt
+      text: Jupyterlite
+      link: https://monikabarget.github.io/distant-reading/jupyterlite
 
 features:
   - title: 📊 Data collection
