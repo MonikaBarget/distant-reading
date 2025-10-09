@@ -37,3 +37,11 @@ The following YouTube video by Monika explains the process of filtering data in 
 
 The focus is on using a general text filter to find keywords and using the facet filter to explore rankings. However, OpenRefine has many other
 exciting functionalities not covered in this brief introduction! If you want to learn more, check out other videos shared by researchers and librarians on YouTube. One [Open Refine tutorial provided by researchers from Edinburgh](https://www.youtube.com/watch?v=wfS1qTKFQoI) does not only explain editing spreadsheets but also covers uploading data easily to Wikidata, which may be of interest to you in the future.
+
+## Further Readings
+
+- - Batrinca, B., & Treleaven, P. C. (2015). Social media analytics: A survey of techniques, tools and platforms. *AI & Society, 30*(1), 89–116. https://doi.org/10.1007/s00146-014-0549-4
+- Ham, K. (2013). OpenRefine (version 2.5). *Journal of the Medical Library Association, 101*(3), 233–234. https://doi.org/10.3163/1536-5050.101.3.020
+- Miller, M., & Vielfaure, N. (2022). OpenRefine: An approachable open tool to clean research data. *Bulletin – Association of Canadian Map Libraries and Archives*, (170). https://doi.org/10.15353/acmla.n170.4873
+- Schöch, C. (2013). Big? Smart? Clean? Messy? Data in the humanities. *Journal of Digital Humanities, 2*(3).https://journalofdigitalhumanities.org/2-3/big-smart-clean-messy-data-in-the-humanities-by-christof-schoech/
+
