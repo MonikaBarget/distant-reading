@@ -1,4 +1,4 @@
-name: Build & Deploy VitePress + JupyterLite to GitHub Pages v11
+name: Build & Deploy VitePress + JupyterLite to GitHub Pages v12
 
 on:
   push:
@@ -65,10 +65,6 @@ jobs:
         run: |
           set -euxo pipefail
           
-          # Create pyodide directory
-          mkdir -p pyodide_dist
-          cd pyodide_dist
-          
           # Download from GitHub releases (more reliable than CDN)
           PYODIDE_VERSION="0.26.2"
           PYODIDE_URL="https://github.com/pyodide/pyodide/releases/download/${PYODIDE_VERSION}/pyodide-${PYODIDE_VERSION}.tar.bz2"
@@ -79,10 +75,10 @@ jobs:
           echo "Extracting Pyodide..."
           tar -xjf pyodide.tar.bz2
           
-          # The extraction creates a 'pyodide' directory
+          echo "Extracted structure:"
           ls -la
+          find pyodide -maxdepth 2 -type f | head -20
           
-          cd ..
           echo "Pyodide downloaded successfully"
 
       - name: Build JupyterLite with local Pyodide
@@ -92,11 +88,11 @@ jobs:
           echo "Contents before build:"
           find jupyterlite/contents -maxdepth 3 -type f \( -name "*.ipynb" -o -name "*.py" \) || true
 
-          # Point to local Pyodide
+          # Point to local Pyodide (the extracted 'pyodide' directory)
           jupyter lite build \
             --contents ./jupyterlite/contents \
             --output-dir dist/jupyterlite \
-            --pyodide pyodide_dist/pyodide \
+            --pyodide ./pyodide \
             --debug
 
           echo "Built JupyterLite tree (first 120 files):"
