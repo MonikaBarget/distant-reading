@@ -1,4 +1,4 @@
-name: Build & Deploy VitePress + JupyterLite to GitHub Pages v5
+name: Build & Deploy VitePress + JupyterLite to GitHub Pages v6
 
 on:
   push:
@@ -29,24 +29,42 @@ jobs:
           name: vitepress-dist
           path: docs/.vitepress/dist
 
+
   build-jupyterlite:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with: { lfs: true }     # ensures real .ipynb files, not LFS pointers
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install JupyterLite
+      - name: Install JupyterLite (pin to JL4-era)
         run: |
+          set -euxo pipefail
           python -m pip install --upgrade pip wheel
-          pip install "jupyterlite[all]"
+          pip install "jupyterlite-core>=0.6,<0.7" "jupyterlite-pyodide-kernel>=0.6,<0.7"
+          python - <<'PY'
+          import jupyterlite_core, jupyterlite_pyodide_kernel
+          print("JL core", jupyterlite_core.__version__, "pyodide-kernel", jupyterlite_pyodide_kernel.__version__)
+          PY
           jupyter lite --version
       - name: Build JupyterLite
         run: |
+          set -euxo pipefail
+          echo "Contents before build:" 
+          find jupyterlite/contents -maxdepth 3 -type f \( -name "*.ipynb" -o -name "*.py" \) || true
           jupyter lite build \
-             --contents ./jupyterlite/contents \
-             --output-dir dist/jupyterlite \
-             --debug
+            --contents ./jupyterlite/contents \
+            --output-dir dist/jupyterlite \
+            --debug
+          echo "Built tree (top level):"
+          find dist/jupyterlite -maxdepth 1 -type d -print
+          # Sanity checks (fail fast if kernel/site missing)
+          test -f dist/jupyterlite/index.html
+          test -f dist/jupyterlite/lab/index.html
+          test -f dist/jupyterlite/retro/index.html
+          test -f dist/jupyterlite/pyodide/pyodide.js
+          test -d dist/jupyterlite/pypi
       - name: Upload JupyterLite artifact
         uses: actions/upload-artifact@v4
         with:
@@ -59,27 +77,23 @@ jobs:
     steps:
       - name: Download VitePress artifact
         uses: actions/download-artifact@v4
-        with:
-          name: vitepress-dist
-          path: _tmp/vitepress
+        with: { name: vitepress-dist, path: _tmp/vitepress }
       - name: Download JupyterLite artifact
         uses: actions/download-artifact@v4
-        with:
-          name: jupyterlite-dist
-          path: _tmp/jupyterlite
+        with: { name: jupyterlite-dist, path: _tmp/jupyterlite }
       - name: Assemble publish directory
         run: |
-          set -e
+          set -euxo pipefail
           rm -rf dist
           mkdir -p dist
-          # VitePress at site root
           cp -r _tmp/vitepress/* dist/
-          # JupyterLite under /jupyterlite
           mkdir -p dist/jupyterlite
           cp -r _tmp/jupyterlite/* dist/jupyterlite/
-          # Sanity checks
+          # Final checks
           test -f dist/index.html
-          test -f dist/jupyterlite/index.html || true
+          test -f dist/jupyterlite/index.html
+          test -f dist/jupyterlite/lab/index.html
+          test -f dist/jupyterlite/pyodide/pyodide.js
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
