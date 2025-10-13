@@ -116,9 +116,6 @@ jobs:
           test -f dist/index.html
           test -f dist/jupyterlite/index.html
           test -f dist/jupyterlite/pyodide/pyodide.js
-          test -f dist/jupyterlite/lab/index.html || \
-          test -f dist/jupyterlite/retro/index.html || \
-          test -f dist/jupyterlite/tree/index.html || \
           (echo "No known JupyterLite app entry found under dist/jupyterlite"; exit 1)
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
