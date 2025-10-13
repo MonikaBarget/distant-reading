@@ -36,22 +36,14 @@ jobs:
    
   build-jupyterlite:
     runs-on: ubuntu-latest
-    env:
-      JUPYTERLITE_PYODIDE_URL: https://cdn.jsdelivr.net/pyodide/v0.24.1/full/
     steps:
       - uses: actions/checkout@v4
         with:
           lfs: true
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'   # ensure >=3.9 for Pyodide
-      - name: Verify Python version
-        run: |
-          python --version
-          python - <<'PY'
-          import sys
-          assert sys.version_info >= (3,9), "Python 3.9+ required for JupyterLite Pyodide kernel"
-          PY
+          python-version: '3.11'
+
       - name: Install JupyterLite toolchain (pin to JL4 era)
         run: |
           set -euxo pipefail
@@ -68,7 +60,29 @@ jobs:
                 "jupyter-server", jupyter_server.__version__)
           PY
           jupyter lite --version
+
+      - name: Pick a reachable Pyodide mirror
+        id: pickpyodide
+        shell: bash
+        run: |
+          set -euo pipefail
+          CANDIDATES=(
+            "https://cdn.jsdelivr.net/pyodide/v0.24.1/full"
+            "https://cdn.jsdelivr.net/npm/pyodide@0.24.1/full"
+            "https://pyodide-cdn2.iodide.io/v0.24.1/full"
+          )
+          for U in "${CANDIDATES[@]}"; do
+            if curl -sIf "${U}/pyodide.js" > /dev/null; then
+              echo "Using Pyodide mirror: ${U}"
+              echo "url=${U}" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+          done
+          echo "No Pyodide mirror reachable"; exit 2
+
       - name: Build JupyterLite
+        env:
+          JUPYTERLITE_PYODIDE_URL: ${{ steps.pickpyodide.outputs.url }}
         run: |
           set -euxo pipefail
           echo "Contents before build:"
@@ -82,53 +96,17 @@ jobs:
           echo "Built JupyterLite tree (first 120 files):"
           find dist/jupyterlite -maxdepth 3 -type f | sed -n '1,120p'
 
-          # ---- Checking if paths are created ----
-          test -f dist/jupyterlite/notebooks/index.html
+          # Kernel + app checks
+          test -f dist/jupyterlite/index.html
+          test -f dist/jupyterlite/pyodide/pyodide.js
+          test -f dist/jupyterlite/lab/index.html || \
+          test -f dist/jupyterlite/retro/index.html || \
+          test -f dist/jupyterlite/tree/index.html || \
           (echo "No known app entry (lab/retro/tree) found under dist/jupyterlite"; exit 1)
+
       - name: Upload JupyterLite artifact
         uses: actions/upload-artifact@v4
         with:
           name: jupyterlite-dist
           path: dist/jupyterlite
 
-  assemble-and-deploy:
-    needs: [build-vitepress, build-jupyterlite]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download VitePress artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: vitepress-dist
-          path: _tmp/vitepress
-      - name: Download JupyterLite artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: jupyterlite-dist
-          path: _tmp/jupyterlite
-      - name: Assemble publish directory
-        run: |
-          set -euxo pipefail
-          rm -rf dist
-          mkdir -p dist
-          # VitePress at site root
-          cp -r _tmp/vitepress/* dist/
-          # JupyterLite under /jupyterlite
-          mkdir -p dist/jupyterlite
-          cp -r _tmp/jupyterlite/* dist/jupyterlite/
-          # Prevent Pages/Jekyll from skipping underscore folders
-          touch dist/.nojekyll
-
-          echo "Final dist tree (first 120 files):"
-          find dist -maxdepth 3 -type f | sed -n '1,120p'
-
-          # ---- Testing if build works ----
-          test -f dist/index.html
-          test -f dist/jupyterlite/index.html
-          test -f dist/jupyterlite/pyodide/pyodide.js
-          (echo "No known JupyterLite app entry found under dist/jupyterlite"; exit 1)
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          keep_files: false
