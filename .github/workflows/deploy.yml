@@ -1,4 +1,4 @@
-name: Build & Deploy VitePress + JupyterLite to GitHub Pages v10
+name: Build & Deploy VitePress + JupyterLite to GitHub Pages v11
 
 on:
   push:
@@ -61,48 +61,42 @@ jobs:
           PY
           jupyter lite --version
 
-      - name: Pick a reachable Pyodide mirror
-        id: pickpyodide
-        shell: bash
-        run: |
-          set -euo pipefail
-          CANDIDATES=(
-            "https://cdn.jsdelivr.net/pyodide/v0.26.2/full"
-            "https://github.com/pyodide/pyodide/releases/download/0.26.2/pyodide-0.26.2.tar.bz2"
-            "https://cdn.jsdelivr.net/pyodide/v0.25.1/full"
-          )
-          for U in "${CANDIDATES[@]}"; do
-            # For GitHub releases, check differently
-            if [[ "$U" == *"github.com"* ]]; then
-              if curl -sIf "$U" | head -n 1 | grep -q "200\|302"; then
-                echo "Using Pyodide from GitHub releases: ${U}"
-                echo "url=${U}" >> "$GITHUB_OUTPUT"
-                exit 0
-              fi
-            else
-              # For CDN URLs, check for pyodide.js
-              if curl -sIf -m 10 "${U}/pyodide.js" | head -n 1 | grep -q "200"; then
-                echo "Using Pyodide mirror: ${U}"
-                echo "url=${U}" >> "$GITHUB_OUTPUT"
-                exit 0
-              fi
-            fi
-          done
-          echo "No Pyodide mirror reachable - trying default"
-          echo "url=https://cdn.jsdelivr.net/pyodide/v0.26.2/full" >> "$GITHUB_OUTPUT"
-
-      - name: Build JupyterLite
-        env:
-          JUPYTERLITE_PYODIDE_URL: ${{ steps.pickpyodide.outputs.url }}
+      - name: Download and cache Pyodide
         run: |
           set -euxo pipefail
-          echo "Using Pyodide URL: ${JUPYTERLITE_PYODIDE_URL}"
+          
+          # Create pyodide directory
+          mkdir -p pyodide_dist
+          cd pyodide_dist
+          
+          # Download from GitHub releases (more reliable than CDN)
+          PYODIDE_VERSION="0.26.2"
+          PYODIDE_URL="https://github.com/pyodide/pyodide/releases/download/${PYODIDE_VERSION}/pyodide-${PYODIDE_VERSION}.tar.bz2"
+          
+          echo "Downloading Pyodide ${PYODIDE_VERSION} from GitHub releases..."
+          curl -L -o pyodide.tar.bz2 "${PYODIDE_URL}"
+          
+          echo "Extracting Pyodide..."
+          tar -xjf pyodide.tar.bz2
+          
+          # The extraction creates a 'pyodide' directory
+          ls -la
+          
+          cd ..
+          echo "Pyodide downloaded successfully"
+
+      - name: Build JupyterLite with local Pyodide
+        run: |
+          set -euxo pipefail
+          
           echo "Contents before build:"
           find jupyterlite/contents -maxdepth 3 -type f \( -name "*.ipynb" -o -name "*.py" \) || true
 
+          # Point to local Pyodide
           jupyter lite build \
             --contents ./jupyterlite/contents \
             --output-dir dist/jupyterlite \
+            --pyodide pyodide_dist/pyodide \
             --debug
 
           echo "Built JupyterLite tree (first 120 files):"
@@ -121,4 +115,3 @@ jobs:
         with:
           name: jupyterlite-dist
           path: dist/jupyterlite
-
