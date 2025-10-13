@@ -33,8 +33,8 @@ jobs:
         with:
           name: vitepress-dist
           path: docs/.vitepress/dist
-
-   build-jupyterlite:
+   
+  build-jupyterlite:
     runs-on: ubuntu-latest
     env:
       JUPYTERLITE_PYODIDE_URL: https://cdn.jsdelivr.net/pyodide/v0.24.1/full/
