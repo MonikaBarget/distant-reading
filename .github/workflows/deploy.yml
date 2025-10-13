@@ -1,4 +1,4 @@
-name: Build & Deploy VitePress + JupyterLite to GitHub Pages v9
+name: Build & Deploy VitePress + JupyterLite to GitHub Pages v10
 
 on:
   push:
@@ -67,24 +67,36 @@ jobs:
         run: |
           set -euo pipefail
           CANDIDATES=(
-            "https://cdn.jsdelivr.net/pyodide/v0.24.1/full"
-            "https://cdn.jsdelivr.net/npm/pyodide@0.24.1/full"
-            "https://pyodide-cdn2.iodide.io/v0.24.1/full"
+            "https://cdn.jsdelivr.net/pyodide/v0.26.2/full"
+            "https://github.com/pyodide/pyodide/releases/download/0.26.2/pyodide-0.26.2.tar.bz2"
+            "https://cdn.jsdelivr.net/pyodide/v0.25.1/full"
           )
           for U in "${CANDIDATES[@]}"; do
-            if curl -sIf "${U}/pyodide.js" > /dev/null; then
-              echo "Using Pyodide mirror: ${U}"
-              echo "url=${U}" >> "$GITHUB_OUTPUT"
-              exit 0
+            # For GitHub releases, check differently
+            if [[ "$U" == *"github.com"* ]]; then
+              if curl -sIf "$U" | head -n 1 | grep -q "200\|302"; then
+                echo "Using Pyodide from GitHub releases: ${U}"
+                echo "url=${U}" >> "$GITHUB_OUTPUT"
+                exit 0
+              fi
+            else
+              # For CDN URLs, check for pyodide.js
+              if curl -sIf -m 10 "${U}/pyodide.js" | head -n 1 | grep -q "200"; then
+                echo "Using Pyodide mirror: ${U}"
+                echo "url=${U}" >> "$GITHUB_OUTPUT"
+                exit 0
+              fi
             fi
           done
-          echo "No Pyodide mirror reachable"; exit 2
+          echo "No Pyodide mirror reachable - trying default"
+          echo "url=https://cdn.jsdelivr.net/pyodide/v0.26.2/full" >> "$GITHUB_OUTPUT"
 
       - name: Build JupyterLite
         env:
           JUPYTERLITE_PYODIDE_URL: ${{ steps.pickpyodide.outputs.url }}
         run: |
           set -euxo pipefail
+          echo "Using Pyodide URL: ${JUPYTERLITE_PYODIDE_URL}"
           echo "Contents before build:"
           find jupyterlite/contents -maxdepth 3 -type f \( -name "*.ipynb" -o -name "*.py" \) || true
 
