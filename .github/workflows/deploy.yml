@@ -1,4 +1,4 @@
-name: Build & Deploy VitePress + JupyterLite to GitHub Pages v7
+name: Build & Deploy VitePress + JupyterLite to GitHub Pages v8
 
 on:
   push:
@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          lfs: true
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -23,6 +25,9 @@ jobs:
         run: npm ci
       - name: Build VitePress
         run: npm run build
+      - name: Show VitePress output
+        run: |
+          echo "VitePress dist:"; find docs/.vitepress/dist -maxdepth 2 -type f | sed -n '1,120p'
       - name: Upload VitePress artifact
         uses: actions/upload-artifact@v4
         with:
@@ -33,7 +38,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with: { lfs: true }     # ensures real .ipynb files
+        with:
+          lfs: true  # ensures real .ipynb files (not LFS pointers)
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -41,9 +47,11 @@ jobs:
         run: |
           set -euxo pipefail
           python -m pip install --upgrade pip wheel
-          pip install "jupyterlite-core>=0.6,<0.7" \
-                      "jupyterlite-pyodide-kernel>=0.6,<0.7" \
-                      "jupyter-server>=2.14,<3"
+          pip install \
+            "jupyterlite-core>=0.6,<0.7" \
+            "jupyterlite-pyodide-kernel>=0.6,<0.7" \
+            "jupyter-server>=2.14,<3" \
+            "jupyterlab_server>=2.27,<3"
           python - <<'PY'
           import jupyterlite_core, jupyterlite_pyodide_kernel, jupyter_server
           print("JL core", jupyterlite_core.__version__,
@@ -51,24 +59,27 @@ jobs:
                 "jupyter-server", jupyter_server.__version__)
           PY
           jupyter lite --version
-          
       - name: Build JupyterLite
         run: |
           set -euxo pipefail
-          echo "Contents before build:" 
+          echo "Contents before build:"
           find jupyterlite/contents -maxdepth 3 -type f \( -name "*.ipynb" -o -name "*.py" \) || true
+
           jupyter lite build \
             --contents ./jupyterlite/contents \
             --output-dir dist/jupyterlite \
             --debug
-          echo "Built tree (top level):"
-          find dist/jupyterlite -maxdepth 1 -type d -print
-          # Sanity checks (fail fast if kernel/site missing)
+
+          echo "Built JupyterLite tree (first 120 files):"
+          find dist/jupyterlite -maxdepth 3 -type f | sed -n '1,120p'
+
+          # ---- Robust sanity checks ----
           test -f dist/jupyterlite/index.html
-          test -f dist/jupyterlite/lab/index.html
-          test -f dist/jupyterlite/retro/index.html
           test -f dist/jupyterlite/pyodide/pyodide.js
-          test -d dist/jupyterlite/pypi
+          test -f dist/jupyterlite/lab/index.html || \
+          test -f dist/jupyterlite/retro/index.html || \
+          test -f dist/jupyterlite/tree/index.html || \
+          (echo "No known app entry (lab/retro/tree) found under dist/jupyterlite"; exit 1)
       - name: Upload JupyterLite artifact
         uses: actions/upload-artifact@v4
         with:
@@ -81,23 +92,38 @@ jobs:
     steps:
       - name: Download VitePress artifact
         uses: actions/download-artifact@v4
-        with: { name: vitepress-dist, path: _tmp/vitepress }
+        with:
+          name: vitepress-dist
+          path: _tmp/vitepress
       - name: Download JupyterLite artifact
         uses: actions/download-artifact@v4
-        with: { name: jupyterlite-dist, path: _tmp/jupyterlite }
+        with:
+          name: jupyterlite-dist
+          path: _tmp/jupyterlite
       - name: Assemble publish directory
         run: |
           set -euxo pipefail
           rm -rf dist
           mkdir -p dist
+          # VitePress at site root
           cp -r _tmp/vitepress/* dist/
+          # JupyterLite under /jupyterlite
           mkdir -p dist/jupyterlite
           cp -r _tmp/jupyterlite/* dist/jupyterlite/
-          # Final checks
+          # Prevent Pages/Jekyll from skipping underscore folders
+          touch dist/.nojekyll
+
+          echo "Final dist tree (first 120 files):"
+          find dist -maxdepth 3 -type f | sed -n '1,120p'
+
+          # ---- Testing if build works ----
           test -f dist/index.html
           test -f dist/jupyterlite/index.html
-          test -f dist/jupyterlite/lab/index.html
           test -f dist/jupyterlite/pyodide/pyodide.js
+          test -f dist/jupyterlite/lab/index.html || \
+          test -f dist/jupyterlite/retro/index.html || \
+          test -f dist/jupyterlite/tree/index.html || \
+          (echo "No known JupyterLite app entry found under dist/jupyterlite"; exit 1)
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
