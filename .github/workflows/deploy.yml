@@ -1,4 +1,4 @@
-name: Build & Deploy VitePress + JupyterLite to GitHub Pages v6
+name: Build & Deploy VitePress + JupyterLite to GitHub Pages v7
 
 on:
   push:
@@ -29,25 +29,29 @@ jobs:
           name: vitepress-dist
           path: docs/.vitepress/dist
 
-
   build-jupyterlite:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with: { lfs: true }     # ensures real .ipynb files, not LFS pointers
+        with: { lfs: true }     # ensures real .ipynb files
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install JupyterLite (pin to JL4-era)
+      - name: Install JupyterLite toolchain (pin to JL4 era)
         run: |
           set -euxo pipefail
           python -m pip install --upgrade pip wheel
-          pip install "jupyterlite-core>=0.6,<0.7" "jupyterlite-pyodide-kernel>=0.6,<0.7"
+          pip install "jupyterlite-core>=0.6,<0.7" \
+                      "jupyterlite-pyodide-kernel>=0.6,<0.7" \
+                      "jupyter-server>=2.14,<3"
           python - <<'PY'
-          import jupyterlite_core, jupyterlite_pyodide_kernel
-          print("JL core", jupyterlite_core.__version__, "pyodide-kernel", jupyterlite_pyodide_kernel.__version__)
+          import jupyterlite_core, jupyterlite_pyodide_kernel, jupyter_server
+          print("JL core", jupyterlite_core.__version__,
+                "pyodide-kernel", jupyterlite_pyodide_kernel.__version__,
+                "jupyter-server", jupyter_server.__version__)
           PY
           jupyter lite --version
+          
       - name: Build JupyterLite
         run: |
           set -euxo pipefail
