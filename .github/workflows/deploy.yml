@@ -34,15 +34,24 @@ jobs:
           name: vitepress-dist
           path: docs/.vitepress/dist
 
-  build-jupyterlite:
+   build-jupyterlite:
     runs-on: ubuntu-latest
+    env:
+      JUPYTERLITE_PYODIDE_URL: https://cdn.jsdelivr.net/pyodide/v0.24.1/full/
     steps:
       - uses: actions/checkout@v4
         with:
-          lfs: true  # ensures real .ipynb files (not LFS pointers)
+          lfs: true
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.11'   # ensure >=3.9 for Pyodide
+      - name: Verify Python version
+        run: |
+          python --version
+          python - <<'PY'
+          import sys
+          assert sys.version_info >= (3,9), "Python 3.9+ required for JupyterLite Pyodide kernel"
+          PY
       - name: Install JupyterLite toolchain (pin to JL4 era)
         run: |
           set -euxo pipefail
