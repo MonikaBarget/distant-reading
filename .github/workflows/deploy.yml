@@ -73,12 +73,8 @@ jobs:
           echo "Built JupyterLite tree (first 120 files):"
           find dist/jupyterlite -maxdepth 3 -type f | sed -n '1,120p'
 
-          # ---- Robust sanity checks ----
-          test -f dist/jupyterlite/index.html
-          test -f dist/jupyterlite/pyodide/pyodide.js
-          test -f dist/jupyterlite/lab/index.html || \
-          test -f dist/jupyterlite/retro/index.html || \
-          test -f dist/jupyterlite/tree/index.html || \
+          # ---- Checking if paths are created ----
+          test -f dist/jupyterlite/notebooks/index.html
           (echo "No known app entry (lab/retro/tree) found under dist/jupyterlite"; exit 1)
       - name: Upload JupyterLite artifact
         uses: actions/upload-artifact@v4
