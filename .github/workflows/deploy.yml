@@ -1,4 +1,4 @@
-name: Build & Deploy VitePress + JupyterLite to GitHub Pages v8
+name: Build & Deploy VitePress + JupyterLite to GitHub Pages v9
 
 on:
   push:
