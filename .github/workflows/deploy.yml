@@ -1,4 +1,4 @@
-name: Build & Deploy VitePress + JupyterLite to GitHub Pages v13
+name: Build & Deploy VitePress + JupyterLite to GitHub Pages v14
 
 on:
   push:
@@ -44,7 +44,7 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install JupyterLite toolchain (pin to JL4 era)
+      - name: Install JupyterLite toolchain
         run: |
           set -euxo pipefail
           python -m pip install --upgrade pip wheel
@@ -53,52 +53,47 @@ jobs:
             "jupyterlite-pyodide-kernel>=0.6,<0.7" \
             "jupyter-server>=2.14,<3" \
             "jupyterlab_server>=2.27,<3"
-          python - <<'PY'
-          import jupyterlite_core, jupyterlite_pyodide_kernel, jupyter_server
-          print("JL core", jupyterlite_core.__version__,
-                "pyodide-kernel", jupyterlite_pyodide_kernel.__version__,
-                "jupyter-server", jupyter_server.__version__)
-          PY
           jupyter lite --version
 
-      - name: Download Pyodide tarball
+      - name: Create JupyterLite config with CDN URL
         run: |
-          set -euxo pipefail
-          
-          # Download from GitHub releases (more reliable than CDN)
-          PYODIDE_VERSION="0.26.2"
-          PYODIDE_URL="https://github.com/pyodide/pyodide/releases/download/${PYODIDE_VERSION}/pyodide-${PYODIDE_VERSION}.tar.bz2"
-          
-          echo "Downloading Pyodide ${PYODIDE_VERSION} from GitHub releases..."
-          curl -L -o pyodide.tar.bz2 "${PYODIDE_URL}"
-          
-          echo "Pyodide tarball downloaded successfully"
-          ls -lh pyodide.tar.bz2
+          mkdir -p jupyterlite
+          cat > jupyterlite/jupyter-lite.json << 'EOF'
+          {
+            "jupyter-lite-schema-version": 0,
+            "jupyter-config-data": {
+              "litePluginSettings": {
+                "@jupyterlite/pyodide-kernel-extension:kernel": {
+                  "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
+                }
+              }
+            }
+          }
+          EOF
+          cat jupyterlite/jupyter-lite.json
 
-      - name: Build JupyterLite with local Pyodide
+      - name: Build JupyterLite without bundling Pyodide
         run: |
           set -euxo pipefail
           
           echo "Contents before build:"
           find jupyterlite/contents -maxdepth 3 -type f \( -name "*.ipynb" -o -name "*.py" \) || true
 
-          # Point to the tar.bz2 file directly - JupyterLite will extract it
+          # Build WITHOUT --pyodide flag - let browsers fetch from CDN
           jupyter lite build \
             --contents ./jupyterlite/contents \
             --output-dir dist/jupyterlite \
-            --pyodide ./pyodide.tar.bz2 \
             --debug
 
           echo "Built JupyterLite tree (first 120 files):"
           find dist/jupyterlite -maxdepth 3 -type f | sed -n '1,120p'
 
-          # Kernel + app checks
+          # Check for required files
           test -f dist/jupyterlite/index.html
-          test -f dist/jupyterlite/pyodide/pyodide.js
           test -f dist/jupyterlite/lab/index.html || \
           test -f dist/jupyterlite/retro/index.html || \
           test -f dist/jupyterlite/tree/index.html || \
-          (echo "No known app entry (lab/retro/tree) found under dist/jupyterlite"; exit 1)
+          (echo "No known app entry (lab/retro/tree) found"; exit 1)
 
       - name: Upload JupyterLite artifact
         uses: actions/upload-artifact@v4
