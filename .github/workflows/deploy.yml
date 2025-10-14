@@ -1,8 +1,9 @@
-name: Build & Deploy VitePress + JupyterLite to GitHub Pages v14
+name: Build & Deploy VitePress + JupyterLite to GitHub Pages v16
 
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: write  # needed by peaceiris/actions-gh-pages
@@ -33,17 +34,23 @@ jobs:
         with:
           name: vitepress-dist
           path: docs/.vitepress/dist
-   
+
   build-jupyterlite:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           lfs: true
+      - name: Clean previous JupyterLite build directories
+        run: |
+          echo "Cleaning old build directories and caches..."
+          rm -rf dist
+          rm -f .doit.db .doit* .jupyterlite.doit.db db.json || true
+          echo "Any jupyter-lite.* already in repo?"
+          (git ls-files | grep -E '^jupyterlite/.*jupyter-lite\.(json|ipynb)$') || echo "none"
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
       - name: Install JupyterLite toolchain
         run: |
           set -euxo pipefail
@@ -55,31 +62,31 @@ jobs:
             "jupyterlab_server>=2.27,<3"
           jupyter lite --version
 
-      - name: Create JupyterLite config with CDN URL
+      # IMPORTANT: write config at REPO ROOT, not inside jupyterlite/
+      - name: Create JupyterLite config (Pyodide from CDN at runtime)
         run: |
-          mkdir -p jupyterlite
-          cat > jupyterlite/jupyter-lite.json << 'EOF'
+          cat > jupyter-lite.json << 'EOF'
           {
             "jupyter-lite-schema-version": 0,
             "jupyter-config-data": {
               "litePluginSettings": {
                 "@jupyterlite/pyodide-kernel-extension:kernel": {
-                  "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
+                  "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/"
                 }
               }
             }
           }
           EOF
-          cat jupyterlite/jupyter-lite.json
+          echo "Wrote ./jupyter-lite.json:"
+          cat jupyter-lite.json
 
-      - name: Build JupyterLite without bundling Pyodide
+      - name: Build JupyterLite (no Pyodide bundling; browser will fetch from CDN)
         run: |
           set -euxo pipefail
-          
+
           echo "Contents before build:"
           find jupyterlite/contents -maxdepth 3 -type f \( -name "*.ipynb" -o -name "*.py" \) || true
 
-          # Build WITHOUT --pyodide flag - let browsers fetch from CDN
           jupyter lite build \
             --contents ./jupyterlite/contents \
             --output-dir dist/jupyterlite \
@@ -88,7 +95,7 @@ jobs:
           echo "Built JupyterLite tree (first 120 files):"
           find dist/jupyterlite -maxdepth 3 -type f | sed -n '1,120p'
 
-          # Check for required files
+          # App entry checks (no pyodide file check since we fetch at runtime)
           test -f dist/jupyterlite/index.html
           test -f dist/jupyterlite/lab/index.html || \
           test -f dist/jupyterlite/retro/index.html || \
@@ -100,3 +107,47 @@ jobs:
         with:
           name: jupyterlite-dist
           path: dist/jupyterlite
+
+  assemble-and-deploy:
+    needs: [build-vitepress, build-jupyterlite]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download VitePress artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: vitepress-dist
+          path: _tmp/vitepress
+      - name: Download JupyterLite artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: jupyterlite-dist
+          path: _tmp/jupyterlite
+      - name: Assemble publish directory
+        run: |
+          set -euxo pipefail
+          rm -rf dist
+          mkdir -p dist
+          # VitePress at site root
+          cp -r _tmp/vitepress/* dist/
+          # JupyterLite under /jupyterlite
+          mkdir -p dist/jupyterlite
+          cp -r _tmp/jupyterlite/* dist/jupyterlite/
+          # Prevent Pages/Jekyll from skipping underscore folders
+          touch dist/.nojekyll
+
+          echo "Final dist tree (first 120 files):"
+          find dist -maxdepth 3 -type f | sed -n '1,120p'
+
+          # Final checks (no pyodide file check; fetched at runtime)
+          test -f dist/index.html
+          test -f dist/jupyterlite/index.html
+          test -f dist/jupyterlite/lab/index.html || \
+          test -f dist/jupyterlite/retro/index.html || \
+          test -f dist/jupyterlite/tree/index.html || \
+          (echo "No known JupyterLite app entry found"; exit 1)
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          keep_files: false
