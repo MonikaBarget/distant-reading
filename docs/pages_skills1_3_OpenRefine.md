@@ -40,8 +40,9 @@ exciting functionalities not covered in this brief introduction! If you want to 
 
 ## Further Readings
 
-- - Batrinca, B., & Treleaven, P. C. (2015). Social media analytics: A survey of techniques, tools and platforms. *AI & Society, 30*(1), 89–116. https://doi.org/10.1007/s00146-014-0549-4
+- Batrinca, B., & Treleaven, P. C. (2015). Social media analytics: A survey of techniques, tools and platforms. *AI & Society, 30*(1), 89–116. https://doi.org/10.1007/s00146-014-0549-4
 - Ham, K. (2013). OpenRefine (version 2.5). *Journal of the Medical Library Association, 101*(3), 233–234. https://doi.org/10.3163/1536-5050.101.3.020
 - Miller, M., & Vielfaure, N. (2022). OpenRefine: An approachable open tool to clean research data. *Bulletin – Association of Canadian Map Libraries and Archives*, (170). https://doi.org/10.15353/acmla.n170.4873
 - Schöch, C. (2013). Big? Smart? Clean? Messy? Data in the humanities. *Journal of Digital Humanities, 2*(3).https://journalofdigitalhumanities.org/2-3/big-smart-clean-messy-data-in-the-humanities-by-christof-schoech/
+
 
