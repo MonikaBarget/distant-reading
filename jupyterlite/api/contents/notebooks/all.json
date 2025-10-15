@@ -2,11 +2,11 @@
   "content": [
     {
       "content": null,
-      "created": "2025-10-15T09:31:19.450241Z",
+      "created": "2025-10-15T10:33:35.703833Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2025-10-15T09:31:01.668281Z",
+      "last_modified": "2025-10-15T10:33:20.394729Z",
       "mimetype": null,
       "name": "data_cleaner_jupyterlite.ipynb",
       "path": "notebooks/data_cleaner_jupyterlite.ipynb",
@@ -15,11 +15,11 @@
       "writable": true
     }
   ],
-  "created": "2025-10-15T09:31:19.450241Z",
+  "created": "2025-10-15T10:33:35.703833Z",
   "format": "json",
   "hash": null,
   "hash_algorithm": null,
-  "last_modified": "2025-10-15T09:31:19.450241Z",
+  "last_modified": "2025-10-15T10:33:35.703833Z",
   "mimetype": null,
   "name": "notebooks",
   "path": "notebooks",
