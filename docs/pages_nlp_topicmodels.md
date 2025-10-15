@@ -41,7 +41,6 @@ When you give the same sentences to a Large Language Model (LLM), the model can,
 > Topic: Gardening
 > Reasoning: "Growing," "garden," and "slugs" are strong indicators of gardening. "Vegetables" are being grown, not cooked.
 
-```
 In some circumstances, it can be very useful that LLMs recognise semantic relationships, but the focus on word co-occurences is reproducible and avoids biases coming from training data or prompts.
 Also, the use of LLMs is energy-intensive and has a large environmental footprint. You should, therefore, carefully consider when and why the use of LLMs is necessary.
 
