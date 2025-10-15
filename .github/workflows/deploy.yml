@@ -1,4 +1,4 @@
-name: Build & Deploy VitePress + JupyterLite to GitHub Pages v17
+name: Build & Deploy VitePress + JupyterLite to GitHub Pages v18
 
 on:
   push:
@@ -65,31 +65,36 @@ jobs:
             "jupyterlab_server>=2.27,<3"
           jupyter lite --version
 
-      # IMPORTANT: config lives at REPO ROOT so it maps to dist/jupyterlite/jupyter-lite.json
-      - name: Create JupyterLite config pointing to local /pyodide/
+      # Repo-absolute pyodideUrl so /lab/ and /tree/ resolve correctly
+      - name: Create JupyterLite config (absolute pyodide URL)
         run: |
-          cat > jupyter-lite.json << 'EOF'
+          set -euo pipefail
+          OWNER="${GITHUB_REPOSITORY%/*}"
+          REPO="${GITHUB_REPOSITORY#*/}"
+          ABS_URL="https://${OWNER}.github.io/${REPO}/jupyterlite/pyodide/"
+          echo "Using pyodideUrl: ${ABS_URL}"
+          cat > jupyter-lite.json << EOF
           {
             "jupyter-lite-schema-version": 0,
             "jupyter-config-data": {
               "litePluginSettings": {
                 "@jupyterlite/pyodide-kernel-extension:kernel": {
-                  "pyodideUrl": "./pyodide/"
+                  "pyodideUrl": "${ABS_URL}"
                 }
               }
             }
           }
           EOF
-          echo "Wrote ./jupyter-lite.json:"
           cat jupyter-lite.json
 
-      - name: Build JupyterLite (no CDN usage)
+      - name: Build JupyterLite (force Lab & Tree)
         run: |
           set -euxo pipefail
           echo "Contents before build:"
           find jupyterlite/contents -maxdepth 3 -type f \( -name "*.ipynb" -o -name "*.py" \) || true
 
           jupyter lite build \
+            --apps lab,tree \
             --contents ./jupyterlite/contents \
             --output-dir dist/jupyterlite \
             --debug
@@ -99,10 +104,8 @@ jobs:
 
           # App entry checks
           test -f dist/jupyterlite/index.html
-          test -f dist/jupyterlite/lab/index.html || \
-          test -f dist/jupyterlite/retro/index.html || \
-          test -f dist/jupyterlite/tree/index.html || \
-          (echo "No known app entry (lab/retro/tree) found"; exit 1)
+          test -f dist/jupyterlite/lab/index.html
+          test -f dist/jupyterlite/tree/index.html
 
       - name: Fetch Pyodide files into site (bundle locally)
         run: |
@@ -117,7 +120,7 @@ jobs:
           curl -fL "${BASE}/pyodide.mjs"    -o "${OUT}/pyodide.mjs" || true
           curl -fL "${BASE}/repodata.json"  -o "${OUT}/repodata.json" || true
 
-          # Main WASM binary (name differs by version; try both)
+          # Main WASM binary (version-dependent name)
           (curl -fL "${BASE}/pyodide.wasm"      -o "${OUT}/pyodide.wasm" \
            || curl -fL "${BASE}/pyodide.asm.wasm" -o "${OUT}/pyodide.asm.wasm")
 
@@ -161,10 +164,19 @@ jobs:
           echo "Final dist tree (first 120 files):"
           find dist -maxdepth 3 -type f | sed -n '1,120p'
 
-          # Final checks (now Pyodide must be present locally)
+          # Final checks (Pyodide must be present locally)
           test -f dist/index.html
           test -f dist/jupyterlite/index.html
           test -f dist/jupyterlite/pyodide/pyodide.js
+
+      - name: Verify public pyodide URL resolves
+        run: |
+          OWNER="${GITHUB_REPOSITORY%/*}"
+          REPO="${GITHUB_REPOSITORY#*/}"
+          ABS_URL="https://${OWNER}.github.io/${REPO}/jupyterlite/pyodide/pyodide.js"
+          echo "Checking ${ABS_URL}"
+          curl -sSfIL "${ABS_URL}" | sed -n '1,20p'
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
