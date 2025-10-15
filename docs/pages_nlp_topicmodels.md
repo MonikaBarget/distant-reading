@@ -26,20 +26,21 @@ receive output like this:
 As a human reader, you would still likely interpret the first topic as *cooking* and the second as *gardening*, but the model per se cannot distinguish that "water" in the first sentence has a different usage than in the second sentence. The model also does not know that, in our sample, "slugs" are mentioned as a garden pest or that "tender" is related to food texture. This why it also never suggests a name or title for your topics other than *topic 1*, *topic 2*, etc. The labelling of topics always has to come from you.
 
 When you give the same sentences to a Large Language Model (LLM), the model can, of course, make suggetions about context and meaning. Mistral.ai, for example, gives the following interpretation for the sample:
-```
-Sentence 1: "Garden plants need a lot of water."
-Topic: Gardening
-Reasoning: "Garden" and "plants" are strong indicators of gardening. "Water" is used in the context of plant care.
+
+> Sentence 1: "Garden plants need a lot of water."
+> Topic: Gardening
+> Reasoning: "Garden" and "plants" are strong indicators of gardening. "Water" is used in the context of plant care.
 
 
-Sentence 2: "You have to boil water and cook the vegetables till tender."
-Topic: Cooking
-Reasoning: "Boil," "cook," and "tender" are strong indicators of cooking. "Water" is used in the context of boiling, and "vegetables" are being cooked.
+> Sentence 2: "You have to boil water and cook the vegetables till tender."
+> Topic: Cooking
+> Reasoning: "Boil," "cook," and "tender" are strong indicators of cooking. "Water" is used in the context of boiling, and "vegetables" are being cooked.
 
 
-Sentence 3: "Growing vegetables in your garden can be difficult when there are slugs."
-Topic: Gardening
-Reasoning: "Growing," "garden," and "slugs" are strong indicators of gardening. "Vegetables" are being grown, not cooked.
+> Sentence 3: "Growing vegetables in your garden can be difficult when there are slugs."
+> Topic: Gardening
+> Reasoning: "Growing," "garden," and "slugs" are strong indicators of gardening. "Vegetables" are being grown, not cooked.
+
 ```
 In some circumstances, it can be very useful that LLMs recognise semantic relationships, but the focus on word co-occurences is reproducible and avoids biases coming from training data or prompts.
 Also, the use of LLMs is energy-intensive and has a large environmental footprint. You should, therefore, carefully consider when and why the use of LLMs is necessary.
@@ -59,9 +60,11 @@ Also, the use of LLMs is energy-intensive and has a large environmental footprin
 
 [Voyant Tools](https://voyant-tools.org/) as web-based platform for text analysis also includes a [topic modelling option](https://voyant-tools.org/docs/tutorial-topics.html). In the interface of the Voyant suite, you can find it under *Corpus Tools*.  This tool uses the Latent Dirichlet Allocation (LDA) algorithm, specifically the jsLDA implementation by David Mimno. The algorithm starts by temporarily assigning words in your documents to a set number of topics (you choose how many topics to create). This initial assignment isn’t meaningful yet — it’s just a starting point. The algorithm then goes through 50 iterations (or cycles) to improve the model. In each iteration, it adjusts which words belong to which topics based on how often they appear together in your documents. Over time, the topics become more coherent and meaningful. Because the process starts with a random temporary assignment, the final topics can vary slightly each time you run the analysis. This might seem inconsistent, but the topics usually maintain a logical structure. Think of it like shuffling a deck of cards: you’ll get a different order each time, but the same types of cards will still group together. In the topic output you see, only the top n (e.g. 10) words per topic are shown. The more words you include, the more overlaps you will see between the topics you created as each topic actually includes all word in your topic in the end. However, the words are ranked by how strongly they relate to the topic, with the first few words being the most defining for that topic.
 
-To better understand what is happening behind the tool, you can use the [Spyral Topic Modelling Notebook by Geoffrey Rockwell] that walks you through the actual code. You don’t need to write any code from scratch but can read the explanations and follow the notebook’s steps. Like the user interface in Voyant, the topics notebook starts by loading a text corpus (e.g., the default "Frankenstein" text). The notebook then runs a probabilistic model (LDA) to identify topics and displays the results in a panel. You can adjust the number of topics and words per topic to fit your needs. This notebook is shared under a Creative Commons Attribution (CC BY) license and you may adapt it for your own projects.
+To better understand what is happening behind the tool, you can use the [Spyral Topic Modelling Notebook by Geoffrey Rockwell](https://voyant-tools.org/spyral/learnspyral@gh/Topic-Modelling/) that walks you through the actual code. You don’t need to write any code from scratch but can read the explanations and follow the notebook’s steps. Like the user interface in Voyant, the topics notebook starts by loading a text corpus (e.g., the default "Frankenstein" text). The notebook then runs a probabilistic model (LDA) to identify topics and displays the results in a panel. You can adjust the number of topics and words per topic to fit your needs. This notebook is shared under a Creative Commons Attribution (CC BY) license and you may adapt it for your own projects.
 
 ## Tool 2: DARIAH-DE Topic Explorer
+
+<img src="https://de.dariah.eu/documents/20142/34430/g4526+%281%29.png/25446365-b8b9-14f6-5b01-2839d632ba03?t=1587049498055" alt="Topic Modelling Example" style="float: left; margin: 10px;"/>
 
 The [DARIAH-DE Topic Explorer](https://topics.dariah.eu/) is another beginner-friendly tool for topic modelling and specially designed for humanities research. It also uses LDA to generate topics from your text collection.
 
