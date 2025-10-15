@@ -63,17 +63,11 @@ To better understand what is happening behind the tool, you can use the [Spyral 
 
 ## Tool 2: DARIAH-DE Topic Explorer
 
-The [DARIAH-DE Topic Explorer](https://topics.dariah.eu/) is another beginner-friendly tool for topic modelling and specially designed for humanities research. It also uses LDA to generate topics from your text collection.
+The [DARIAH-DE Topic Explorer](https://topics.dariah.eu/) is another beginner-friendly tool for topic modelling and specially designed for humanities research. It also uses LDA to generate topics from your text collection. Similar to the Voyant topic modelling, the Topic Explorer allows you to upload plain text files (one per document), set stopwords and parameters, and run the model repeatedly. No coding skills are required. It is recommended to start with a small number of topics (5 to 10) and increase gradually. It is rare that you will already get the best result in the first attempt. 
+
+One unique feature of the DARIAH Topics Explorer going beyond the Voyant functionalities is that you can also display **topic-document proportions** as a heat map (see image below). This heat map provides a clear, color-coded overview of how strongly each topic is represented across all documents in your corpus. It helps you quickly identify which documents are most relevant to specific themes.
 
 <img src="https://de.dariah.eu/documents/20142/34430/g4526+%281%29.png/25446365-b8b9-14f6-5b01-2839d632ba03?t=1587049498055" alt="Topic Modelling Example" style="float: left; margin: 10px;"/>
 
-### How to Use the Topic Explorer:
-1. **Upload your corpus** (plain text files, one per document).
-2. **Set parameters** (e.g., number of topics, stopwords).
-3. **Run the model** and explore the generated topics.
-4. **Interpret results** by examining:
-   - The **top words** in each topic.
-   - **Sample documents** where a topic is prominent.
 
-Advantages of the Dariah Topics Explorer are that, similar to Voyant, no coding skills are required. Also, the iterative refinement is very helpful. It is recommended to start with a small number of topics (5 to 10) and increase gradually. It is rare that you will already get the best result in the first attempt.
 
