@@ -63,9 +63,9 @@ To better understand what is happening behind the tool, you can use the [Spyral 
 
 ## Tool 2: DARIAH-DE Topic Explorer
 
-<img src="https://de.dariah.eu/documents/20142/34430/g4526+%281%29.png/25446365-b8b9-14f6-5b01-2839d632ba03?t=1587049498055" alt="Topic Modelling Example" style="float: left; margin: 10px;"/>
-
 The [DARIAH-DE Topic Explorer](https://topics.dariah.eu/) is another beginner-friendly tool for topic modelling and specially designed for humanities research. It also uses LDA to generate topics from your text collection.
+
+<img src="https://de.dariah.eu/documents/20142/34430/g4526+%281%29.png/25446365-b8b9-14f6-5b01-2839d632ba03?t=1587049498055" alt="Topic Modelling Example" style="float: left; margin: 10px;"/>
 
 ### How to Use the Topic Explorer:
 1. **Upload your corpus** (plain text files, one per document).
