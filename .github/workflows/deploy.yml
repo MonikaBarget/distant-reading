@@ -1,4 +1,4 @@
-name: Build & Deploy VitePress + JupyterLite to GitHub Pages v18
+name: Build & Deploy VitePress + JupyterLite to GitHub Pages v19
 
 on:
   push:
@@ -65,21 +65,23 @@ jobs:
             "jupyterlab_server>=2.27,<3"
           jupyter lite --version
 
-      # Repo-absolute pyodideUrl so /lab/ and /tree/ resolve correctly
-      - name: Create JupyterLite config (absolute pyodide URL)
+      - name: Create JupyterLite config (absolute pyodide *file* URL)
         run: |
           set -euo pipefail
-          OWNER="${GITHUB_REPOSITORY%/*}"
-          REPO="${GITHUB_REPOSITORY#*/}"
-          ABS_URL="https://${OWNER}.github.io/${REPO}/jupyterlite/pyodide/"
-          echo "Using pyodideUrl: ${ABS_URL}"
+          OWNER_RAW="${GITHUB_REPOSITORY%/*}"
+          REPO_RAW="${GITHUB_REPOSITORY#*/}"
+          OWNER_LC="${OWNER_RAW,,}"
+          REPO_LC="${REPO_RAW,,}"
+          BASE="https://${OWNER_LC}.github.io/${REPO_LC}/jupyterlite/pyodide/"
+          FILE_URL="${BASE}pyodide.js"
+          echo "Using pyodideUrl: ${FILE_URL}"
           cat > jupyter-lite.json << EOF
           {
             "jupyter-lite-schema-version": 0,
             "jupyter-config-data": {
               "litePluginSettings": {
                 "@jupyterlite/pyodide-kernel-extension:kernel": {
-                  "pyodideUrl": "${ABS_URL}"
+                  "pyodideUrl": "${FILE_URL}"
                 }
               }
             }
@@ -87,20 +89,22 @@ jobs:
           EOF
           cat jupyter-lite.json
 
-      - name: Build JupyterLite (force Lab & Tree)
+      - name: Build JupyterLite (Lab & Tree apps)
         run: |
           set -euxo pipefail
           echo "Contents before build:"
           find jupyterlite/contents -maxdepth 3 -type f \( -name "*.ipynb" -o -name "*.py" \) || true
 
+          # Use separate flags for multiple apps
           jupyter lite build \
-            --apps lab,tree \
+            --apps=lab \
+            --apps=tree \
             --contents ./jupyterlite/contents \
             --output-dir dist/jupyterlite \
             --debug
 
-          echo "Built JupyterLite tree (first 120 files):"
-          find dist/jupyterlite -maxdepth 3 -type f | sed -n '1,120p'
+          echo "Top-level app dirs in dist/jupyterlite:"
+          ls -la dist/jupyterlite | sed -n '1,200p'
 
           # App entry checks
           test -f dist/jupyterlite/index.html
@@ -161,19 +165,21 @@ jobs:
           # Prevent Pages/Jekyll from skipping underscore folders
           touch dist/.nojekyll
 
-          echo "Final dist tree (first 120 files):"
-          find dist -maxdepth 3 -type f | sed -n '1,120p'
+          echo "Final dist tree (first 200 files):"
+          find dist -maxdepth 3 -type f | sed -n '1,200p'
 
           # Final checks (Pyodide must be present locally)
           test -f dist/index.html
           test -f dist/jupyterlite/index.html
+          test -f dist/jupyterlite/lab/index.html
+          test -f dist/jupyterlite/tree/index.html
           test -f dist/jupyterlite/pyodide/pyodide.js
 
       - name: Verify public pyodide URL resolves
         run: |
-          OWNER="${GITHUB_REPOSITORY%/*}"
-          REPO="${GITHUB_REPOSITORY#*/}"
-          ABS_URL="https://${OWNER}.github.io/${REPO}/jupyterlite/pyodide/pyodide.js"
+          OWNER_LC="${GITHUB_REPOSITORY%/*}"; OWNER_LC="${OWNER_LC,,}"
+          REPO_LC="${GITHUB_REPOSITORY#*/}";  REPO_LC="${REPO_LC,,}"
+          ABS_URL="https://${OWNER_LC}.github.io/${REPO_LC}/jupyterlite/pyodide/pyodide.js"
           echo "Checking ${ABS_URL}"
           curl -sSfIL "${ABS_URL}" | sed -n '1,20p'
 
