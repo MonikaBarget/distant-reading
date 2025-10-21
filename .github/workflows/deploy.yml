@@ -84,7 +84,7 @@ jobs:
           find jupyterlite/contents -maxdepth 3 -type f \( -name "*.ipynb" -o -name "*.py" \) || true
 
           jupyter lite build \
-            --apps lab,tree \
+            --apps lab tree \
             --contents ./jupyterlite/contents \
             --output-dir dist/jupyterlite \
             --debug
