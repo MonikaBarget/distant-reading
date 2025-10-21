@@ -1,4 +1,4 @@
-name: Build & Deploy VitePress + JupyterLite to GitHub Pages v24
+name: Build & Deploy VitePress + JupyterLite to GitHub Pages v26
 
 on:
   push:
@@ -49,7 +49,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install JupyterLite toolchain (Pyodide 0.27)
+      - name: Install JupyterLite toolchain (Pyodide 0.26 compatible)
         run: |
           set -euxo pipefail
           python -m pip install --upgrade pip wheel
@@ -64,12 +64,13 @@ jobs:
             "jupyter-config-data": {
               "litePluginSettings": {
                 "@jupyterlite/pyodide-kernel-extension:kernel": {
-                  "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"
+                  "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
                 }
               }
             }
           }
           EOF
+          echo "Configured Pyodide entry: https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
 
       - name: Build JupyterLite site
         run: |
@@ -79,24 +80,23 @@ jobs:
             --output-dir dist/jupyterlite \
             --debug
 
-          # Checks
+          # Minimal checks
           test -f dist/jupyterlite/index.html
           test -f dist/jupyterlite/lab/index.html
 
       - name: Download Pyodide runtime locally (offline fallback)
         run: |
           set -euxo pipefail
-          PYODIDE_VER="0.27.2"
-          BASE="https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VER}/full/pyodide.js"
+          PYODIDE_VER="0.26.2"
+          BASE="https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VER}/full"
           OUT="dist/jupyterlite/pyodide"
           mkdir -p "${OUT}"
 
-          curl -fL "${BASE}/pyodide.js"     -o "${OUT}/pyodide.js"
-          curl -fL "${BASE}/pyodide.mjs"    -o "${OUT}/pyodide.mjs" || true
-          curl -fL "${BASE}/repodata.json"  -o "${OUT}/repodata.json" || true
-          curl -fL "${BASE}/pyodide.wasm"   -o "${OUT}/pyodide.wasm"
+          curl -fL "${BASE}/pyodide.js"    -o "${OUT}/pyodide.js"
+          curl -fL "${BASE}/pyodide.mjs"   -o "${OUT}/pyodide.mjs" || true
+          curl -fL "${BASE}/pyodide.wasm"  -o "${OUT}/pyodide.wasm"
+          curl -fL "${BASE}/repodata.json" -o "${OUT}/repodata.json" || true
 
-          # Checks
           test -f "${OUT}/pyodide.js"
 
       - name: Upload JupyterLite artifact
@@ -131,7 +131,7 @@ jobs:
           cp -r _tmp/jupyterlite/* dist/jupyterlite/
           touch dist/.nojekyll
 
-          # Checks
+          # Final checks
           test -f dist/index.html
           test -f dist/jupyterlite/index.html
           test -f dist/jupyterlite/pyodide/pyodide.js
