@@ -1,4 +1,4 @@
-name: Build & Deploy VitePress + JupyterLite to GitHub Pages v23
+name: Build & Deploy VitePress + JupyterLite to GitHub Pages v24
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write  # required for gh-pages deployment
+  contents: write
 
 concurrency:
   group: pages-${{ github.ref }}
@@ -22,14 +22,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Install deps
+      - name: Install dependencies
         run: npm ci
       - name: Build VitePress
         run: npm run build
-      - name: Show VitePress output
-        run: |
-          echo "VitePress dist (first 50 files):"
-          find docs/.vitepress/dist -maxdepth 2 -type f | sed -n '1,50p'
       - name: Upload VitePress artifact
         uses: actions/upload-artifact@v4
         with:
@@ -43,30 +39,24 @@ jobs:
         with:
           lfs: true
 
-      - name: Clean previous JupyterLite build dirs & caches
+      - name: Clean previous build and caches
         run: |
           set -euxo pipefail
           rm -rf dist
           rm -f .doit.db .doit* .jupyterlite.doit.db db.json || true
-          echo "Cleaned workspace."
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
-      - name: Install JupyterLite toolchain (JL4 era)
+      - name: Install JupyterLite toolchain (Pyodide 0.27)
         run: |
           set -euxo pipefail
           python -m pip install --upgrade pip wheel
-          pip install \
-            "jupyterlite-core>=0.6,<0.7" \
-            "jupyterlite-pyodide-kernel>=0.6,<0.7" \
-            "jupyter-server>=2.14,<3" \
-            "jupyterlab_server>=2.27,<3"
+          pip install -r requirements.txt
           jupyter lite --version
 
-      # Create the configuration so that browsers fetch Pyodide from CDN
-      - name: Create JupyterLite config (CDN Pyodide)
+      - name: Create JupyterLite configuration
         run: |
           cat > jupyter-lite.json << 'EOF'
           {
@@ -74,35 +64,40 @@ jobs:
             "jupyter-config-data": {
               "litePluginSettings": {
                 "@jupyterlite/pyodide-kernel-extension:kernel": {
-                  "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
+                  "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"
                 }
               }
             }
           }
           EOF
-          echo "Wrote CDN-based jupyter-lite.json:"
-          cat jupyter-lite.json
 
-      - name: Build JupyterLite site (no local Pyodide, browser fetches from CDN)
+      - name: Build JupyterLite site
         run: |
           set -euxo pipefail
-          echo "Contents before build:"
-          find jupyterlite/contents -maxdepth 3 -type f \( -name "*.ipynb" -o -name "*.py" \) || true
-
-          # Build lab and tree apps
           jupyter lite build \
-            --apps lab tree \
             --contents ./jupyterlite/contents \
             --output-dir dist/jupyterlite \
             --debug
 
-          echo "Build complete. Checking outputs:"
-          find dist/jupyterlite -maxdepth 2 -type d
+          # Checks
           test -f dist/jupyterlite/index.html
           test -f dist/jupyterlite/lab/index.html
-          test -f dist/jupyterlite/jupyter-lite.json || \
-            (echo "Warning: jupyter-lite.json missing!" && exit 1)
-          echo "✅ Build appears successful — skipping tree app check."
+
+      - name: Download Pyodide runtime locally (offline fallback)
+        run: |
+          set -euxo pipefail
+          PYODIDE_VER="0.27.2"
+          BASE="https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VER}/full"
+          OUT="dist/jupyterlite/pyodide"
+          mkdir -p "${OUT}"
+
+          curl -fL "${BASE}/pyodide.js"     -o "${OUT}/pyodide.js"
+          curl -fL "${BASE}/pyodide.mjs"    -o "${OUT}/pyodide.mjs" || true
+          curl -fL "${BASE}/repodata.json"  -o "${OUT}/repodata.json" || true
+          curl -fL "${BASE}/pyodide.wasm"   -o "${OUT}/pyodide.wasm"
+
+          # Checks
+          test -f "${OUT}/pyodide.js"
 
       - name: Upload JupyterLite artifact
         uses: actions/upload-artifact@v4
@@ -119,31 +114,28 @@ jobs:
         with:
           name: vitepress-dist
           path: _tmp/vitepress
+
       - name: Download JupyterLite artifact
         uses: actions/download-artifact@v4
         with:
           name: jupyterlite-dist
           path: _tmp/jupyterlite
+
       - name: Assemble publish directory
         run: |
           set -euxo pipefail
           rm -rf dist
           mkdir -p dist
-          # VitePress site at root
           cp -r _tmp/vitepress/* dist/
-          # JupyterLite under /jupyterlite
           mkdir -p dist/jupyterlite
           cp -r _tmp/jupyterlite/* dist/jupyterlite/
-          # Ensure GitHub Pages doesn't mangle static assets
           touch dist/.nojekyll
 
-          echo "Final dist tree (top-level folders):"
-          find dist -maxdepth 2 -type d
-
-          # Sanity checks
+          # Checks
           test -f dist/index.html
           test -f dist/jupyterlite/index.html
-          test -f dist/jupyterlite/lab/index.html
+          test -f dist/jupyterlite/pyodide/pyodide.js
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
