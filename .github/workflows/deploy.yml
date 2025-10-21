@@ -91,7 +91,14 @@ jobs:
           if [ -f "$CONFIG_FILE" ] && [ -f "$HTML_FILE" ]; then
             echo "Embedding JupyterLite config into HTML..."
             CONFIG_JSON=$(jq -c '.' "$CONFIG_FILE")
-            sed -i "s|<script id=\"jupyter-config-data\" type=\"application/json\" data-jupyter-lite-root=\"..\">{}</script>|<script id=\"jupyter-config-data\" type=\"application/json\" data-jupyter-lite-root=\"..\">${CONFIG_JSON}</script>|" "$HTML_FILE"
+
+            # Replace the {} JSON block inside the multiline <script> tag
+            awk -v json="$CONFIG_JSON" '
+              /<script id="jupyter-config-data"/ {in_block=1; print; next}
+              in_block && /{}/ {print json; next}
+              in_block && /<\/script>/ {in_block=0}
+              {print}
+            ' "$HTML_FILE" > "${HTML_FILE}.tmp" && mv "${HTML_FILE}.tmp" "$HTML_FILE"
           else
             echo "Config or HTML file not found; skipping patch."
           fi
