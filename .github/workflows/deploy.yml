@@ -1,4 +1,4 @@
-name: Build & Deploy VitePress + JupyterLite to GitHub Pages v26
+name: Build & Deploy VitePress + JupyterLite to GitHub Pages v27
 
 on:
   push:
@@ -79,12 +79,10 @@ jobs:
             --contents ./jupyterlite/contents \
             --output-dir dist/jupyterlite \
             --debug
-
-          # Minimal checks
           test -f dist/jupyterlite/index.html
           test -f dist/jupyterlite/lab/index.html
 
-      - name: Download Pyodide runtime locally (offline fallback)
+      - name: Download Pyodide runtime locally (handles name change)
         run: |
           set -euxo pipefail
           PYODIDE_VER="0.26.2"
@@ -92,10 +90,13 @@ jobs:
           OUT="dist/jupyterlite/pyodide"
           mkdir -p "${OUT}"
 
-          curl -fL "${BASE}/pyodide.js"    -o "${OUT}/pyodide.js"
-          curl -fL "${BASE}/pyodide.mjs"   -o "${OUT}/pyodide.mjs" || true
-          curl -fL "${BASE}/pyodide.wasm"  -o "${OUT}/pyodide.wasm"
-          curl -fL "${BASE}/repodata.json" -o "${OUT}/repodata.json" || true
+          curl -fL "${BASE}/pyodide.js"     -o "${OUT}/pyodide.js"
+          curl -fL "${BASE}/pyodide.mjs"    -o "${OUT}/pyodide.mjs" || true
+          curl -fL "${BASE}/repodata.json"  -o "${OUT}/repodata.json" || true
+
+          # Handle either pyodide.wasm or pyodide.asm.wasm
+          (curl -fL "${BASE}/pyodide.wasm"      -o "${OUT}/pyodide.wasm" \
+           || curl -fL "${BASE}/pyodide.asm.wasm" -o "${OUT}/pyodide.asm.wasm")
 
           test -f "${OUT}/pyodide.js"
 
@@ -131,7 +132,7 @@ jobs:
           cp -r _tmp/jupyterlite/* dist/jupyterlite/
           touch dist/.nojekyll
 
-          # Final checks
+          # Checks
           test -f dist/index.html
           test -f dist/jupyterlite/index.html
           test -f dist/jupyterlite/pyodide/pyodide.js
