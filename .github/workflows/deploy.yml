@@ -68,7 +68,7 @@ jobs:
             "jupyter-config-data": {
               "litePluginSettings": {
                 "@jupyterlite/pyodide-kernel-extension:kernel": {
-                  "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/"
+                  "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
                 }
               }
             }
