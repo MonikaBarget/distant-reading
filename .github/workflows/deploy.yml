@@ -87,7 +87,7 @@ jobs:
         run: |
           set -euxo pipefail
           PYODIDE_VER="0.27.2"
-          BASE="https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VER}/full"
+          BASE="https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VER}/full/pyodide.js"
           OUT="dist/jupyterlite/pyodide"
           mkdir -p "${OUT}"
 
