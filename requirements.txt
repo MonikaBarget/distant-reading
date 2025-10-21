@@ -1,4 +1,6 @@
-# JupyterLite toolchain (JupyterLab 4 era)
+# requirements.txt for local JupyterLite builds
 
 jupyterlite-core>=0.6,<0.7
 jupyterlite-pyodide-kernel>=0.6,<0.7
+jupyter-server>=2.14,<3
+jupyterlab_server>=2.27,<3
