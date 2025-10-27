@@ -66,10 +66,11 @@ If the environment is inactive after a long period of disuse, the course coordin
 ## Further Reading
 
 For context on data cleaning and preparation:
-- Ignatow, G., & Mihalcea, R. (2018). *An Introduction to Text Mining*. Sage. [DOI](https://doi.org/10.4135/9781506336985)
-- Piotrowski, M. (2012). *Natural Language Processing for Historical Texts*. Springer. [DOI](https://doi.org/10.1007/978-3-031-02146-6)
-- Schöch, C. (2013). *Big? Smart? Clean? Messy? Data in the Humanities*. [Journal of Digital Humanities](http://journalofdigitalhumanities.org/2-3/big-smart-clean-messy-data-in-the-humanities/)
+- Ignatow, G., & Mihalcea, R. (2018). *An introduction to text mining: Research design, data collection, and analysis.* SAGE Publications. https://doi.org/10.4135/9781506336985
+- Piotrowski, M. (2012). *Natural language processing for historical texts.* Springer. https://doi.org/10.1007/978-3-031-02146-6
+- Schöch, C. (2013). Big? Smart? Clean? Messy? Data in the humanities. *Journal of Digital Humanities*, 2(3). http://journalofdigitalhumanities.org/2-3/big-smart-clean-messy-data-in-the-humanities/
 
 ---
 
 Instructions adapted by Monika Renate Barget (2025).
+
