@@ -14,12 +14,16 @@ For VPN support, you can contact **UM ICT** directly:
 - **ICT FASoS**: Visit in person by turning left at the reception and walking down the hallway with the red seats. Their office is usually open from 9 am to 4 pm on working days.
 - **ICT Central**: Submit a request via the [online ticketing system](https://servicedesk.icts.maastrichtuniversity.nl/tas/public/ssp/) or visit their in-person service desk at the university library in the inner city.
 
+To successfully connect to the VPN client, make sure to select access category **06** (for students) instead of **01** (for staff). Logging in to VPN is a requirement for access to DSRI / JupyterHub.
+
 ---
 
 ## Step 2 – Access JupyterHub
 
-After connecting to the UM VPN, open your browser and go to the JupyterHub URL provided by your instructor (####). Log in using:
-- **Username**: Your student I-number (e.g., `I6000000`).
+After connecting to the UM VPN, open your browser and go to the following JupyterHub:[https://machines-of-knowledge-fdcw-history-machines-of-knowledge.apps.dsri2.unimaas.nl/hub/login?next=%2Fhub%2F](https://machines-of-knowledge-fdcw-history-machines-of-knowledge.apps.dsri2.unimaas.nl/hub/login?next=%2Fhub%2F)
+
+Then enter the following access information:
+- **Username**: Your student I-number (e.g., `I6000000`). The tool should accept both *I* and *i* before your number.
 - **Password**: The shared course password provided by your tutor.
 
 Having one password for all students ensures that tutors and ICT staff can also access your projects when necessary and help with problems.
@@ -34,7 +38,7 @@ After logging in, you’ll see the JupyterHub interface with project folders on 
 
 ## Step 4 – Access Course Materials
 
-In the **File Explorer** (left panel), navigate to the `notebooks` folder. Here, you’ll find the course scripts, such as the Apple Web Scraper notebook. Double-click a notebook to open and run it.
+In the **File Explorer** (left panel), navigate to the `notebooks` folder, which is hidden under `materials`. Here, you’ll find the course scripts, such as the Apple Web Scraper notebook. Double-click a notebook to open and run it.
 Use the buttons at the top of the **File Explorer** to upload or download files as needed.
 
 ### Storage Reminder
