@@ -66,3 +66,13 @@ Students often find it challenging to develop a logical workflow in Voyant as th
 - What is (un)expected?
 - What would have been difficult to find via close reading?
 - What research questions would be interesting to explore based on this dataset?
+
+### Further Readings
+
+- Drucker, J. (2017). Why distant reading isn’t. *PMLA, 132*(3), 628–635. https://doi.org/10.1632/pmla.2017.132.3.628
+- Jockers, M. L. (2013). *Macroanalysis: Digital methods and literary history.* University of Illinois Press.
+- Moretti, F. (2000). Conjectures on world literature. *New Left Review, 1*, 54–68. https://newleftreview.org/issues/II1/articles/franco-moretti-conjectures-on-world-literature
+- Moretti, F. (2013). *Distant reading.* Verso.
+- Sinclair, S., & Rockwell, G. (2015). Text analysis and visualization: Making meaning count. In S. Schreibman, R. Siemens, & J. Unsworth (Eds.), *A new companion to digital humanities* (pp. 274–290). Wiley-Blackwell. https://doi.org/10.1002/9781118680605.ch19
+  
+

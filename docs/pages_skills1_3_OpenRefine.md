@@ -5,7 +5,7 @@ In our course, Open Refine helps us filter podcast reviews to create sub-collect
 
 ## Using filters in Open Refine
 
-You can filter the data displayed in OpenRefine by applying a ‘Text Filter’, which looks for a particular piece of text appearing in a column. Text filters are applied by clicking the drop-down menu at the top of the column you want to apply the filter to and choosing **Text filter**. The filter options appear in the left-hand panel. Simply type in the text you want to use in the Filter to display only rows which contain that text in the relevant column. You can also use [regular expressions](https://librarycarpentry.github.io/lc-data-intro/04-regular-expressions) in the filter. 
+You can filter the data displayed in OpenRefine by applying a ‘Text Filter’, which looks for a particular piece of text appearing in a column. Text filters are applied by clicking the drop-down menu at the top of the column you want to apply the filter to and choosing **Text filter**. The filter options appear in the left-hand panel. Simply type in the text you want to use in the Filter to display only rows which contain that text in the relevant column. You can also use [regular expressions](https://librarycarpentry.github.io/lc-data-intro/04-regular-expressions) in the filter (Library Carpentry, n.d.). 
 
 It is very important to note that when you have filtered the data displayed in OpenRefine, any operations you carry out will apply only to the rows that match the filter – that is, the data currently being displayed. This also means that only the current selection will be saved when you export your data while a filter is active!
 
@@ -23,7 +23,7 @@ Facets can be a great way to select podcast reviews by user names, time periods,
 **Screenshot 2**: facet applied to "user" column, showing all user names and the number of reviews written  
 [![Screenshot 2](../screenshots_distant_reading/OpenRefine_textfacet.png)](https://github.com/MonikaBarget/distant-reading/tree/main/screenshots_distant_reading/OpenRefine_textfacet.png)
 
-Please also read the documentation for "Exporting your Work" in the official [Open Refine](https://openrefine.org/docs/manual/exporting) documentation!
+Please also read the documentation for "Exporting your Work" in the official [Open Refine (n.d.)](https://openrefine.org/docs/manual/exporting) documentation!
 
 **Screenshot 3**: using the "export" option to save a data selection in a new file  
 [![Screenshot 3](../screenshots_distant_reading/OpenRefine_export.png)](https://github.com/MonikaBarget/distant-reading/tree/main/screenshots_distant_reading/OpenRefine_export.png)
@@ -35,14 +35,19 @@ The following YouTube video by Monika explains the process of filtering data in 
 
 [![Thumbnail](https://img.youtube.com/vi/oMWIUf5_9jM/maxresdefault.jpg)](https://youtu.be/oMWIUf5_9jM?si=ibxc2zxcn335uGOo)
 
-The focus is on using a general text filter to find keywords and using the facet filter to explore rankings. However, OpenRefine has many other
-exciting functionalities not covered in this brief introduction! If you want to learn more, check out other videos shared by researchers and librarians on YouTube. One [Open Refine tutorial provided by researchers from Edinburgh](https://www.youtube.com/watch?v=wfS1qTKFQoI) does not only explain editing spreadsheets but also covers uploading data easily to Wikidata, which may be of interest to you in the future.
+The focus is on using a general text filter to find keywords and using the facet filter to explore rankings (DigitalHistory, 2023). However, OpenRefine has many other
+exciting functionalities not covered in this brief introduction! If you want to learn more, check out other videos shared by researchers and librarians on YouTube. One [Open Refine tutorial provided by researchers from Edinburgh](https://www.youtube.com/watch?v=wfS1qTKFQoI) does not only explain editing spreadsheets but also covers uploading data easily to Wikidata, which may be of interest to you in the future (Wikimedian in Residence – University of Edinburgh, 2019).
 
-## Further Readings
+## Cited works and further readings
 
 - Batrinca, B., & Treleaven, P. C. (2015). Social media analytics: A survey of techniques, tools and platforms. *AI & Society, 30*(1), 89–116. https://doi.org/10.1007/s00146-014-0549-4
+- DigitalHistory. (2023, December 15). *Sorting and exporting data in Open Refine* [Video]. YouTube. https://youtu.be/oMWIUf5_9jM
 - Ham, K. (2013). OpenRefine (version 2.5). *Journal of the Medical Library Association, 101*(3), 233–234. https://doi.org/10.3163/1536-5050.101.3.020
+- Library Carpentry. (n.d.). *Regular expressions*. https://librarycarpentry.github.io/lc-data-intro/01-regular-expressions.html
 - Miller, M., & Vielfaure, N. (2022). OpenRefine: An approachable open tool to clean research data. *Bulletin – Association of Canadian Map Libraries and Archives*, (170). https://doi.org/10.15353/acmla.n170.4873
+- OpenRefine. (n.d.). *Exporting data.* https://openrefine.org/docs/manual/exporting
 - Schöch, C. (2013). Big? Smart? Clean? Messy? Data in the humanities. *Journal of Digital Humanities, 2*(3).https://journalofdigitalhumanities.org/2-3/big-smart-clean-messy-data-in-the-humanities-by-christof-schoech/
+- Wikimedian in Residence – University of Edinburgh. (2019, August 21). *OpenRefine beginners tutorial* [Video]. YouTube. https://youtu.be/wfS1qTKFQoI
+
 
 
