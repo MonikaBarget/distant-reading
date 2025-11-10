@@ -5,6 +5,8 @@
 [A United Kingdom](https://en.wikipedia.org/wiki/A_United_Kingdom) is a 2016 biographical romantic drama film based on the true-life romance of Seretse Khama, 
 heir to the throne of the Bangwato Tribe in Serowe, with his British wife Ruth Williams Khama. In the 1940s, when Seretse met Ruth, Serowe was part of the Bechuanaland Protectorate, which was established by the UK in 1885 and, after independence, became the Republic of Botswana.
 
+[![A United Kingdom – Official Trailer](https://img.youtube.com/vi/LKPDNKdpys8/hqdefault.jpg)](https://youtu.be/LKPDNKdpys8?si=ITN5UAuIoSrJk0eI)
+
 The couple faced many obstacles and discriminations although Seretse Khama came from a royal African family and received an excellent education,
 studying law in England (Wikipedia contributors, n.d.-a). Have things changed since Botswana`s indepencende in the 1960s, and can couples coming from different cultural and ethnic
 backgrounds now enjoy a better life? Have opinions about the relationship between Seretse and Ruth changed over time? And what can we learn from how their
@@ -12,9 +14,9 @@ relationship was and is discussed in terms of a larger postcolonial discourse?
 
 The data sets suggested below may help you get some insights.
 
-## Data sets (YouTube and Apple Reviews)
+## Suggested data sets (YouTube and Apple Reviews)
 
-On YouTube, Monika has collected four videos with comments in English that cover the (family) life of Seretse Khama in the [Digital Cultures - Seretse Khama](https://youtube.com/playlist?list=PL5XPG366xWVs4-pGWgNu2NLw__olk9I8E&si=KNrZLoROgJUEQDcI) playlist (Digital History, n.d.). You can scrape the comments from this playlist to get an idea how present-day YouTube users discuss the historical events and how they feel about interracial relationships in their own time.
+On YouTube, Monika Barget has collected four videos with comments in English that cover the (family) life of Seretse Khama in the [Digital Cultures - Seretse Khama](https://youtube.com/playlist?list=PL5XPG366xWVs4-pGWgNu2NLw__olk9I8E&si=KNrZLoROgJUEQDcI) playlist (Digital History, n.d.). You can scrape the comments from this playlist to get an idea how present-day YouTube users discuss the historical events and how they feel about interracial relationships in their own time.
 
 Alternatively or in comparison, you can also analyse reviews that people have left for podcasts dedicated to interracial dating, relationships and family life. On the Apple Store, the following podcasts may be of interest:
 
@@ -32,7 +34,7 @@ Alternatively or in comparison, you can also analyse reviews that people have le
 
 - [The Swirl World Podcast](https://podcasts.apple.com/us/podcast/the-swirl-world-podcast/id885695922) (The Swirl World, 2014–2019)
 
-:bangbang: While each of the podcasts may not have so many reviews per country, it can be interesting to scrape the data for all countries. And several smaller sets of podcast reviews can also be combined to form a larger insightful data set.
+:bangbang: While each of the podcasts may not have many reviews per country, it can be interesting to scrape the data for all countries worldwide. Several smaller sets of podcast reviews can also be combined to form a larger insightful data set.
 
 ## Questions for data analysis
 
@@ -47,11 +49,15 @@ Here are some research questions that you could explore based on YouTube comment
 
 When analysing the comments in Voyant Tools, use different tools to explore these questions. While the word cloud can give you an idea of the most frequent terms, you should also use tools that show co-occurrences or allow you to analyse keywords in context.
 
-## Idea for further data analysis: historical novels that cover romantic relations across perceived color boundaries
+## Idea for further data analysis: historical biographies and novels that cover romantic relations across perceived color boundaries
 
-For your final essays or in future research, you may also want to explore how historical novels address romantic relationships across perceived color boundaries. Take, for instance, Vanessa Riley's book [Island Queen](https://books.apple.com/us/audiobook/island-queen/id1561061014) (2021), which offers a fictionalised account of the life of [Dorothy Kirwan Thomas](https://en.wikipedia.org/wiki/Dorothy_Thomas_(entrepreneur)) — a freed woman of color who rose from slavery to become a prominent landowner in the colonial West Indies (Apple Books, n.d.; Wikipedia contributors, n.d.-b). This detailed first-person narrative highlights how the main character navigates family ties, business connections and several romantic relationships despite social constraints.
+For your final essays or in future research, you may also want to explore how historical biographies or novels address romantic relationships across perceived color boundaries, and how readers react. Many podcasts and YouTube channels cover literature and discuss main themes, so you can collect the comments and reviews accordingly. Take, for instance, Vanessa Riley's book [Island Queen](https://books.apple.com/us/audiobook/island-queen/id1561061014) (2021), which offers a fictionalised account of the life of [Dorothy Kirwan Thomas](https://en.wikipedia.org/wiki/Dorothy_Thomas_(entrepreneur)) — a freed woman of color who rose from slavery to become a prominent landowner in the colonial West Indies (Apple Books, n.d.; Wikipedia contributors, n.d.-b). This detailed first-person narrative highlights how the main character navigates family ties, business connections and several romantic relationships despite social constraints. On YouTube, you can find several videos on the life of Dorothy Kirwan Thomas and her reception in fiction. One is *Mixed-Race Slave Owner Who Became a Millionaire and Known as the Island Queen, Dorthy Kirwan Thomas*, published by the channel *Royal, Black, and Elite History and Culture*.
+
+[![Mixed-Race Slave Owner Who Became a Millionaire and Known as the Island Queen, Dorthy Kirwan Thomas](https://img.youtube.com/vi/9AA2mx3AtJc/hqdefault.jpg)](https://youtu.be/9AA2mx3AtJc?si=mzME1ipGO389XLZX)
+
 
 ## Cited Works and Further Readings
+
 - Ab123. (2020). *Interracial Marriage with Christina Adams* [Audio podcast]. https://podcasts.apple.com/us/podcast/interracial-marriage-with-christina-adams/id1534758235
 - Apple Books. (n.d.). *Island queen*. https://books.apple.com/us/audiobook/island-queen/id1561061014
 - Barnett, A. (2015–2019). *Multiracial Family Man* [Audio podcast]. https://podcasts.apple.com/us/podcast/multiracial-family-man/id969793342
