@@ -1,20 +1,27 @@
 
-**Distant Reading Case Study: Postcolonial Discourses around the Queen's Platinum Jubilee**
+**Distant Reading Case Study: Postcolonial Discourses around the Queen's Platinum Jubilee and Funeral in 2022**
 
-The British monarchy, like others in Europe, is strongly entwined with colonial histories and contested in a globalised and postcolonial world. In September 2022, as the United Kingdom celebrated Queen Elizabeth II's Platinum Jubilee, a number of voices discussed the complexity of the monarchy’s legacy, particularly regarding its colonial past. The jubilee sparked debates on both sides of the spectrum: While supporters celebrated the Queen as a symbol of continuity and unity, others critiqued her role in upholding traditional societal structures, imperial power, and the legacies of exploitation.
+The British monarchy, like others in Europe, is strongly entwined with colonial histories and contested in a globalised and postcolonial world. In 2022, as the United Kingdom first celebrated Queen Elizabeth II's Platinum Jubilee and also mourned her death a few months after, a number of voices discussed the complexity of the monarchy’s legacy and debated whether this institution had a future at all. The jubilee in the summer and the funeral in September 2022 sparked debates on both sides of the spectrum: While supporters celebrated the Queen as a symbol of continuity and unity, others critiqued her role in upholding traditional societal structures and imperial inequalities. 
 
-The British Empire, which reached its height in the 19th and early 20th centuries, spanned smaller regions within Europe as well as vast territories in Africa, Asia, and the Caribbean. The monarchy’s role in this vast empire cannot be separated from the economic exploitation, cultural erasure, and political subjugation that many colonised peoples experienced. Yet, Queen Elizabeth II herself, as head of the Commonwealth established when most colonies gained independence, has also been seen as a figurehead in postcolonial discussions about equality and collaboration in the later 20th century. 
+The British Empire, which reached its height in the 19th and early 20th centuries, spanned smaller regions within Europe as well as vast territories in Africa, Asia, and the Caribbean. The monarchy’s role in this empire cannot be separated from the economic exploitation, cultural erasure, and political subjugation that many colonised peoples experienced. Yet, Queen Elizabeth II herself, as head of the Commonwealth established when most colonies gained independence, has also been seen as a figurehead in postcolonial discussions about friendship and new collaborations in the later 20th century. 
 
-It is interesting to find out how the international Twittersphere reacted to the jubilee celebrations and what (post)colonial themes were mentioned online. Scraping the hashtags #Queen, #AbolishMonarchy, and #DecolonizeBritain at the time of the jubilee celebrations reflected polarised sentiments. Because the data was collected based on rather generic hashtags and dates, not geographic location or more specific keywords, it includes both pro-monarchy statements and critiques that stem from various sources. Anti-monarchists sentiments can include reasons unrelated to colonial history, such as concerns about the high expenses of the royal family or scandals surrounding the Queen's children.
+It is interesting to find out how the international Twittersphere reacted to the Queen's funeral and King Charles's accession, paying particular attention to (post)colonial themes. Scraping the trending hashtag #AbolishMonarchy between 8 and 19 September 2022, we have collected a data set that reflects mostly negative perceptions of the British monarchy. Not all of the anti-monarchist sentiments voiced in these tweets are, of course, directly related to colonial history. They can include other social and moral concerns such as the high expenses of the royal family or scandals surrounding the Queen's children. At the time, alleged racism towards Prince Harry's wife Meghan made headlines, and Prince Andrew's involvement with sex-offender Jeffrey Eppstein had also come to public attention.
 
-It will be your task to dive deeper into this data using Voyant Tools to see if more specific postcolonial themes can be uncovered. You will need to look beyond some of the more obvious terms and search for subtler forms of discourse about the monarchy's role in postcolonial contexts, paying attention to mentions of race, national identity, or the monarchy's present-day connection to authoritarian regimes abroad. 
+It will be your task to dive deeper into this data using Voyant Tools to see if more specific postcolonial elements can be uncovered. You will need to look beyond some of the more obvious terms and pay attention to mentions of race, national identity, or the monarchy's present-day connection to authoritarian regimes abroad. 
 
 **Data Sets (collected via the Twitter API)**  
 
-The following data sets can be used for analysis:
+The data set was collected via the Twitter API in 2022 and is available as both a CSV file (including metadata) and a TXT file for distant reading. Some tweets are very short and emotional, consisting only in keywords that describe people's rejection of the monarchy, e.g.:
 
-- Tweets with hashtags such as #queen, #jubilee2022, #abolishmonarchy, and #decolonizebritain.
-- Data files are available as both CSV (searchable directly on GitHub) and TXT formats for distant reading.
+> Unelected. Undemocratic. Unaccountable. Unnecessary.
+
+Other tweets refer to specific historical details which you may need to research further, for example:
+
+> $45 Trillion was stolen from India alone, Shree Paradkar is right.
+
+Also, most tweets use more than one hashtag, and you should also consider why certain other hashtags beyond #AbolishMonarchy were chosen, and what they mean in a postcolonial context, e.g.:
+
+> #WhyNotScotland
 
 **Questions for Data Analysis** 
 
