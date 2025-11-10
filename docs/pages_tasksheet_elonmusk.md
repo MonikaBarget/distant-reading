@@ -1,5 +1,9 @@
 # Distant Reading Case Study "Elon Musk"
 
+:::: info
+To use this case study in your classroom presentations, you can download csv data tables and txt files for several of the videos and podcasts mentioned below from [Data_Epstein](/distant-reading/tree/main/data/Data_Musk). If emojis or special characters appear distorted in Voyant Tools, you may need to use a different character encoding. Read more about it under [data cleaning](https://monikabarget.github.io/distant-reading/pages_datacleaning.html).
+::::
+
 ## From Twitter Takeover to Political Power?
 
 In 2022, the *Machines of Knowledge* course used Twitter data to analyse public reactions to Elon Musk’s takeover of the platform, which has since been rebranded "X". The event marked a turning point in discussions about digital governance, online freedom of speech, and the role of powerful tech entrepreneurs in shaping public discourse.  
