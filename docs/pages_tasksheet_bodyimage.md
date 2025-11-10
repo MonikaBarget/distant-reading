@@ -32,9 +32,10 @@ Alternatively or in comparison, you can analyse user comments for YouTube videos
 
 [![The almond mum epidemic is getting worse](https://img.youtube.com/vi/2ezaWCBI1t8/0.jpg)](https://youtu.be/2ezaWCBI1t8)
 
-A similar video is *almond moms and the illusion of wellness* by Madisyn Brown (2023). In this video, Madisyn starts with a viral clip of celebrity Gwyneth Paltrow and how she was framed as an almond mom in internet discourse. She then expands on the ties between the label of wellness and disordered eating in the pursuit of an ideal body. The video has over 280 thousand views, and more than 750 comments.
+An analysis of the phenomenon in the light of TikTok's success (among younger social media users) is offered in the video *How Almond Moms Became The TikTok-Friendly New Face of Diet Culture* shared by the channel The Financial Diet in 2023.
 
-[![Almond moms and the illusion of wellness](https://img.youtube.com/vi/HgqC6v3YG8I/maxresdefault.jpg)](https://youtu.be/HgqC6v3YG8I)
+[![How Almond Moms Became The TikTok-Friendly New Face Of Diet Culture](https://img.youtube.com/vi/SquRwi7BuuE/maxresdefault.jpg)](https://youtu.be/SquRwi7BuuE)
+
 
 Rowan Ellis (2023) also posted a video on almond moms and *the cult of generational diet culture*, but focuses more on a queer perspective. The highlighted video has over 400 thousand views, and more than 1100 comments.
 
