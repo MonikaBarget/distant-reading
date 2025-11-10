@@ -2,6 +2,10 @@
 
 🙌 This case study was inspired by MA DC student [Caroline Déharbe](https://nl.linkedin.com/in/caroline-d%C3%A9harbe-013669185/fr), who used some of the data recommended below for her essay in the 2024/2025 academic year.
 
+:::: info
+To use this case study in your classroom presentations, you can download csv data tables and txt files for several of the videos and podcasts mentioned below from [Data_BodyImage](/distant-reading/tree/main/data/Data_Musk). If emojis or special characters appear distorted in Voyant Tools, you may need to use a different character encoding. Read more about it under [data cleaning](https://monikabarget.github.io/distant-reading/pages_datacleaning.html).
+::::
+
 ## Reasons for studying body images in social media data
 
 Body image is a relevant and much-discussed topic in our digital age as it influences self-worth, mental health, and societal expectations. Body images and their contestations can be analysed through different data, including podcast reviews and YouTube comments.
