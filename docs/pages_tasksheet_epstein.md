@@ -13,7 +13,7 @@ Virginia Roberts Giuffre, who died by suicide in 2025, accused many internationa
 
 The first source to analyse in the Epstein case are viewer reactions to the various interviews and documentaries on YouTube. In addition to interviews with Epstein's victims such as Virginia Roberts Giuffre, YouTube features the infamous BBC Newsnight interview with Prince Andrew, in which the member of the British Royal Family unsuccessfully tried to refute allegations that Roberts Giuffre and other underage girls had been trafficked to him for sex. Most shockingly for viewers, Prince Andrew showed no sympathy with Epstein's victims and played down his actions repeatedly, calling them "unbecoming" instead of openly labelling them as crimes. The interview turned public opinion in Britain against the Prince and forced the Royal Family to remove him from important functions.
 
-[![Thumbnail](https://img.youtube.com/vi/QHiY3OF5pg1_2nln/maxresdefault.jpg)](https://youtu.be/QtBS8COhhhM?si=QHiY3OF5pg1_2nln)
+[![Prince Andrew & the Epstein Scandal: The Newsnight Interview - BBC News](https://img.youtube.com/vi/QtBS8COhhhM/0.jpg)](https://youtu.be/QtBS8COhhhM)
 
 Using the Python script presented in this repository, several videos relating to the Epstein case can be added to one playlist, and all comments for the related videos can be scraped for (comparative) text analysis.
 
