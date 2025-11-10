@@ -1,6 +1,6 @@
 # Distant Reading Case Study "Elon Musk"
 
-## From Twitter Takeover to the Political Power?
+## From Twitter Takeover to Political Power?
 
 In 2022, the *Machines of Knowledge* course used Twitter data to analyse public reactions to Elon Musk’s takeover of the platform, which has since been rebranded "X". The event marked a turning point in discussions about digital governance, online freedom of speech, and the role of powerful tech entrepreneurs in shaping public discourse.  
 
