@@ -2,8 +2,6 @@
 
 :book: This case study is discussed in my postcolonialism lecture for the MA DC Machines of Knowledge course to showcase a postcolonial reading of a contemporary data set. The lecture introduces postcolonial theory as a diverse academic approach that developed over time and is now practised by researchers from different backgrounds. As a consequence, definitions and goals of postcolonial theory are also contested, and some scholars have offered provocative revisions of how we read the colonial past. 
 
-<a href="https://mediasite.maastrichtuniversity.nl/Mediasite/Play/a77329409890416782957b122e9c094a1d">Watch the lecture on the UM mediasite.</a>
-
 ## Waste management and waste reduction as global issues
 
 The term [waste colonialism](https://stopwastecolonialism.org/) is used by researchers, activists and NGOs. It refers to the practice of affluent nations exporting their waste, including plastics, e-waste or used fashion, to poorer countries. This practice, critics argue, disproportionately impacts vulnerable populations and ecosystems. As developed nations reduce waste in their own countries, also to meet environmental goals in the face of climate change, they often ship their garbage to the Global South, which gives the problem a (post)colonial dimension (The Or Foundation, n.d.).
