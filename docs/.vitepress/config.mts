@@ -23,7 +23,7 @@ export default defineConfig({
           { text: 'Meta', link: '/pages_datascraping_Meta.md' },
           { text: 'Reddit', link: '/pages_datascraping_reddit.md' },
           { text: 'Twitter', link: '/pages_datascraping_twitter.md' },
-          { text: 'YouTube', link: '/pages_datascraping_youtube.md' },
+          { text: 'YouTube', link: '/pages_datascraping_youtube.md' }
         ]
       },
       
@@ -59,13 +59,15 @@ export default defineConfig({
       {
         text: 'Task Sheets',
         items: [
+          { text: 'Appropriation', link: '/pages_tasksheet_appropriation.md' },  // placeholder page
           { text: 'Body Image', link: '/pages_tasksheet_bodyimage.md' },
           { text: 'Domestic Violence', link: '/pages_tasksheet_domesticviolence.md' },
           { text: 'Elon Musk', link: '/pages_tasksheet_elonmusk.md' },
+          { text: 'Epstein', link: '/pages_tasksheet_epstein.md' },
           { text: 'Girlboss', link: '/pages_tasksheet_girlboss.md' },
-          { text: 'Jeffrey Epstein', link: '/pages_tasksheet_epstein.md' },
           { text: 'Menstruation', link: '/pages_tasksheet_menstruation.md' },
           { text: 'Miley Cyrus', link: '/pages_tasksheet_mileycyrus.md' },
+          { text: 'Monarchy', link: '/pages_tasksheet_monarchy.md' },
           { text: 'Race', link: '/pages_tasksheet_race.md' },
           { text: 'Seretse Khama', link: '/pages_tasksheet_seretsekhama.md' },
           { text: 'Slavery', link: '/pages_tasksheet_slavery.md' },
@@ -77,7 +79,7 @@ export default defineConfig({
       }
     ],
 
-    // Sidebar configuration with new links
+    // Sidebar configuration
     sidebar: [
       {
         text: 'External Links',
@@ -86,11 +88,19 @@ export default defineConfig({
           { text: 'YouTube Channel', link: 'https://www.youtube.com/@digitalhistory7990' }
         ]
       }
-    ],    
+    ],
 
-    // Social links that appear in the footer
+    // Social links in footer
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    ],
+
+    // Custom 404 message
+    notFound: {
+      title: 'Page under construction',
+      quote: 'This page is under construction. Go back to the main site or select another case study from the Task Sheets menu.',
+      linkText: 'Return to home',
+      link: '/'
+    }
   }
 })
