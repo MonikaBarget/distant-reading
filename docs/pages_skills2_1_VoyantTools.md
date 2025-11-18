@@ -70,11 +70,17 @@ Of course, you do not have to follow these instructions verbatim. They are merel
 
 ### Cited works, recommended tutorials and further readings
 
+- Alhudithi, E. (2021). Review of Voyant Tools: See through your text. *Language Learning & Technology, 25*(3), 43–50.
+https://hdl.handle.net/10125/73446
 - Dickerson, M. (2018). *A gentle introduction to text analysis with Voyant Tools* [Presentation]. UC Irvine Libraries. https://escholarship.org/uc/item/6jz712sf
 - Lynch, T. L. (2015). Where the machine stops: Software as reader and the rise of new literatures. *Research in the Teaching of English, 49*(3), 297–304. https://www.jstor.org/stable/24398704
+- Miller, A. (2018). Text mining digital humanities projects: Assessing content analysis capabilities of Voyant Tools. *Journal of Web Librarianship, 12*(3), 169–197. https://doi.org/10.1080/19322909.2018.1479673
 - Priestley, A. (2014). Voyant Tools: A Tutorial for Text Analysis. Medium. https://medium.com/@priestleyal/voyant-tools-a-tutorial-for-text-analysis-df265d85d214
 - Sinclair, S., & Rockwell, G. (2016). *Text analysis and visualization: Making meaning count.* In S. Schreibman, R. Siemens, & J. Unsworth (Eds.), *A new companion to digital humanities* (pp. 274–290). John Wiley & Sons. https://doi.org/10.1002/9781118680605.ch19
 - Story, D. (n.d.). *Library guides: Tutorials + resources: Voyant.* University of California, Santa Cruz Library. Retrieved October 11, 2021, from https://guides.library.ucsc.edu/DS/Resources/Voyant
 - Villanova University Library. (n.d.). *Text analysis 101: Voyant tools.* https://library.villanova.edu/application/files/9815/8739/5480/VoyantToolsParadiseLostTutorial.pdf
 - Voyant Official Website. (2018). Tutorial/Workshop—Voyant Tools Help. https://voyant-tools.org/docs/#!/guide/tutorial
 - Zaidi, S., & Allahdad, S. (2023). Analyzing recent (2019) Kashmir socio-political issue: A Voyant sentiment analysis of tweets. *Linguistics and Literature Review, 9*(2), 20–46. https://doi.org/10.32350/llr.92.02
+- Zeller, F. (2022). The good, the bad, and the how-to of analysing social media data. In L. Sloan & A. Quan-Haase (Eds.), *The SAGE handbook of social media research methods* (2nd ed.). SAGE.
+https://doi.org/10.4135/9781529782943
+
