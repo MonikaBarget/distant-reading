@@ -24,6 +24,8 @@ Below the prompt, I pasted in several tables rows from a social media file conta
 
 <img src="../screenshots_distant_reading/Screenshot_language-coding_MistralAI.png" style="width:50%; float:right; padding:10px" alt="Screenshot Mistral AI">
 
+**Figure 1.** Mistral AI output table with added “Language” column.
+
 As you can see in the screenshot, Mistral's AI chatbot <em>Le Chat</em> was able to correctly identify the post language. It was then possible for me to copy the data from the new column into my existing CSV file and proceed with data filtering in Open Refine. As AI tools tend to hallucinate and change text, e.g. when they hit the output rate limit, you absolutely have to double-check the results, however, and I would not recommend letting AI re-create the entire file for you as it can also manipulate the original posts without you noticing.
 
 ## Script-based approaches to recognising and filtering languages
