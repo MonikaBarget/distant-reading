@@ -7,7 +7,7 @@ With administrator rights, right-click Command Prompt and select *Run as adminis
 
 1) Now you need to log in to DSRI on the command line, using the *oc* command:
 
-[Login in the terminal with oc](https://dsri.maastrichtuniversity.nl/docs/openshift-install/#login-in-the-terminal-with-oc)(Tamas, 2025a)
+[Login in the terminal with oc](https://dsri.maastrichtuniversity.nl/docs/openshift-install/#login-in-the-terminal-with-oc) (Tamas, 2025a)
 
 2) The next step is to point to correct project by typing:
 ```
