@@ -70,9 +70,13 @@ Students often find it challenging to develop a logical workflow in Voyant as th
 ### Further Readings
 
 - Drucker, J. (2017). Why distant reading isn’t. *PMLA, 132*(3), 628–635. https://doi.org/10.1632/pmla.2017.132.3.628
+- Earhart, A. E. (2015). Data and the fragmented text: Tools, visualization, and datamining or is bigger better? In *Traces of the old, uses of the new: The emergence of digital literary studies* (pp. 90–116). University of Michigan Press. https://doi.org/10.2307/j.ctv65swvf.8
 - Jockers, M. L. (2013). *Macroanalysis: Digital methods and literary history.* University of Illinois Press.
 - Moretti, F. (2000). Conjectures on world literature. *New Left Review, 1*, 54–68. https://newleftreview.org/issues/II1/articles/franco-moretti-conjectures-on-world-literature
 - Moretti, F. (2013). *Distant reading.* Verso.
+- Nguyen, D., Liakata, M., DeDeo, S., Eisenstein, J., Mimno, D., Tromble, R., & Winters, J. (2020). *How we do things with words: Analyzing text as social and cultural data.* Frontiers in Artificial Intelligence, 3, Article 62. https://doi.org/10.3389/frai.2020.00062
+- Ramsay, S. (2011). *Reading machines: Toward an algorithmic criticism.* University of Illinois Press. https://www.press.uillinois.edu/books/catalog/75tms2pw9780252036415.html
 - Sinclair, S., & Rockwell, G. (2015). Text analysis and visualization: Making meaning count. In S. Schreibman, R. Siemens, & J. Unsworth (Eds.), *A new companion to digital humanities* (pp. 274–290). Wiley-Blackwell. https://doi.org/10.1002/9781118680605.ch19
   
+
 
