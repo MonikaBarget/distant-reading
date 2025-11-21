@@ -18,17 +18,17 @@ This is a simpler encoding for Western European languages and excludes emojis or
 - ASCII:
 A basic encoding that only supports standard Latin characters. It will strip non-standard characters and emojis but may fail if your corpus includes accented characters (e.g., é, ñ, ü), so it is less useful for languages such as French, Spanish or German.
 
-To change the encoding of a plain text file, you can open it in a powerful text editor such as [Sublime](https://www.sublimetext.com/), which has a "Save with Encoding" option and allows you to select from a wide range of ISO encodings (see screenshot). 
+To change the encoding of a plain text file, you can open it in a powerful text editor such as [Sublime](https://www.sublimetext.com/), which has a "Save with Encoding" option and allows you to select from a wide range of ISO encodings (see Figure 1). 
 
 ![Changing file encoding in Sublime Text](../screenshots_distant_reading/Sublime_change-encoding.png)
 
-**Figure 1.** Changing file encoding in Sublime Text using the *Save with Encoding* menu.
+**Figure 1:** Changing file encoding in Sublime Text using the *Save with Encoding* menu.
 
-If you are working with Open Refine, you can also adjust the encoding there before saving the file to *.txt*. In Open Refine, the standard encoding also is UTF-8, but ASCII and Latin-1 are also available (see screenshot).
+If you are working with Open Refine, you can also adjust the encoding there before saving the file to *.txt*. In Open Refine, the standard encoding also is UTF-8, but ASCII and Latin-1 are also available (see Figure 2).
 
 ![image.png](../screenshots_distant_reading/OpenRefine_change-encoding.png)
 
-**Figure 2.** Changing file encoding in OpenRefine when exporting a dataset.
+**Figure 2:** Changing file encoding in OpenRefine when exporting a dataset.
 
 ## Semi-manual data cleaning
 
