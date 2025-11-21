@@ -6,7 +6,7 @@ On MacOS and Windows: download and install the Maastricht University VPN client 
 
 ![image.png](../screenshots_dsri/image-bfaa1120-2cce-4cf8-bb81-aef78efb38db.png)
 
-**Figure 1.** Using the Cisco AnyConnect client to connect to vpn.maastrichtuniversity.nl.
+**Figure 1:** Using the Cisco AnyConnect client to connect to vpn.maastrichtuniversity.nl.
 
 ## Launch the UM VPN client
 
@@ -16,13 +16,14 @@ On MacOS and Windows: download and install the Maastricht University VPN client 
 
 ![image.png](../screenshots_dsri/image-95712b24-4215-4e67-9579-842478262805.png)
 
-**Figure 2.** Entering your UM username and password in the Cisco AnyConnect client.
+**Figure 2:** Entering your UM username and password in the Cisco AnyConnect client.
 
 - Enter your one-time passcode (5).
 
 ![image.png](../screenshots_dsri/image-c77c660a-fb92-45eb-8d3b-20bfd30dcfbe.png)
 
-**Figure 3.** Entering your verification code in the Cisco AnyConnect client.
+**Figure 3:** Entering your verification code in the Cisco AnyConnect client.
 
 
 🙌 These instructions were provided by Arnoud Wils (The Plant, FASoS). 
+
