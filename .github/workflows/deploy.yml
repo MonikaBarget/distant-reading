@@ -15,6 +15,7 @@ concurrency:
 jobs:
   build-jupyterlite:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,11 +31,19 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
       - name: Install JupyterLite toolchain (Pyodide 0.26 compatible)
         run: |
           set -euxo pipefail
-          python -m pip install --upgrade pip wheel
-          pip install -r requirements.txt
+          python -m pip install --upgrade pip wheel --quiet
+          pip install -r requirements.txt --quiet
           jupyter lite --version
 
       - name: Create JupyterLite configuration
@@ -88,7 +97,7 @@ jobs:
             echo "Config or HTML file not found; skipping patch."
           fi
 
-      - name: Download Pyodide runtime locally (handles name change)
+      - name: Download Pyodide runtime locally (with retries)
         run: |
           set -euxo pipefail
           PYODIDE_VER="0.26.2"
@@ -96,13 +105,19 @@ jobs:
           OUT="standalone/jupyterlite/pyodide"
           mkdir -p "${OUT}"
 
-          curl -fL "${BASE}/pyodide.js"     -o "${OUT}/pyodide.js"
-          curl -fL "${BASE}/pyodide.mjs"    -o "${OUT}/pyodide.mjs" || true
-          curl -fL "${BASE}/repodata.json"  -o "${OUT}/repodata.json" || true
+          # Download with 5-second timeout and 3 retries
+          for file in pyodide.js pyodide.mjs repodata.json; do
+            curl --connect-timeout 5 --max-time 30 --retry 3 \
+              -fL "${BASE}/${file}" -o "${OUT}/${file}" || true
+          done
 
-          (curl -fL "${BASE}/pyodide.wasm"      -o "${OUT}/pyodide.wasm" \
-           || curl -fL "${BASE}/pyodide.asm.wasm" -o "${OUT}/pyodide.asm.wasm")
+          # Try to get WASM file (optional, can be served from CDN)
+          (curl --connect-timeout 5 --max-time 30 --retry 2 \
+            -fL "${BASE}/pyodide.wasm" -o "${OUT}/pyodide.wasm" \
+            || curl --connect-timeout 5 --max-time 30 --retry 2 \
+            -fL "${BASE}/pyodide.asm.wasm" -o "${OUT}/pyodide.asm.wasm") || true
 
+          # Verify critical file exists
           test -f "${OUT}/pyodide.js"
 
       - name: Assemble publish directory with jupyter/ subdirectory
