@@ -103,9 +103,21 @@ jobs:
 
           test -f "${OUT}/pyodide.js"
 
+      - name: Assemble publish directory with jupyter/ subdirectory
+        run: |
+          set -euxo pipefail
+          rm -rf dist
+          mkdir -p dist/jupyter
+          cp -r standalone/jupyterlite/* dist/jupyter/
+          touch dist/.nojekyll
+          
+          test -f dist/jupyter/index.html
+          test -f dist/jupyter/lab/index.html
+          test -f dist/jupyter/pyodide/pyodide.js
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./standalone/jupyterlite
+          publish_dir: ./dist
           keep_files: false
