@@ -46,23 +46,21 @@ jobs:
           pip install -r requirements.txt --quiet
           jupyter lite --version
 
-      - name: Create JupyterLite configuration
+      - name: Create JupyterLite overrides configuration
         run: |
-          cat > jupyter-lite.json << 'EOF'
+          mkdir -p jupyterlite/contents
+          cat > jupyterlite/contents/overrides.json << 'EOF'
           {
-            "jupyter-lite-schema-version": 0,
-            "jupyter-config-data": {
-              "baseUrl": "/distant-reading/jupyter/",
-              "litePluginSettings": {
-                "@jupyterlite/pyodide-kernel-extension:kernel": {
-                  "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
-                }
+            "baseUrl": "/distant-reading/jupyter/",
+            "appUrl": "/distant-reading/jupyter/lab",
+            "litePluginSettings": {
+              "@jupyterlite/pyodide-kernel-extension:kernel": {
+                "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
               }
             }
           }
           EOF
-          echo "Configured JupyterLite with baseUrl=/distant-reading/jupyter/"
-          echo "Configured Pyodide entry: https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
+          echo "Created overrides.json with baseUrl and pyodideUrl"
 
       - name: Build JupyterLite site
         run: |
@@ -76,26 +74,60 @@ jobs:
           test -f standalone/jupyterlite/index.html
           test -f standalone/jupyterlite/lab/index.html
 
-      - name: Patch JupyterLite HTML config embedding
+      - name: Verify and patch JupyterLite config
         run: |
           set -euxo pipefail
-          CONFIG_FILE="standalone/jupyterlite/jupyter-lite.json"
-          HTML_FILE="standalone/jupyterlite/lab/index.html"
+          python3 << 'PYSCRIPT'
+import json
+import re
 
-          if [ -f "$CONFIG_FILE" ] && [ -f "$HTML_FILE" ]; then
-            echo "Embedding JupyterLite config into HTML..."
-            CONFIG_JSON=$(jq -c '.' "$CONFIG_FILE")
+html_file = "standalone/jupyterlite/lab/index.html"
 
-            # Replace the {} JSON block inside the multiline <script> tag
-            awk -v json="$CONFIG_JSON" '
-              /<script id="jupyter-config-data"/ {in_block=1; print; next}
-              in_block && /{}/ {print json; next}
-              in_block && /<\/script>/ {in_block=0}
-              {print}
-            ' "$HTML_FILE" > "${HTML_FILE}.tmp" && mv "${HTML_FILE}.tmp" "$HTML_FILE"
-          else
-            echo "Config or HTML file not found; skipping patch."
-          fi
+# Read HTML
+with open(html_file, 'r') as f:
+    html_content = f.read()
+
+# Check if config is already embedded
+if '"baseUrl"' in html_content and '"pyodideUrl"' in html_content:
+    print("✓ Config already properly embedded in HTML")
+else:
+    print("⚠ Config missing or incomplete, patching now...")
+    
+    config = {
+        "jupyter-config-data": {
+            "baseUrl": "/distant-reading/jupyter/",
+            "appUrl": "/distant-reading/jupyter/lab",
+            "litePluginSettings": {
+                "@jupyterlite/pyodide-kernel-extension:kernel": {
+                    "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
+                }
+            }
+        },
+        "jupyter-lite-schema-version": 0
+    }
+    
+    config_json = json.dumps(config)
+    
+    # Replace {} placeholder
+    html_content = re.sub(
+        r'<script[^>]*id="jupyter-config-data"[^>]*>\s*\{\}\s*</script>',
+        f'<script id="jupyter-config-data" type="application/json">{config_json}</script>',
+        html_content
+    )
+    
+    # Write patched HTML
+    with open(html_file, 'w') as f:
+        f.write(html_content)
+    
+    print("✓ Config patched into HTML successfully")
+    
+    # Verify patch
+    if '"baseUrl"' in html_content and '"pyodideUrl"' in html_content:
+        print("✓ Verification: Config is now in HTML")
+    else:
+        print("✗ ERROR: Patch failed, config still missing")
+        exit(1)
+PYSCRIPT
 
       - name: Download Pyodide runtime locally (with retries)
         run: |

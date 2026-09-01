@@ -1,8 +1,9 @@
 {
-  "@jupyterlite/pyodide-kernel-extension:kernel": {
-    "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.23.4/full/",
-    "pipliteUrls": [
-      "https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pypi/"
-    ]
+  "baseUrl": "/distant-reading/jupyter/",
+  "appUrl": "/distant-reading/jupyter/lab",
+  "litePluginSettings": {
+    "@jupyterlite/pyodide-kernel-extension:kernel": {
+      "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
+    }
   }
 }
