@@ -3,7 +3,7 @@
     "appName": "JupyterLite",
     "appUrl": "./lab",
     "appVersion": "0.4.5",
-    "baseUrl": "/distant-reading/jupyter/",
+    "baseUrl": "./",
     "defaultKernelName": "python",
     "faviconUrl": "./lab/favicon.ico",
     "federated_extensions": [
@@ -301,8 +301,7 @@
       "@jupyterlite/pyodide-kernel-extension:kernel": {
         "pipliteUrls": [
           "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=952179a484fad344a3a22fa8617b47985fab2c71dea8084f0d0f6a2a35a45c45"
-        ],
-        "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
+        ]
       }
     }
   },
