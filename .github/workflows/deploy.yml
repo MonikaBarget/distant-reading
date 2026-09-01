@@ -42,7 +42,7 @@ jobs:
       - name: Clean previous build and caches
         run: |
           set -euxo pipefail
-          rm -rf dist
+          rm -rf dist _output standalone/jupyterlite docs/.vitepress/dist/jupyterlite
           rm -f .doit.db .doit* .jupyterlite.doit.db db.json || true
 
       - uses: actions/setup-python@v5
