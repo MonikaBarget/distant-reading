@@ -2,7 +2,7 @@
   "content": [
     {
       "content": null,
-      "created": "2026-09-01T15:03:17.450608Z",
+      "created": "2026-09-01T17:36:52.301181Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
@@ -15,11 +15,11 @@
       "writable": true
     }
   ],
-  "created": "2026-09-01T15:03:17.450608Z",
+  "created": "2026-09-01T17:36:52.301181Z",
   "format": "json",
   "hash": null,
   "hash_algorithm": null,
-  "last_modified": "2026-09-01T15:03:17.450608Z",
+  "last_modified": "2026-09-01T17:36:52.301181Z",
   "mimetype": null,
   "name": "notebooks",
   "path": "notebooks",
