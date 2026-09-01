@@ -1,6 +1,12 @@
 {
   "jupyter-config-data": {
     "defaultMode": "classic",
-    "theme": "JupyterLab Light"
+    "theme": "JupyterLab Light",
+    "kernelPreference": {
+      "default": "pyodide"
+    }
+  },
+  "build": {
+    "outputDir": "../docs/.vitepress/dist/jupyterlite"
   }
 }
