@@ -77,57 +77,34 @@ jobs:
       - name: Verify and patch JupyterLite config
         run: |
           set -euxo pipefail
-          python3 << 'PYSCRIPT'
-import json
-import re
-
-html_file = "standalone/jupyterlite/lab/index.html"
-
-# Read HTML
-with open(html_file, 'r') as f:
-    html_content = f.read()
-
-# Check if config is already embedded
-if '"baseUrl"' in html_content and '"pyodideUrl"' in html_content:
-    print("✓ Config already properly embedded in HTML")
-else:
-    print("⚠ Config missing or incomplete, patching now...")
-    
-    config = {
-        "jupyter-config-data": {
-            "baseUrl": "/distant-reading/jupyter/",
-            "appUrl": "/distant-reading/jupyter/lab",
-            "litePluginSettings": {
-                "@jupyterlite/pyodide-kernel-extension:kernel": {
-                    "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
-                }
-            }
-        },
-        "jupyter-lite-schema-version": 0
-    }
-    
-    config_json = json.dumps(config)
-    
-    # Replace {} placeholder
-    html_content = re.sub(
-        r'<script[^>]*id="jupyter-config-data"[^>]*>\s*\{\}\s*</script>',
-        f'<script id="jupyter-config-data" type="application/json">{config_json}</script>',
-        html_content
-    )
-    
-    # Write patched HTML
-    with open(html_file, 'w') as f:
-        f.write(html_content)
-    
-    print("✓ Config patched into HTML successfully")
-    
-    # Verify patch
-    if '"baseUrl"' in html_content and '"pyodideUrl"' in html_content:
-        print("✓ Verification: Config is now in HTML")
-    else:
-        print("✗ ERROR: Patch failed, config still missing")
-        exit(1)
-PYSCRIPT
+          python3 > /dev/null << 'ENDPY'
+          import json
+          import re
+          
+          html_file = "standalone/jupyterlite/lab/index.html"
+          with open(html_file, 'r') as f:
+              html_content = f.read()
+          
+          if '"baseUrl"' not in html_content or '"pyodideUrl"' not in html_content:
+              config = {
+                  "jupyter-config-data": {
+                      "baseUrl": "/distant-reading/jupyter/",
+                      "appUrl": "/distant-reading/jupyter/lab",
+                      "litePluginSettings": {
+                          "@jupyterlite/pyodide-kernel-extension:kernel": {
+                              "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
+                          }
+                      }
+                  },
+                  "jupyter-lite-schema-version": 0
+              }
+              config_json = json.dumps(config)
+              pattern = r'<script[^>]*id="jupyter-config-data"[^>]*>.*?</script>'
+              replacement = '<script id="jupyter-config-data" type="application/json">' + config_json + '</script>'
+              html_content = re.sub(pattern, replacement, html_content, flags=re.DOTALL)
+              with open(html_file, 'w') as f:
+                  f.write(html_content)
+          ENDPY
 
       - name: Download Pyodide runtime locally (with retries)
         run: |
