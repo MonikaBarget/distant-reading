@@ -1,9 +1,0 @@
-# JupyterLite components compatible with Pyodide 0.26.x
-jupyterlite-core>=0.4,<0.5
-jupyterlite-pyodide-kernel>=0.4,<0.5
-
-# Supporting dependencies
-jupyter-server>=2.14,<3
-jupyterlab_server>=2.27,<3
-wheel
-
