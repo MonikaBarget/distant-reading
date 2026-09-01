@@ -2,8 +2,7 @@
   "name": "distant-reading",
   "version": "3.0.0",
   "scripts": {
-    "build:jupyterlite": "jupyter lite build --output-dir docs/.vitepress/dist/jupyterlite --config jupyterlite/jupyterlite.config.json",
-    "build": "npm run build:jupyterlite && vitepress build docs",
+    "build": "vitepress build docs",
     "dev": "vitepress dev docs",
     "deploy": "gh-pages -d docs/.vitepress/dist -r https://x-access-token:${GITHUB_TOKEN}@github.com/MonikaBarget/distant-reading.git",
     "preview": "vitepress preview docs",
@@ -14,8 +13,6 @@
   },
   "devDependencies": {
     "gh-pages": "^6.2.0",
-    "vitepress": "^1.4.1",
-    "jupyterlite-core": "^0.4.0",
-    "jupyterlite-pyodide-kernel": "^0.4.0"
+    "vitepress": "^1.4.1"
   }
 }

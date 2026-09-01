@@ -6,7 +6,5 @@
       "default": "pyodide"
     }
   },
-  "build": {
-    "outputDir": "../docs/.vitepress/dist/jupyterlite"
-  }
+  "contents": "contents"
 }
