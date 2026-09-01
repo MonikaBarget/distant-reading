@@ -1,48 +1,99 @@
 # JupyterLite Setup - Kernel Fixed ✓
 
 ## What Was Wrong
-The JupyterLite installation had an inactive Pyodide kernel because:
-1. The configuration wasn't specifying which kernel to use
-2. JupyterLite wasn't built properly
-3. Build artifacts weren't deployed to the docs folder
+The JupyterLite installation had cells that hung indefinitely because:
+1. The Pyodide runtime URL wasn't configured
+2. Cells would show `*` (executing) but never complete
+3. The kernel needed to know where to download the Python runtime from
 
 ## What's Fixed
-✓ **Kernel**: Pyodide is now the default kernel (runs Python in the browser)
-✓ **Configuration**: `jupyterlite/jupyterlite.config.json` now explicitly sets `"kernelPreference": { "default": "pyodide" }`
-✓ **Build System**: Python requirements.txt has jupyterlite packages
-✓ **Deployment**: Built files are in `docs/.vitepress/dist/jupyterlite/`
+✓ **Pyodide CDN**: Browser now loads Python runtime from `https://cdn.jsdelivr.net/pyodide/v0.23.4/full/`
+✓ **Kernel Configuration**: `pyodideUrl` is now set in the built config
+✓ **Plugin Settings**: Pyodide kernel extension can now initialize properly
+✓ **Patch Script**: `patch_pyodide_config.py` ensures the URL is applied to every build
 
-## How to Access JupyterLite
-1. Deploy the site: `npm run build` (will build VitePress documentation)
-2. The JupyterLite instance will be available at: `/jupyterlite/`
+## How to Build and Deploy JupyterLite
 
-## Building Future Updates
-When you update notebooks or want to rebuild:
-
+### Quick Build Command
 ```bash
-# Install Python dependencies
-pip install -r requirements.txt
-
-# Build JupyterLite
-jupyter lite build --config jupyterlite/jupyterlite.config.json
-
-# Deploy build to docs
-mkdir -p docs/.vitepress/dist/jupyterlite
-cp -r _output/* docs/.vitepress/dist/jupyterlite/
+# Full build and deploy pipeline
+pip install -r requirements.txt && \
+jupyter lite build --config jupyterlite/jupyterlite.config.json && \
+python3 patch_pyodide_config.py && \
+mkdir -p docs/.vitepress/dist/jupyterlite && \
+cp -r _output/* docs/.vitepress/dist/jupyterlite/ && \
+npm run build
 ```
 
-## Adding Student Notebooks
-Place `.ipynb` files in `jupyterlite/contents/notebooks/`
+### Step-by-Step Breakdown
 
-Note: These will need to be rebuilt using the above commands to appear in the JupyterLite instance.
+1. **Install Python dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Build JupyterLite**
+   ```bash
+   jupyter lite build --config jupyterlite/jupyterlite.config.json
+   ```
+
+3. **Patch with Pyodide URL** (CRITICAL!)
+   ```bash
+   python3 patch_pyodide_config.py
+   ```
+   This adds the Pyodide runtime URL to the final config. Without this, the kernel hangs.
+
+4. **Deploy to docs folder**
+   ```bash
+   mkdir -p docs/.vitepress/dist/jupyterlite
+   cp -r _output/* docs/.vitepress/dist/jupyterlite/
+   ```
+
+5. **Build VitePress documentation**
+   ```bash
+   npm run build
+   ```
+
+## How Students Access JupyterLite
+- After deploying, JupyterLite is available at: `/jupyterlite/`
+- They can open the classic Jupyter Notebook interface
+- Python code runs entirely in the browser via Pyodide
+
+## Adding Student Notebooks
+1. Place `.ipynb` files in `jupyterlite/contents/notebooks/`
+2. Rebuild JupyterLite using the build steps above
+3. The notebooks will appear in the file browser
+
+## Files Added/Modified
+- `jupyterlite/jupyterlite.config.json` - Main JupyterLite configuration
+- `jupyterlite/contents/overrides.json` - Plugin settings override
+- `patch_pyodide_config.py` - **CRITICAL**: Patches Pyodide URL into final config
+- `requirements.txt` - Python dependencies (unchanged)
 
 ## Kernel Features
 - **Python 3** in the browser using Pyodide
 - **No server required** - runs entirely in the browser
 - **Offline capable** - works without internet after initial load
 - **pip support** - students can install packages dynamically
+- **Scientific packages** - numpy, pandas, matplotlib and more available
 
-## Files Modified
-- `jupyterlite/jupyterlite.config.json` - Added kernel configuration
-- `package.json` - Restored to original (removed incorrect npm packages)
-- `requirements.txt` - Already had correct JupyterLite packages
+## Troubleshooting
+
+### Cells stay in `*` (executing) forever
+This means Pyodide didn't load. Check:
+1. Did you run `python3 patch_pyodide_config.py`? (This is crucial!)
+2. Check browser console (F12) for errors
+3. Verify the file: `docs/.vitepress/dist/jupyterlite/jupyter-lite.json` contains:
+   ```json
+   "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.23.4/full/"
+   ```
+
+### Notebooks don't appear
+- Check they're in `jupyterlite/contents/notebooks/` with `.ipynb` extension
+- Rebuild JupyterLite and redeploy
+- Clear browser cache (Ctrl+Shift+Del)
+
+### Build fails or errors
+- Delete `_output/` and `.jupyterlite.doit.db` before rebuilding
+- Ensure Python dependencies are installed: `pip install -r requirements.txt`
+- Check Python version: `python3 --version` (should be 3.9+)

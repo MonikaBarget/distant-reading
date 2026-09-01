@@ -75,18 +75,20 @@ jobs:
       - name: Build JupyterLite site
         run: |
           set -euxo pipefail
+          mkdir -p standalone
+          rm -rf standalone/jupyterlite
           jupyter lite build \
             --contents ./jupyterlite/contents \
-            --output-dir dist/jupyterlite \
+            --output-dir standalone/jupyterlite \
             --debug
-          test -f dist/jupyterlite/index.html
-          test -f dist/jupyterlite/lab/index.html
+          test -f standalone/jupyterlite/index.html
+          test -f standalone/jupyterlite/lab/index.html
 
       - name: Patch JupyterLite HTML config embedding
         run: |
           set -euxo pipefail
-          CONFIG_FILE="dist/jupyterlite/jupyter-lite.json"
-          HTML_FILE="dist/jupyterlite/lab/index.html"
+          CONFIG_FILE="standalone/jupyterlite/jupyter-lite.json"
+          HTML_FILE="standalone/jupyterlite/lab/index.html"
 
           if [ -f "$CONFIG_FILE" ] && [ -f "$HTML_FILE" ]; then
             echo "Embedding JupyterLite config into HTML..."
@@ -108,7 +110,7 @@ jobs:
           set -euxo pipefail
           PYODIDE_VER="0.26.2"
           BASE="https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VER}/full"
-          OUT="dist/jupyterlite/pyodide"
+          OUT="standalone/jupyterlite/pyodide"
           mkdir -p "${OUT}"
 
           curl -fL "${BASE}/pyodide.js"     -o "${OUT}/pyodide.js"
@@ -124,7 +126,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: jupyterlite-dist
-          path: dist/jupyterlite
+          path: standalone/jupyterlite
 
   assemble-and-deploy:
     needs: [build-vitepress, build-jupyterlite]
@@ -148,13 +150,13 @@ jobs:
           rm -rf dist
           mkdir -p dist
           cp -r _tmp/vitepress/* dist/
-          mkdir -p dist/jupyterlite
-          cp -r _tmp/jupyterlite/* dist/jupyterlite/
+          mkdir -p dist/standalone
+          cp -r _tmp/jupyterlite/* dist/standalone/jupyterlite/
           touch dist/.nojekyll
 
           test -f dist/index.html
-          test -f dist/jupyterlite/index.html
-          test -f dist/jupyterlite/pyodide/pyodide.js
+          test -f dist/standalone/jupyterlite/index.html
+          test -f dist/standalone/jupyterlite/pyodide/pyodide.js
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
