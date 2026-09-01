@@ -3,7 +3,7 @@
     "appName": "JupyterLite",
     "appUrl": "./lab",
     "appVersion": "0.4.5",
-    "baseUrl": "./",
+    "baseUrl": "/distant-reading/jupyter/",
     "defaultKernelName": "python",
     "faviconUrl": "./lab/favicon.ico",
     "federated_extensions": [
