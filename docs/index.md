@@ -5,14 +5,14 @@ layout: home
 hero:
   name: "Distant Reading"
   text: "a repository for teaching"
-  tagline:
+  tagline: This project has moved to a new interactive handbook with live coding embedded.
   actions:
     - theme: brand
-      text: Welcome
-      link: /pages_welcome
+      text: Interactive Handbook
+      link: https://maastrichtuniversitypress.github.io/distant-reading-textbook/main/intro.html
     - theme: alt
-      text: Github repository
-      link: https://github.com/MonikaBarget/distant-reading
+      text: GitHub repository
+      link: https://github.com/MaastrichtUniversityPress/distant-reading-textbook
     - theme: alt
       text: Jupyterlite
       link: https://monikabarget.github.io/distant-reading/standalone/jupyterlite/
