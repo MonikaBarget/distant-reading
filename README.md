@@ -1,5 +1,5 @@
-# DistantReading
+#DistantReading
 
-This repository contains teaching materials for distant reading in the humanities and social sciences.
+I (@MonikaBarget) started this repository in 2022 to give students taking courses in computational text analysis at Maastricht University better access to code, data samples and short instructions. In the Faculty of Arts and Social Sciences, most students have limited experience with digital technologies when starting their studies, so my teaching materials are designed for beginners. While my own MA Digital Cultures students, who take the course "Machines of Knowledge" (see Figure 1 for course overview), were my initial audience, students at other institutions as well as researchers without previous programming experience may also find this repository helpful to explore the possibilities of distant reading for their work.
 
-
+In 2025/2026, an OpenUp grant awarded by the University Library in Maastricht allowed me to transform this repository into an [interactive textbook](https://maastrichtuniversitypress.github.io/distant-reading-textbook/main/intro.html) with live coding embedded, hosted via Maastricht University Press.
