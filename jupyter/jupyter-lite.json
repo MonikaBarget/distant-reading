@@ -5,6 +5,7 @@
     "appVersion": "0.4.5",
     "baseUrl": "./",
     "defaultKernelName": "python",
+    "defaultMode": "classic",
     "faviconUrl": "./lab/favicon.ico",
     "federated_extensions": [
       {
@@ -296,6 +297,9 @@
     },
     "fullLabextensionsUrl": "./extensions",
     "fullStaticUrl": "./build",
+    "kernelPreference": {
+      "default": "pyodide"
+    },
     "licensesUrl": "./lab/api/licenses",
     "litePluginSettings": {
       "@jupyterlite/pyodide-kernel-extension:kernel": {
@@ -303,7 +307,8 @@
           "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=952179a484fad344a3a22fa8617b47985fab2c71dea8084f0d0f6a2a35a45c45"
         ]
       }
-    }
+    },
+    "theme": "JupyterLab Light"
   },
   "jupyter-lite-schema-version": 0
 }
