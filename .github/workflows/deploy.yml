@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-jupyterlite:
+  build-and-deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -21,11 +21,8 @@ jobs:
         with:
           lfs: true
 
-      - name: Clean previous build and caches
-        run: |
-          set -euxo pipefail
-          rm -rf dist standalone/jupyterlite
-          rm -f .doit.db .doit* .jupyterlite.doit.db db.json || true
+      - name: Clean previous build
+        run: rm -rf dist
 
       - uses: actions/setup-python@v5
         with:
@@ -39,107 +36,22 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      - name: Install JupyterLite toolchain (Pyodide 0.26 compatible)
+      - name: Install JupyterLite toolchain
         run: |
           set -euxo pipefail
           python -m pip install --upgrade pip wheel --quiet
           pip install -r requirements.txt --quiet
           jupyter lite --version
 
-      - name: Create JupyterLite overrides configuration
-        run: |
-          mkdir -p jupyterlite/contents
-          cat > jupyterlite/contents/overrides.json << 'EOF'
-          {
-            "baseUrl": "/distant-reading/jupyter/",
-            "appUrl": "/distant-reading/jupyter/lab",
-            "litePluginSettings": {
-              "@jupyterlite/pyodide-kernel-extension:kernel": {
-                "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
-              }
-            }
-          }
-          EOF
-          echo "Created overrides.json with baseUrl and pyodideUrl"
-
       - name: Build JupyterLite site
         run: |
           set -euxo pipefail
-          mkdir -p standalone
-          rm -rf standalone/jupyterlite
           jupyter lite build \
-            --contents ./jupyterlite/contents \
-            --output-dir standalone/jupyterlite \
-            --debug
-          test -f standalone/jupyterlite/index.html
-          test -f standalone/jupyterlite/lab/index.html
-
-      - name: Verify and patch JupyterLite config
-        run: |
-          set -euxo pipefail
-          python3 > /dev/null << 'ENDPY'
-          import json
-          import re
-          
-          html_file = "standalone/jupyterlite/lab/index.html"
-          with open(html_file, 'r') as f:
-              html_content = f.read()
-          
-          if '"baseUrl"' not in html_content or '"pyodideUrl"' not in html_content:
-              config = {
-                  "jupyter-config-data": {
-                      "baseUrl": "/distant-reading/jupyter/",
-                      "appUrl": "/distant-reading/jupyter/lab",
-                      "litePluginSettings": {
-                          "@jupyterlite/pyodide-kernel-extension:kernel": {
-                              "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
-                          }
-                      }
-                  },
-                  "jupyter-lite-schema-version": 0
-              }
-              config_json = json.dumps(config)
-              pattern = r'<script[^>]*id="jupyter-config-data"[^>]*>.*?</script>'
-              replacement = '<script id="jupyter-config-data" type="application/json">' + config_json + '</script>'
-              html_content = re.sub(pattern, replacement, html_content, flags=re.DOTALL)
-              with open(html_file, 'w') as f:
-                  f.write(html_content)
-          ENDPY
-
-      - name: Download Pyodide runtime locally (with retries)
-        run: |
-          set -euxo pipefail
-          PYODIDE_VER="0.26.2"
-          BASE="https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VER}/full"
-          OUT="standalone/jupyterlite/pyodide"
-          mkdir -p "${OUT}"
-
-          # Download with 5-second timeout and 3 retries
-          for file in pyodide.js pyodide.mjs repodata.json; do
-            curl --connect-timeout 5 --max-time 30 --retry 3 \
-              -fL "${BASE}/${file}" -o "${OUT}/${file}" || true
-          done
-
-          # Try to get WASM file (optional, can be served from CDN)
-          (curl --connect-timeout 5 --max-time 30 --retry 2 \
-            -fL "${BASE}/pyodide.wasm" -o "${OUT}/pyodide.wasm" \
-            || curl --connect-timeout 5 --max-time 30 --retry 2 \
-            -fL "${BASE}/pyodide.asm.wasm" -o "${OUT}/pyodide.asm.wasm") || true
-
-          # Verify critical file exists
-          test -f "${OUT}/pyodide.js"
-
-      - name: Assemble publish directory with jupyter/ subdirectory
-        run: |
-          set -euxo pipefail
-          rm -rf dist
-          mkdir -p dist/jupyter
-          cp -r standalone/jupyterlite/* dist/jupyter/
-          touch dist/.nojekyll
-          
-          test -f dist/jupyter/index.html
-          test -f dist/jupyter/lab/index.html
-          test -f dist/jupyter/pyodide/pyodide.js
+            --lite-dir jupyterlite \
+            --output-dir dist/jupyterlite \
+            --base-url /distant-reading/jupyterlite/
+          test -f dist/jupyterlite/index.html
+          test -f dist/jupyterlite/lab/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
