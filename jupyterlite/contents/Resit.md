@@ -5,9 +5,34 @@ you may need to perform a full reset:
 
 ### Step 1: Use DevTools "Clear site data"
 
-In your web browser, open the so-called *DevTools*, find the *Application* tab, and navigate to *Storage*. There should be a "Clear site data" button or similar.
-In Firefox, for instance, you can use the *Storage* tab or Settings > Privacy > Manage Data > remove the site. This unregisters the service worker, clears your browser cache storage,
-and IndexedDB together.
+In your web browser, look for the option to clear the site data specifically for the Jupyterlite deployment:
+
+#### Chrome
+- Open DevTools (**F12** or **Ctrl+Shift+I**).
+- Go to the **Application** tab > **Storage** > **Clear site data**.
+
+#### Edge
+- Open DevTools (**F12** or **Ctrl+Shift+I**).
+- Go to the **Application** tab > **Storage** > **Clear site data**.
+
+#### Firefox
+- Open **Settings** > **Privacy & Security** > **Manage Data**.
+- Search for the website, select it, and click **Remove Selected**.
+
+#### Vivaldi
+- Open DevTools (F12 or Ctrl+Shift+I).
+- Go to the Application tab > Storage (see screenshot below).
+- Expand the relevant storage types: Local Storage, IndexedDB, Cookies.
+- Right-click the site entry and select Delete or Clear.
+
+<img width="1252" height="709" alt="image" src="https://github.com/user-attachments/assets/d9b2e381-ade7-4d5a-bdee-f6b4a15f8c3f" />
+
+#### Brave
+1. Open DevTools (**F12** or **Ctrl+Shift+I**).
+2. Go to the **Application** tab > **Storage** > **Clear site data**.
+3. Hard refresh (**Ctrl+Shift+R**).
+
+**Note:** This deletes all local data for the site. Back up files if needed.
 
 ### Step 2: Hard refresh the page
 
