@@ -48,6 +48,7 @@ jobs:
           set -euxo pipefail
           jupyter lite build \
             --lite-dir jupyterlite \
+            --contents jupyterlite/contents/notebooks \
             --output-dir dist/jupyterlite \
             --base-url /distant-reading/jupyterlite/
           test -f dist/jupyterlite/index.html
