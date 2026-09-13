@@ -15,7 +15,7 @@ hero:
       link: https://github.com/MaastrichtUniversityPress/distant-reading-textbook
     - theme: alt
       text: Jupyterlite
-      link: https://monikabarget.github.io/distant-reading/standalone/jupyterlite/
+      link: https://monikabarget.github.io/distant-reading/jupyterlite/
 
 features:
   - title: Welcome
