@@ -1,4 +1,4 @@
-name: Build & Deploy VitePress + JupyterLite to GitHub Pages v28
+name: Build & Deploy VitePress to GitHub Pages
 
 on:
   push:
@@ -13,154 +13,29 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-vitepress:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           lfs: true
+
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+
       - name: Install dependencies
         run: npm ci
+
       - name: Build VitePress
         run: npm run build
-      - name: Upload VitePress artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: vitepress-dist
-          path: docs/.vitepress/dist
 
-  build-jupyterlite:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          lfs: true
-
-      - name: Clean previous build and caches
-        run: |
-          set -euxo pipefail
-          rm -rf dist _output standalone/jupyterlite docs/.vitepress/dist/jupyterlite
-          rm -f .doit.db .doit* .jupyterlite.doit.db db.json || true
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install JupyterLite toolchain (Pyodide 0.26 compatible)
-        run: |
-          set -euxo pipefail
-          python -m pip install --upgrade pip wheel
-          pip install -r requirements.txt
-          jupyter lite --version
-
-      - name: Create JupyterLite configuration
-        run: |
-          cat > jupyter-lite.json << 'EOF'
-          {
-            "jupyter-lite-schema-version": 0,
-            "jupyter-config-data": {
-              "litePluginSettings": {
-                "@jupyterlite/pyodide-kernel-extension:kernel": {
-                  "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
-                }
-              }
-            }
-          }
-          EOF
-          echo "Configured Pyodide entry: https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
-
-      - name: Build JupyterLite site
-        run: |
-          set -euxo pipefail
-          mkdir -p standalone
-          rm -rf standalone/jupyterlite
-          jupyter lite build \
-            --contents ./jupyterlite/contents \
-            --output-dir standalone/jupyterlite \
-            --debug
-          test -f standalone/jupyterlite/index.html
-          test -f standalone/jupyterlite/lab/index.html
-
-      - name: Patch JupyterLite HTML config embedding
-        run: |
-          set -euxo pipefail
-          CONFIG_FILE="standalone/jupyterlite/jupyter-lite.json"
-          HTML_FILE="standalone/jupyterlite/lab/index.html"
-
-          if [ -f "$CONFIG_FILE" ] && [ -f "$HTML_FILE" ]; then
-            echo "Embedding JupyterLite config into HTML..."
-            CONFIG_JSON=$(jq -c '.' "$CONFIG_FILE")
-
-            # Replace the {} JSON block inside the multiline <script> tag
-            awk -v json="$CONFIG_JSON" '
-              /<script id="jupyter-config-data"/ {in_block=1; print; next}
-              in_block && /{}/ {print json; next}
-              in_block && /<\/script>/ {in_block=0}
-              {print}
-            ' "$HTML_FILE" > "${HTML_FILE}.tmp" && mv "${HTML_FILE}.tmp" "$HTML_FILE"
-          else
-            echo "Config or HTML file not found; skipping patch."
-          fi
-
-      - name: Download Pyodide runtime locally (handles name change)
-        run: |
-          set -euxo pipefail
-          PYODIDE_VER="0.26.2"
-          BASE="https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VER}/full"
-          OUT="standalone/jupyterlite/pyodide"
-          mkdir -p "${OUT}"
-
-          curl -fL "${BASE}/pyodide.js"     -o "${OUT}/pyodide.js"
-          curl -fL "${BASE}/pyodide.mjs"    -o "${OUT}/pyodide.mjs" || true
-          curl -fL "${BASE}/repodata.json"  -o "${OUT}/repodata.json" || true
-
-          (curl -fL "${BASE}/pyodide.wasm"      -o "${OUT}/pyodide.wasm" \
-           || curl -fL "${BASE}/pyodide.asm.wasm" -o "${OUT}/pyodide.asm.wasm")
-
-          test -f "${OUT}/pyodide.js"
-
-      - name: Upload JupyterLite artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: jupyterlite-dist
-          path: standalone/jupyterlite
-
-  assemble-and-deploy:
-    needs: [build-vitepress, build-jupyterlite]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download VitePress artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: vitepress-dist
-          path: _tmp/vitepress
-
-      - name: Download JupyterLite artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: jupyterlite-dist
-          path: _tmp/jupyterlite
-
-      - name: Assemble publish directory
-        run: |
-          set -euxo pipefail
-          rm -rf dist
-          mkdir -p dist
-          cp -r _tmp/vitepress/* dist/
-          mkdir -p dist/standalone
-          cp -r _tmp/jupyterlite/* dist/standalone/jupyterlite/
-          touch dist/.nojekyll
-
-          test -f dist/index.html
-          test -f dist/standalone/jupyterlite/index.html
-          test -f dist/standalone/jupyterlite/pyodide/pyodide.js
+      - name: Verify build output
+        run: test -f docs/.vitepress/dist/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: docs/.vitepress/dist
           keep_files: false
