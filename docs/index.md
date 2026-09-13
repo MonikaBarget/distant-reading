@@ -18,15 +18,9 @@ hero:
       link: https://monikabarget.github.io/distant-reading/standalone/jupyterlite/
 
 features:
-  - title: 📊 Data collection
-    details: Learn how to scrape data for text analysis using Python scripts.
-    link: /pages_datacollection
-  - title: 🧹 Data cleaning
-    details: Find out how to clean and filter data with EXCEL, Open Refine, scripts and browser-based tools.
-    link: /pages_datacleaning
-  - title: 📈 Data analysis
-    details: Learn how to use Voyant Tools for computational text analysis.
-    link: /pages_skills2_1_VoyantTools
+  - title: Welcome
+    details: Information on the history & purpose of this repository.
+    link: /pages_welcome
   - title: 📺 YouTube channel
     details: Visit YouTube to find examples of code execution and tools tutorials.
     link: https://www.youtube.com/@digitalhistory7990
