@@ -9,7 +9,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Welcome", link: "/pages_welcome" },
-      { text: "Share button", link: "/share-button-WP-demo" }
+      { text: "Share button", link: "/share-button-WP-demo.html" }
     ],
 
     sidebar: [
