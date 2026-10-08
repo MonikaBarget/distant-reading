@@ -8,7 +8,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Welcome", link: "/pages_welcome" }
+      { text: "Welcome", link: "/pages_welcome" },
+      { text: "Share button", link: "/share-button-WP-demo" }
     ],
 
     sidebar: [
